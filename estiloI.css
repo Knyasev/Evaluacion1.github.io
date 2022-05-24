@@ -3,7 +3,12 @@ body{
 	background-image: url(fondo.jpg);
     
 }
-
+.menu li a{
+	text-decoration: none;
+	color: blanchedalmond;
+	padding: 10px;
+	display: block;
+}
 .menu{
 
 	list-style: none;
