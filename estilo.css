@@ -3,6 +3,10 @@ body{
 	background-image: url(comuE.jpg);
     
 }
+.menu a{
+	display: inline-block;
+	text-align: center;
+}
 
 .menu{
 
