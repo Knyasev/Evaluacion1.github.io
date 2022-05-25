@@ -3,10 +3,7 @@ body{
 	background-image: url(comuE.jpg);
     
 }
-.menu li a{
-	display: inline-block;
-	text-align: center;
-}
+
 
 .menu{
 
@@ -37,4 +34,13 @@ body{
 	background: #ef8354;
 }
 
+.menu h1{
+	height: 50px;
+	text-align: center;
+	margin: 2rem auto;
+	position: relative;
+	left: 550px;
+	color: blanchedalmond;
+	width: 1000px;
+}
 
