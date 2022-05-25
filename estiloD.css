@@ -1,22 +1,25 @@
 body{
     font-family: Sans-Serif;
-    background-image: url(diagram.jpg);
+    background-image: url(fondo2.jpg);
+    background-size: 150%;
     
 }
 
  a {
 text-decoration: none;
-    color: black;
+    color: blanchedalmond;
     padding: 10px;
     display: block;
 }
 a  {
 display: inline-block;
+position: relative;
+left: 600px;
     text-align: center;
 
 }
  a:hover{
-    background: #ef8354;
+    background: #0B0706;
 }
 .menu{
 
@@ -29,6 +32,7 @@ display: inline-block;
     background-position: center;
     font-family: sans-serif;
     font-size: inherit;
+    
 }
 
 .menu li a{
@@ -45,4 +49,11 @@ display: inline-block;
 
 .menu li a:hover{
     background: #ef8354;
+}
+
+.menu div {
+    position: relative;
+    left: 120px;
+    color: blanchedalmond;
+
 }
