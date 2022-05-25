@@ -20,6 +20,7 @@ body{
     background-position: center;
     font-family: sans-serif;
     font-size: inherit;
+    text-indent : 15px;
 }
 
 .menu li a{
