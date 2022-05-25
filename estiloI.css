@@ -1,9 +1,29 @@
 body{
 	font-family: Sans-Serif;
-	background-image: url(fE.jpg);
+	background-image: url(fondo2.jpg);
     
 }
 
+ul li a {
+text-decoration: none;
+	color: blanchedalmond;
+	padding: 15px;
+	display: block;
+}
+ul li  {
+display: inline-block;
+	text-align: center;
+
+}
+ul li a:hover{
+	background: #0B0706;
+}
+.menu li a{
+	text-decoration: none;
+	color: blanchedalmond;
+	padding: 10px;
+	display: block;
+}
 .menu{
 
 	list-style: none;
@@ -15,6 +35,7 @@ body{
     background-position: center;
     font-family: sans-serif;
     font-size: inherit;
+    text-indent : 15px;
 }
 
 .menu li a{
@@ -31,4 +52,27 @@ body{
 
 .menu li a:hover{
 	background: #ef8354;
+}
+
+div h1{
+	color: blanchedalmond;
+	text-decoration: blink;
+
+}
+div p{
+	color: black;
+	position: relative;
+	left: 600px;
+	background: #cccc;
+	width: 700px;
+}
+
+p {
+	color: blanchedalmond;
+}
+ul li {
+color: blanchedalmond;
+position: relative;
+left: 600px;
+
 }

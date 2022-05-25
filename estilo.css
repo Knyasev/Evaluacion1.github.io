@@ -1,8 +1,13 @@
+
+
 body{
 	font-family: Sans-Serif;
-	background-image: url(comuE.jpg);
+	background-image: url(fondo2.jpg);
     
 }
+
+
+
 
 .menu{
 
@@ -19,6 +24,8 @@ body{
 
 .menu li a{
 	text-decoration: none;
+	position: relative;
+	left: 600px;
 	color: blanchedalmond;
 	padding: 10px;
 	display: block;
@@ -30,7 +37,43 @@ body{
 }
 
 .menu li a:hover{
-	background: #ef8354;
+	background: #0B0706;
 }
 
 
+.menu h1{
+	height: 50px;
+	text-align: center;
+	margin: 2rem auto;
+	position: relative;
+	left: 480px;
+	color: blanchedalmond;
+	width: 1000px;
+}
+
+div h2{
+color: blanchedalmond;
+
+}
+
+ div p{
+	text-align: center;
+	margin: 4rem auto;
+	
+	width: 1000px;
+	height: 550px;
+	position: relative;
+	left: 50px;
+	text-align: justify;
+	font-size: x-large;
+}
+
+img {
+	margin-left: 20%;
+  	margin-right: 25%;
+  	position: relative;
+  	right: 200px;
+  	bottom: 700px;
+  	width: 150px;
+	height: 150px;  
+}
