@@ -44,3 +44,19 @@ body{
 	width: 1000px;
 }
 
+div h2{
+color: blanchedalmond;
+
+}
+
+ div p{
+	text-align: center;
+	margin: 4rem auto;
+	background: #ccc;
+	width: 1000px;
+	height: 550px;
+	position: relative;
+	left: 100px;
+	text-align: justify;
+	font-size: x-large;
+}

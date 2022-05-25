@@ -1,7 +1,22 @@
 body{
 	font-family: Sans-Serif;
-	background-image: url(fondo.jpg);
+	background-image: url(comuE.jpg);
     
+}
+
+ul li a {
+text-decoration: none;
+	color: black;
+	padding: 10px;
+	display: block;
+}
+ul li  {
+display: inline-block;
+	text-align: center;
+
+}
+ul li a:hover{
+	background: #ef8354;
 }
 .menu li a{
 	text-decoration: none;

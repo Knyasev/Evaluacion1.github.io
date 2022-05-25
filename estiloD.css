@@ -4,6 +4,20 @@ body{
     
 }
 
+ a {
+text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+a  {
+display: inline-block;
+    text-align: center;
+
+}
+ a:hover{
+    background: #ef8354;
+}
 .menu{
 
     list-style: none;
