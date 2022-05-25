@@ -1,6 +1,6 @@
 body{
 	font-family: Sans-Serif;
-	background-image: url(comuE.jpg);
+	background-image: url(fondo2.jpg);
     
 }
 
@@ -39,7 +39,7 @@ body{
 	text-align: center;
 	margin: 2rem auto;
 	position: relative;
-	left: 550px;
+	left: 480px;
 	color: blanchedalmond;
 	width: 1000px;
 }
@@ -52,11 +52,11 @@ color: blanchedalmond;
  div p{
 	text-align: center;
 	margin: 4rem auto;
-	background: #ccc;
+	
 	width: 1000px;
 	height: 550px;
 	position: relative;
-	left: 100px;
+	left: 50px;
 	text-align: justify;
 	font-size: x-large;
 }
