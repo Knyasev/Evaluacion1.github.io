@@ -25,7 +25,7 @@ body{
 .menu li a{
 	text-decoration: none;
 	position: relative;
-	left: 600px;
+	left: 550px;
 	color: blanchedalmond;
 	padding: 10px;
 	display: block;
@@ -73,7 +73,31 @@ img {
   	margin-right: 25%;
   	position: relative;
   	right: 200px;
-  	bottom: 700px;
+  	bottom: 1500px;
   	width: 150px;
 	height: 150px;  
 }
+
+h3{
+	position: relative;
+	left: 520px;
+	bottom: 300px;
+	font-size: x-large;
+}
+  div ul li {
+ 	position: relative;
+ 	left: 500px;
+ 	bottom: 960px;
+ 	padding: 10px;
+ 	font-size: x-large;
+ }
+
+ div ol li {
+ 	position: relative;
+ 	left: 500px;
+ 	bottom: 960px;
+ 	padding: 10px;
+ 	font-size: x-large;
+
+ }
+ 

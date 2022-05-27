@@ -71,8 +71,12 @@ p {
 	color: blanchedalmond;
 }
 ul li {
-color: blanchedalmond;
+color: black;
 position: relative;
 left: 600px;
 
 }
+ul  li {
+	color: blanchedalmond;
+}
+
