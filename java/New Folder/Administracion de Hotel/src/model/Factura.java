@@ -6,9 +6,8 @@ package model;
 
 /**
  *
- * @author Gonzalez G
+ * @author Usuario iTC
  */
-public class Cocina {
-    private Hotel hotel;
+public class Factura {
     
 }

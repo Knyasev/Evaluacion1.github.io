@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
+import java.util.LinkedList;
 import java.util.List;
 /**
  *
@@ -15,4 +16,17 @@ public class Hotel {
     private List<Habitacion> habitacionList;
     private List<Recepcion> recepcionList;
     private Parqueadero parqueadero;
+
+    
+    //composicion
+    public Hotel() {
+        this.parqueadero = new Parqueadero();
+        this.recepcionList = new LinkedList<>();
+        this.habitacionList = new LinkedList<>();
+        this.comedor = new Comedor();
+        this.reservacionList = new LinkedList<>();
+    }
+   
+    
+    
 }
