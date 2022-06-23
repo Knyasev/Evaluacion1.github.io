@@ -8,9 +8,13 @@ package model;
  *
  * @author Gonzalez G
  */
-public class Bar {
-        private ServicioAdicional servicioAdd;
-        private Hotel hotel;
-        
-            
+public class Gimnasio {
+    private ServicioAdicional servicioAdicional;
+
+    public Gimnasio() {
+        servicioAdicional= new ServicioAdicional();
+    }
+    
+    
+    
 }

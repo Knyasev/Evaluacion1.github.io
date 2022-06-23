@@ -16,6 +16,7 @@ public class Hotel {
     private List<Habitacion> habitacionList;
     private List<Recepcion> recepcionList;
     private Parqueadero parqueadero;
+    private Factura factura;
 
     
     //composicion
@@ -25,6 +26,7 @@ public class Hotel {
         this.habitacionList = new LinkedList<>();
         this.comedor = new Comedor();
         this.reservacionList = new LinkedList<>();
+        this.factura = new Factura();
     }
    
     
