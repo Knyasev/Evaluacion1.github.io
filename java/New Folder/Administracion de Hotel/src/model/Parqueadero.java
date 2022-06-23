@@ -10,4 +10,6 @@ package model;
  */
 public class Parqueadero {
     
+    
+    private Hotel hotel;
 }

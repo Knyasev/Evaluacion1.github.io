@@ -9,5 +9,8 @@ package model;
  * @author Gonzalez G
  */
 public class ReservacionComida {
+   
+    private Reservacion reservacion;
+    private Comedor comedor;
     
 }
