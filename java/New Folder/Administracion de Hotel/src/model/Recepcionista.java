@@ -11,7 +11,8 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Recepcionista extends Personal{
-    private List<Mesero> meseroList;
+    private List<Recepcion> recepcionList;
     
-    
+
+
 }

@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
-
+import java.util.List;
 /**
  *
  * @author Usuario iTC
  */
 public class Recepcion {
-    
+    private  List<Recepcionista> recepcionList;
+    private Hotel hotel;
 }
