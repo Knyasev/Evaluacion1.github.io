@@ -8,6 +8,6 @@ package model;
  *
  * @author Usuario iTC
  */
-public class Chef {
+public class Chef extends Personal{
     
 }
