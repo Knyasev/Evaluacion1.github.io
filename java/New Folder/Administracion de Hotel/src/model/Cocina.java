@@ -9,5 +9,7 @@ package model;
  * @author Gonzalez G
  */
 public class Cocina {
-    
+        private Hotel hotel;
+        private Chef chef;
+        
 }
