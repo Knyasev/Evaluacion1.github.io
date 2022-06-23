@@ -9,8 +9,13 @@ package model;
  * @author Gonzalez G
  */
 public class Spa {
+     private String tratamientos  ;
+    private String masajes ;
+    
+    
     private ServicioAdicional servicioAdicional;
 
+   
     public Spa() {
         servicioAdicional = new ServicioAdicional();
     }

@@ -9,6 +9,13 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Recepcion {
+    private Integer numeroLlaveHabitacion ;
+    private Float precioNoche;
+    private String InformacionHabitacion;
+    private Integer numeroHabitacionesDisponibles;
+    
     private  List<Recepcionista> recepcionList;
     private Hotel hotel;
+    
+   
 }

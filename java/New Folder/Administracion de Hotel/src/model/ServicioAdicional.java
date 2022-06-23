@@ -10,6 +10,11 @@ import java.util.LinkedList;
  * @author Gonzalez G
  */
 public class ServicioAdicional {
+        private Boolean internet;
+        private Boolean tvCable;
+        private Boolean servicioHabitacion;
+        private Boolean servicioLimpieza;
+    
         private Servicio servicio;
         private Bar bar;
         private List<RealizarEvento> realizarEventoList;
