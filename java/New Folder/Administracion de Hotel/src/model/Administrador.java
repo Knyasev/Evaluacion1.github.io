@@ -8,6 +8,6 @@ package model;
  *
  * @author Usuario iTC
  */
-public class Administrador {
+public class Administrador extends Personal{
     
 }
