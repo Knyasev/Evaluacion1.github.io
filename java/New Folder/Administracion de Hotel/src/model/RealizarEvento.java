@@ -10,5 +10,11 @@ package model;
  */
 public class RealizarEvento {
     private ServicioAdicional servicioAdicional ;
+
+    public RealizarEvento() {
+        servicioAdicional = new ServicioAdicional();
+        
+    }
+    
     
 }
