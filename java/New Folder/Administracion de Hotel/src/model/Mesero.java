@@ -11,5 +11,8 @@ import java.util.List;
  */
 public class Mesero extends Personal {
     
-     private List<Recepcionista> recepcionistaList;  
+     private Comedor comedor; 
+
+   
+     
 }

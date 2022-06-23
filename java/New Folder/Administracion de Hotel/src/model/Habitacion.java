@@ -11,4 +11,6 @@ import java.util.List;
 public class Habitacion {
     private Hotel hotel;
     private List<Reservacion> reservacionList;
+    private List<Baño> bañoList;
+    
 }

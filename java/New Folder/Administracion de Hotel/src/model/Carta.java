@@ -10,4 +10,7 @@ package model;
  */
 public class Carta {
         private Comedor comedor;
+        private Habitacion habitacion;
+        
+        
 }

@@ -4,6 +4,7 @@
  */
 package model;
 import java.util.List;
+import java.util.LinkedList;
 /**
  *
  * @author Usuario iTC
@@ -11,8 +12,13 @@ import java.util.List;
 public class Comedor {
         private Hotel hotel;
         private List<ReservacionComida> reservacionComidaList;
-        private Carta carta;
-        private Mesero mesero;
+        private List<Carta> cartaList;
+        private List<Mesero> meseroList;
+
+    public Comedor() {
+        cartaList = new LinkedList <>();
+        meseroList = new LinkedList<>();
+    }
         
     
 }
