@@ -10,6 +10,11 @@ import java.util.LinkedList;
  * @author Usuario iTC
  */
 public class Comedor {
+    private Integer numeroMesas;
+    private Integer numeroSillas; 
+    private  String numeroCubiertos;   
+    
+    
         private Hotel hotel;
         private List<ReservacionComida> reservacionComidaList;
         private List<Carta> cartaList;

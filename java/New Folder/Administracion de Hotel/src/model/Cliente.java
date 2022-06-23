@@ -10,5 +10,6 @@ package model;
  */
 public class Cliente extends Persona{
     private Reservacion reservacion;
+    private Chef chef;
     
 }

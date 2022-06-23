@@ -15,8 +15,13 @@ public class Carta {
     private String bebidas;
     private String sopas;
     
+    public void hacerPedido(){
+    //botton para hacer pedido si o no 
+    }
+    
     private Comedor comedor;
     private Habitacion habitacion;
+    private Chef chef;
     
     
         

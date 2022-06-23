@@ -9,8 +9,16 @@ package model;
  * @author Gonzalez G
  */
 public class Cocina {
+    private String tamanio;
+    private Boolean poseeHorno;
+    
 
         private Hotel hotel;
         private Chef chef;
+        
+        public void cocinar(){
+        
+        
+        }
         
 }

@@ -10,4 +10,9 @@ package model;
  */
 public class Conserje extends Personal {
     
+    
+    public void limpiarHabitacion(){
+    
+    }
+    
 }

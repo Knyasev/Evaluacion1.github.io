@@ -11,10 +11,11 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Chef extends Personal{
-    private List<Carta> cartaList; ;
+    private List<Carta> cartaList;
+    private List<Cliente> clienteList;
     
     public void prepararPlato(){
-    
+        // espero si prearar plato de cocina es boolean
     
     }
     
