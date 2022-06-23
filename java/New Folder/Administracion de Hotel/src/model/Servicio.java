@@ -9,5 +9,7 @@ package model;
  * @author Gonzalez G
  */
 public class Servicio {
-    
+    private Reservacion reservacion;
+    private Hotel hotel;
+    private ServicioAdicional servicioAdicional;
 }
