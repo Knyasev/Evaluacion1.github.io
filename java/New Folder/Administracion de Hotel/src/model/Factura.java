@@ -9,5 +9,9 @@ package model;
  * @author Usuario iTC
  */
 public class Factura {
-    
+        private Integer numero;
+        private String descripcion;
+        private String datosCliente;
+        private String datosEmpresa;
+        private String fecha;
 }

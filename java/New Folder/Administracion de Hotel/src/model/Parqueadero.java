@@ -9,7 +9,8 @@ package model;
  * @author Usuario iTC
  */
 public class Parqueadero {
-    
+    private Integer numeroParqueadero;
+    private String datosVehiculo;
     
     private Hotel hotel;
 }
