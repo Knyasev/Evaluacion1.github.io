@@ -9,5 +9,5 @@ package model;
  * @author Gonzalez G
  */
 public class Carta {
-    
+        private Comedor comedor;
 }
