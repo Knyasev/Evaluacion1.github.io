@@ -9,5 +9,10 @@ package model;
  * @author Usuario iTC
  */
 public class Baño {
+    private Integer numeroDuchas;
+    private String elementosAceoPersonal;
     
+    
+    private Habitacion habitacion;
+          
 }

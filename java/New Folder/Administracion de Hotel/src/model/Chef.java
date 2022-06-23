@@ -4,10 +4,18 @@
  */
 package model;
 
+import java.util.List;
+
 /**
  *
  * @author Usuario iTC
  */
 public class Chef extends Personal{
+    private List<Carta> cartaList; ;
+    
+    public void prepararPlato(){
+    
+    
+    }
     
 }

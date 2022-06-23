@@ -9,8 +9,16 @@ package model;
  * @author Gonzalez G
  */
 public class Carta {
-        private Comedor comedor;
-        private Habitacion habitacion;
+    private String platoComida;
+    private String ensaladas;
+    private String postres;
+    private String bebidas;
+    private String sopas;
+    
+    private Comedor comedor;
+    private Habitacion habitacion;
+    
+    
         
         
 }
