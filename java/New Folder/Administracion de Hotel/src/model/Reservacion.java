@@ -4,6 +4,7 @@
  */
 package model;
 import java.util.List;
+import java.util.LinkedList;
 /**
  *
  * @author Gonzalez G
@@ -11,5 +12,14 @@ import java.util.List;
 public class Reservacion {
     private Hotel hotel;
     private List<ReservacionComida> reservacionComidaList;
+    private List<Recepcionista> recepcionistaList;
+    private Cliente cliente;
+    private Servicio servicio ;
+    
+
+    public Reservacion() {
+        reservacionComidaList = new LinkedList<>();
+    }
+    
     
 }

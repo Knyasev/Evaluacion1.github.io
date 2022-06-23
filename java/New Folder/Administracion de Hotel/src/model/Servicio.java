@@ -12,4 +12,9 @@ public class Servicio {
     private Reservacion reservacion;
     private Hotel hotel;
     private ServicioAdicional servicioAdicional;
+
+    public Servicio() {
+        reservacion  = new Reservacion();
+    }
+    
 }
