@@ -10,6 +10,21 @@ import java.util.LinkedList;
  * @author Gonzalez G
  */
 public class Reservacion {
+    private Integer numeroDias;
+    private String fechaEntrada;
+    private String fechaSalida;
+    private Integer numeroHuespedes;
+    private Float precioHabitacion;
+    private Float precioServicio;
+    private Float precioReservacion;
+    private String tiempoEstancia;
+    private Float tipoDescuento ;
+    private String tipoHabitacion ; //observacion
+    private String metodoPago ;
+
+    
+    
+    
     private Hotel hotel;
     private List<ReservacionComida> reservacionComidaList;
     private List<Recepcionista> recepcionistaList;

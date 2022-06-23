@@ -9,5 +9,8 @@ package model;
  * @author Usuario iTC
  */
 public class Persona {
+    private String nombre ;
+    private String FechaNacimiento ;
+    private String Apellido;
     private Hotel hotel ;
 }

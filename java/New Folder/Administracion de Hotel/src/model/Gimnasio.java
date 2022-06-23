@@ -9,6 +9,9 @@ package model;
  * @author Gonzalez G
  */
 public class Gimnasio {
+    private String horario;
+    private Boolean adquirirMaquinaria;
+    
     private ServicioAdicional servicioAdicional;
 
     public Gimnasio() {

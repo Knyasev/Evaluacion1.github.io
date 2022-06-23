@@ -9,7 +9,10 @@ package model;
  * @author Gonzalez G
  */
 public class ReservacionComida {
-   
+    private String tipoAlmuerzo;
+    private String tipoDesayuno;
+    private String tipoCena ;
+    
     private Reservacion reservacion;
     private Comedor comedor;
     

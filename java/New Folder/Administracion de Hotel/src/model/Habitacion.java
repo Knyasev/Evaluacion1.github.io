@@ -10,6 +10,14 @@ import java.util.LinkedList;
  * @author Gonzalez G
  */
 public class Habitacion {
+    private Boolean poseeMirador;
+    private Integer numeroBaños;
+    private Integer numeroCamas;
+    private Float tamanio;
+    private Integer numeroHuespedes;
+    private String tipoHabitacion;
+    
+    
     private Hotel hotel;
     private List<Reservacion> reservacionList;
     private List<Baño> bañoList;

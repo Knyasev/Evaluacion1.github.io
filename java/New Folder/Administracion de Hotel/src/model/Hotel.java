@@ -10,6 +10,14 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Hotel {
+    private String nombre ;
+    private Integer numeroPisos;
+    private Integer numeroHabitaciones;
+    private String ruc;
+    private Integer numeroEstrella;
+    private Boolean poseePiscina ;
+    private String ubicacion;
+    private String fechaInaguracion;
     
     private List<Reservacion> reservacionList;
     private Comedor comedor;

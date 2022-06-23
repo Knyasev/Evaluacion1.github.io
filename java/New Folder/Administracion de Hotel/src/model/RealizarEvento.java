@@ -9,6 +9,11 @@ package model;
  * @author Gonzalez G
  */
 public class RealizarEvento {
+    private String tipoEvento;
+    private String fecha;
+    private String Duracion;
+    
+    
     private ServicioAdicional servicioAdicional ;
 
     public RealizarEvento() {
