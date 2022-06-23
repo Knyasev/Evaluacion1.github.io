@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
-
+import java.util.List;
 /**
  *
  * @author Gonzalez G
@@ -11,7 +11,7 @@ package model;
 public class Servicio {
     private Reservacion reservacion;
     private Hotel hotel;
-    private ServicioAdicional servicioAdicional;
+    private List<ServicioAdicional> servicioAdicionalList;
 
     public Servicio() {
         reservacion  = new Reservacion();

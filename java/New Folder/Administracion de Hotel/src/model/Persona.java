@@ -9,5 +9,5 @@ package model;
  * @author Usuario iTC
  */
 public class Persona {
-    
+    private Hotel hotel ;
 }

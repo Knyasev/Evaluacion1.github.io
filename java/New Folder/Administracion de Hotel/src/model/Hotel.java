@@ -18,6 +18,7 @@ public class Hotel {
     private Parqueadero parqueadero;
     private Factura factura;
     private List<Servicio> servicioList;
+    private List<Persona> personaList;
 
     
     //composicion
