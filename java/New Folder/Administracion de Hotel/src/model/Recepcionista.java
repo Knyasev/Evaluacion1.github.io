@@ -4,10 +4,14 @@
  */
 package model;
 
+import java.util.List;
+
 /**
  *
  * @author Usuario iTC
  */
-public class Recepcionista {
+public class Recepcionista extends Personal{
+    private List<Mesero> meseroList;
+    
     
 }

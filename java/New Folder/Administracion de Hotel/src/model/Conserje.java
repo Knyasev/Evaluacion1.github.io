@@ -8,6 +8,6 @@ package model;
  *
  * @author Usuario iTC
  */
-public class Conserje {
+public class Conserje extends Personal {
     
 }

@@ -33,7 +33,7 @@ public class inter extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/asteroide-acercandose-a-planeta_5461x2880_xtrafondos.com.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 510, 460));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, -30, 510, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
