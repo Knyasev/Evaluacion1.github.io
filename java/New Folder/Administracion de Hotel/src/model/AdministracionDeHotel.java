@@ -14,6 +14,8 @@ public class AdministracionDeHotel {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Persona p1= new Persona("Mario", "14/24/2005", "Rogel");
+        System.out.println(p1);
         
     }
     
