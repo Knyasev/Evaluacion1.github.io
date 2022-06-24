@@ -9,8 +9,15 @@ package model;
  * @author Gonzalez G
  */
 public class Spa {
-     private String tratamientos  ;
-    private String masajes ;
+     private Boolean Vapor ;
+     private Boolean masajes ;
+
+    public Spa(Boolean Vapor, Boolean masajes) {
+        this.Vapor = Vapor;
+        this.masajes = masajes;
+    }
+
+     
     
     
     private ServicioAdicional servicioAdicional;
@@ -19,6 +26,38 @@ public class Spa {
     public Spa() {
         servicioAdicional = new ServicioAdicional();
     }
+
+    public Boolean getVapor() {
+        return Vapor;
+    }
+
+    public void setVapor(Boolean Vapor) {
+        this.Vapor = Vapor;
+    }
+
+    public Boolean getMasajes() {
+        return masajes;
+    }
+
+    public void setMasajes(Boolean masajes) {
+        this.masajes = masajes;
+    }
+
+    public ServicioAdicional getServicioAdicional() {
+        return servicioAdicional;
+    }
+
+    public void setServicioAdicional(ServicioAdicional servicioAdicional) {
+        this.servicioAdicional = servicioAdicional;
+    }
+
+    @Override
+    public String toString() {
+        return "Spa{" + "Vapor=" + Vapor + ", masajes=" + masajes + '}';
+    }
+
     
+    
+     
 
 }
