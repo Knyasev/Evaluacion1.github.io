@@ -20,7 +20,7 @@ public class Reservacion {
     private Float precioReservacion;
     private String tiempoEstancia;
     private Float tipoDescuento ;
-    private String tipoHabitacion ; //observacion
+    
     private String metodoPago ;
 
     
@@ -38,8 +38,13 @@ public class Reservacion {
         reservacionComidaList = new LinkedList<>();
     }
 
+<<<<<<< Updated upstream
     public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
      
+=======
+    public Reservacion(Integer numeroDias, Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento) {
+        
+>>>>>>> Stashed changes
         this.fechaEntrada = 0;
         this.fechaSalida = fechaSalida;
         this.numeroHuespedes = numeroHuespedes;
@@ -47,13 +52,18 @@ public class Reservacion {
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
         this.tipoDescuento = tipoDescuento;
-        this.tipoHabitacion = tipoHabitacion;
+        
     }
 
+<<<<<<< Updated upstream
+=======
+  
+>>>>>>> Stashed changes
     
     public void reservarHabitacion (){
         
         for (Habitacion habitacion: habitacionList) {
+             
             
             
             
@@ -63,7 +73,10 @@ public class Reservacion {
     
     }
    
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     public Integer getFechaEntrada() {
         return fechaEntrada;
     }
@@ -122,13 +135,8 @@ public class Reservacion {
         this.tipoDescuento = tipoDescuento;
     }
 
-    public String getTipoHabitacion() {
-        return tipoHabitacion;
-    }
-
-    public void setTipoHabitacion(String tipoHabitacion) {
-        this.tipoHabitacion = tipoHabitacion;
-    }
+   
+    
 
     public String getMetodoPago() {
         return metodoPago;
@@ -180,7 +188,11 @@ public class Reservacion {
 
     @Override
     public String toString() {
+<<<<<<< Updated upstream
         return "Reservacion{" + ", fechaEntrada=" + fechaEntrada + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" + tipoHabitacion + '}';
+=======
+        return "Reservacion{"  + ", fechaEntrada=" + fechaEntrada + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia + ", tipoDescuento=" + tipoDescuento + ", habitacionList=" + habitacionList + '}';
+>>>>>>> Stashed changes
     }
     
     

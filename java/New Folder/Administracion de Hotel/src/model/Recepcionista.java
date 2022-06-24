@@ -18,6 +18,7 @@ public class Recepcionista extends Usuario{
         super(identificacionHotel, nombre, Apellido, identificacion);
         this.recepcionList = recepcionList;
     }
+<<<<<<< Updated upstream
 public Recepcionista(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
         super(identificacionHotel, nombre, Apellido, identificacion);
     }
@@ -39,6 +40,22 @@ public Recepcionista(IdentificacionHotel identificacionHotel, String nombre, Str
 
     
     
+=======
+>>>>>>> Stashed changes
 
+    public List<Recepcion> getRecepcionList() {
+        return recepcionList;
+    }
 
+    public void setRecepcionList(List<Recepcion> recepcionList) {
+        this.recepcionList = recepcionList;
+    }
+
+    @Override
+    public String toString() {
+        return "Recepcionista{" + "recepcionList=" + recepcionList + '}';
+    }
+        
+    
+    
 }

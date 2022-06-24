@@ -11,6 +11,12 @@ package model;
 public class Bar {
         private ServicioAdicional servicioAdd;
         private Hotel hotel;
+
+    public ServicioAdicional getServicioAdd() {
+        return servicioAdd;
+    }
+
+  
         
-            
+        
 }
