@@ -10,7 +10,7 @@ import java.util.LinkedList;
  * @author Gonzalez G
  */
 public class Reservacion {
-    private Integer numeroDias;
+    
     private Integer fechaEntrada;
     private Integer fechaSalida;
     private Integer numeroHuespedes;
@@ -38,8 +38,8 @@ public class Reservacion {
         reservacionComidaList = new LinkedList<>();
     }
 
-    public Reservacion(Integer numeroDias, Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
-        this.numeroDias = numeroDias;
+    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+     
         this.fechaEntrada = 0;
         this.fechaSalida = fechaSalida;
         this.numeroHuespedes = numeroHuespedes;
@@ -50,9 +50,6 @@ public class Reservacion {
         this.tipoHabitacion = tipoHabitacion;
     }
 
-    public Integer getNumeroDias() {
-        return numeroDias;
-    }
     
     public void reservarHabitacion (){
         
@@ -65,9 +62,7 @@ public class Reservacion {
     
     
     }
-    public void setNumeroDias(Integer numeroDias) {
-        this.numeroDias = numeroDias;
-    }
+   
 
     public Integer getFechaEntrada() {
         return fechaEntrada;
@@ -181,6 +176,11 @@ public class Reservacion {
 
     public void setServicio(Servicio servicio) {
         this.servicio = servicio;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" + tipoHabitacion + '}';
     }
     
     
