@@ -40,10 +40,10 @@ public class AdministracionDeHotel {
         Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
         System.out.println(hotel);
         
-        Reservacion reservacion = new Reservacion(2, 5, 4, 25f, 45f, 21f, "10 dias",10f, "Presidencial");
+        Reservacion reservacion = new Reservacion(5, 7, 5, 54f, 45f, 12f, "4", 10f, "Presidencial");
         System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",5);
-        Recepcionista recepcionista = new Recepcionista(recepcion,new IdentificacionHotel(51, "Hotel"), "Wilson", "Gonzalez","12415485");
+        Recepcionista recepcionista = new Recepcionista(new IdentificacionHotel(51, "Hotel"), "Wilson", "Gonzalez","12415485");
         recepcion.getRecepcionList().add(recepcionista);
         System.out.println(recepcion);
         

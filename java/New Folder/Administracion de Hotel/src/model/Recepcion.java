@@ -18,7 +18,7 @@ public class Recepcion {
     private  List<Recepcionista> recepcionList;
     private Hotel hotel;
 
-<<<<<<< Updated upstream
+
     public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Integer numeroHabitacionesDisponibles) {
         this.numeroLlaveHabitacion = numeroLlaveHabitacion;
         this.precioNoche = precioNoche;
@@ -26,7 +26,7 @@ public class Recepcion {
         this.numeroHabitacionesDisponibles = numeroHabitacionesDisponibles;
     }
 
-=======
+
     public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Hotel hotel) {
         this.numeroLlaveHabitacion = numeroLlaveHabitacion;
         this.precioNoche = precioNoche;
@@ -36,7 +36,7 @@ public class Recepcion {
     }
 
     
->>>>>>> Stashed changes
+
     public Integer getNumeroLlaveHabitacion() {
         return numeroLlaveHabitacion;
     }
@@ -85,19 +85,9 @@ public class Recepcion {
         this.hotel = hotel;
     }
 
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
-    @Override
+
     public String toString() {
         return "Recepcion{" + "numeroLlaveHabitacion=" + numeroLlaveHabitacion + ", precioNoche=" + precioNoche + ", InformacionHabitacion=" + InformacionHabitacion + ", numeroHabitacionesDisponibles=" + numeroHabitacionesDisponibles + ", recepcionList=" + recepcionList + ", hotel=" + hotel + '}';
     }
-<<<<<<< Updated upstream
-    
-     
-=======
->>>>>>> Stashed changes
-    
-   
+ 
 }

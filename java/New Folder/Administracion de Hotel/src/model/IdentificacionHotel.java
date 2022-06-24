@@ -11,7 +11,7 @@ package model;
 public class IdentificacionHotel {
     private Integer numeroIdeEmpleado;
     private String ocupacion;
-<<<<<<< Updated upstream
+
 
     public IdentificacionHotel(Integer numeroIdeEmpleado, String ocupacion) {
         this.numeroIdeEmpleado = numeroIdeEmpleado;
@@ -34,8 +34,6 @@ public class IdentificacionHotel {
         this.ocupacion = ocupacion;
     }
 
-   
-=======
-    private Usuario personal ; 
->>>>>>> Stashed changes
+   private Usuario personal ; 
+
 }

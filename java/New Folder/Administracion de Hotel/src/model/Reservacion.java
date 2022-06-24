@@ -38,13 +38,10 @@ public class Reservacion {
         reservacionComidaList = new LinkedList<>();
     }
 
-<<<<<<< Updated upstream
+
     public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
      
-=======
-    public Reservacion(Integer numeroDias, Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento) {
-        
->>>>>>> Stashed changes
+
         this.fechaEntrada = 0;
         this.fechaSalida = fechaSalida;
         this.numeroHuespedes = numeroHuespedes;
@@ -55,10 +52,9 @@ public class Reservacion {
         
     }
 
-<<<<<<< Updated upstream
-=======
-  
->>>>>>> Stashed changes
+
+
+
     
     public void reservarHabitacion (){
         
@@ -73,10 +69,7 @@ public class Reservacion {
     
     }
    
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     public Integer getFechaEntrada() {
         return fechaEntrada;
     }
@@ -188,11 +181,13 @@ public class Reservacion {
 
     @Override
     public String toString() {
-<<<<<<< Updated upstream
-        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" + tipoHabitacion + '}';
-=======
-        return "Reservacion{"  + ", fechaEntrada=" + fechaEntrada + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia + ", tipoDescuento=" + tipoDescuento + ", habitacionList=" + habitacionList + '}';
->>>>>>> Stashed changes
+
+        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada 
+                + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes 
+                + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
+                + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
+
+       
     }
     
     
