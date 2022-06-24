@@ -10,7 +10,7 @@ import java.util.LinkedList;
  * @author Gonzalez G
  */
 public class Reservacion {
-    private Integer numeroDias;
+    
     private Integer fechaEntrada;
     private Integer fechaSalida;
     private Integer numeroHuespedes;
@@ -20,7 +20,7 @@ public class Reservacion {
     private Float precioReservacion;
     private String tiempoEstancia;
     private Float tipoDescuento ;
-    private String tipoHabitacion ; //observacion
+    
     private String metodoPago ;
 
     
@@ -38,8 +38,10 @@ public class Reservacion {
         reservacionComidaList = new LinkedList<>();
     }
 
-    public Reservacion(Integer numeroDias, Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
-        this.numeroDias = numeroDias;
+
+    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+     
+
         this.fechaEntrada = 0;
         this.fechaSalida = fechaSalida;
         this.numeroHuespedes = numeroHuespedes;
@@ -47,16 +49,17 @@ public class Reservacion {
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
         this.tipoDescuento = tipoDescuento;
-        this.tipoHabitacion = tipoHabitacion;
+        
     }
 
-    public Integer getNumeroDias() {
-        return numeroDias;
-    }
+
+
+
     
     public void reservarHabitacion (){
         
         for (Habitacion habitacion: habitacionList) {
+             
             
             
             
@@ -65,9 +68,7 @@ public class Reservacion {
     
     
     }
-    public void setNumeroDias(Integer numeroDias) {
-        this.numeroDias = numeroDias;
-    }
+   
 
     public Integer getFechaEntrada() {
         return fechaEntrada;
@@ -127,13 +128,8 @@ public class Reservacion {
         this.tipoDescuento = tipoDescuento;
     }
 
-    public String getTipoHabitacion() {
-        return tipoHabitacion;
-    }
-
-    public void setTipoHabitacion(String tipoHabitacion) {
-        this.tipoHabitacion = tipoHabitacion;
-    }
+   
+    
 
     public String getMetodoPago() {
         return metodoPago;
@@ -181,6 +177,17 @@ public class Reservacion {
 
     public void setServicio(Servicio servicio) {
         this.servicio = servicio;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada 
+                + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes 
+                + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
+                + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
+
+       
     }
     
     
