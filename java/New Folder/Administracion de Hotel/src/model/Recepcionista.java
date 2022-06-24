@@ -13,10 +13,13 @@ import java.util.List;
 public class Recepcionista extends Usuario{
     private List<Recepcion> recepcionList;
 
-    public Recepcionista(List<Recepcion> recepcionList, IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
-        super(identificacionHotel, nombre, Apellido, identificacion);
-        this.recepcionList = recepcionList;
+    public Recepcionista(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
+        super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
     }
+
+    
+
+    
 
     
     

@@ -40,8 +40,13 @@ public class AdministracionDeHotel {
         Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
 //        System.out.println(hotel);
 
+        Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
+        Chef ch2 = new Chef(002, "Chef", "Victor", "Ojeda","78451236" );
         
+        System.out.println(ch1);
 
+
+       
     }
     
 }

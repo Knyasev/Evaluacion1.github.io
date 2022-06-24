@@ -13,9 +13,14 @@ public class Mesero extends Usuario {
     
      private Comedor comedor; 
 
-    public Mesero(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
-        super(identificacionHotel, nombre, Apellido, identificacion);
+    public Mesero(Comedor comedor, Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
+        super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
+        this.comedor = comedor;
     }
+
+    
+
+   
 
     
 

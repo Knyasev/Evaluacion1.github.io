@@ -16,8 +16,10 @@ public class Conserje extends Usuario {
     
     }
 
-    public Conserje(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
-        super(identificacionHotel, nombre, Apellido, identificacion);
+    public Conserje(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
+        super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
     }
+
+    
 
 }

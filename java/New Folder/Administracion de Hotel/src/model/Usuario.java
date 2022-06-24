@@ -9,12 +9,33 @@ package model;
  * @author Usuario iTC
  */
 public class Usuario extends Persona{
-        private IdentificacionHotel identificacionHotel;
+            private Integer numeroIdeEmpleado;
+            private String ocupacion;
 
-    public Usuario(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
+    public Usuario(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(nombre, Apellido, identificacion);
-        this.identificacionHotel = identificacionHotel;
+        this.numeroIdeEmpleado = numeroIdeEmpleado;
+        this.ocupacion = ocupacion;
     }
+
+    public Integer getNumeroIdeEmpleado() {
+        return numeroIdeEmpleado;
+    }
+
+    public void setNumeroIdeEmpleado(Integer numeroIdeEmpleado) {
+        this.numeroIdeEmpleado = numeroIdeEmpleado;
+    }
+
+    public String getOcupacion() {
+        return ocupacion;
+    }
+
+    public void setOcupacion(String ocupacion) {
+        this.ocupacion = ocupacion;
+    }
+    
+
+   
 
       
 }
