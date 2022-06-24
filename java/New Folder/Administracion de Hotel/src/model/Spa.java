@@ -11,13 +11,14 @@ package model;
 public class Spa {
      private String tratamientos  ;
     private String masajes ;
-   
+    
+    
     private ServicioAdicional servicioAdicional;
 
+   
     public Spa() {
         servicioAdicional = new ServicioAdicional();
     }
-    
     
 
 }

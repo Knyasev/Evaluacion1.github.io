@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Gonzalez%20G/OneDrive/Desktop/proyecto/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Hotel.java</file>
             <file>file:/C:/Users/Gonzalez%20G/OneDrive/Desktop/proyecto/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Recepcionista.java</file>
             <file>file:/C:/Users/Gonzalez%20G/OneDrive/Desktop/proyecto/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Personal.java</file>
@@ -31,6 +32,25 @@
             <file>file:/C:/Users/Gonzalez%20G/OneDrive/Desktop/proyecto/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Comedor.java</file>
             <file>file:/C:/Users/Gonzalez%20G/OneDrive/Desktop/proyecto/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Persona.java</file>
             <file>file:/C:/Users/Gonzalez%20G/OneDrive/Desktop/proyecto/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/ServicioAdicional.java</file>
+=======
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Hotel.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Mesero.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/gui/HotelInter.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/gui/hotel2.png</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Habitacion.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Carta.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/AdministracionDeHotel.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Factura.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Cocina.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Recepcionista.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Reservacion.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/ServicioAdicional.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Cliente.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Comedor.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Conserje.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Chef.java</file>
+            <file>file:/C:/Users/Usuario%20iTC/Desktop/2%20ciclo/unidad%202/POO/prueba2/Evaluacion1.github.io/java/New%20Folder/Administracion%20de%20Hotel/src/model/Baño.java</file>
+>>>>>>> fc610c0406299161e3bc972257f85c472b0d74eb
         </group>
     </open-files>
 </project-private>
