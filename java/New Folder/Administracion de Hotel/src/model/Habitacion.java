@@ -20,7 +20,7 @@ public class Habitacion {
     
     private Hotel hotel;
     private List<Reservacion> reservacionList;
-    private List<Baño> bañoList;
+    private List<Banio> bañoList;
 
     public Habitacion() {
         bañoList = new LinkedList<>();

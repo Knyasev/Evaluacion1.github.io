@@ -10,31 +10,23 @@ package model;
  */
 public class Persona {
     private String nombre ;
-    private String FechaNacimiento ;
     private String Apellido;
-    private Hotel hotel ;
+    private Hotel  hotel ;
+    private String identificacion;
 
-    public Persona(String nombre, String FechaNacimiento, String Apellido) {
+    public Persona(String nombre, String Apellido, String identificacion) {
         this.nombre = nombre;
-        this.FechaNacimiento = FechaNacimiento;
         this.Apellido = Apellido;
-      
+        this.identificacion = identificacion;
     }
 
+   
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getFechaNacimiento() {
-        return FechaNacimiento;
-    }
-
-    public void setFechaNacimiento(String FechaNacimiento) {
-        this.FechaNacimiento = FechaNacimiento;
     }
 
     public String getApellido() {
@@ -52,7 +44,21 @@ public class Persona {
     public void setHotel(Hotel hotel) {
         this.hotel = hotel;
     }
+
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
+    }
     
+
+    @Override
+    public String toString() {
+        return "nombre=" + nombre + "  Apellido=" + Apellido + "  identificacion=" + identificacion;
+    }
     
+    //evaluacion 14 //!=condicion13?//if14*12://else14*15;
     
 }

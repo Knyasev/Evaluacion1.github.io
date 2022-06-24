@@ -12,9 +12,9 @@ public class Cliente extends Persona{
     private Reservacion reservacion;
     private Chef chef; 
 
-    public Cliente(String nombre, String FechaNacimiento, String Apellido) {
-        super(nombre, FechaNacimiento, Apellido);
+    public Cliente(String nombre, String Apellido, String Identificacion) {
+        super(nombre, Apellido, Identificacion);
     }
-    
+ 
     
 }
