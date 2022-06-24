@@ -5,6 +5,7 @@
 package model;
 
 import java.util.List;
+import java.util.LinkedList;
 
 /**
  *
@@ -13,26 +14,11 @@ import java.util.List;
 public class Recepcionista extends Usuario{
     private List<Recepcion> recepcionList;
 
-<<<<<<< HEAD
-    public Recepcionista(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
+    public Recepcionista( Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
-=======
-   
-    public Recepcionista(List<Recepcion> recepcionList, IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
-        super(identificacionHotel, nombre, Apellido, identificacion);
-        this.recepcionList = recepcionList;
->>>>>>> 3fbef475f83f1ed50eb772fe6fc9aa71d559667e
+        this.recepcionList = new LinkedList<>();
     }
 
-public Recepcionista(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
-        super(identificacionHotel, nombre, Apellido, identificacion);
-    }
-    
-
-    
-
-    
-    
     public List<Recepcion> getRecepcionList() {
         return recepcionList;
     }

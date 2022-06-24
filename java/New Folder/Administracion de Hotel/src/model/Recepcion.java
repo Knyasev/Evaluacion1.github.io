@@ -19,12 +19,7 @@ public class Recepcion {
     private Hotel hotel;
 
 
-    public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Integer numeroHabitacionesDisponibles) {
-        this.numeroLlaveHabitacion = numeroLlaveHabitacion;
-        this.precioNoche = precioNoche;
-        this.InformacionHabitacion = InformacionHabitacion;
-        this.numeroHabitacionesDisponibles = numeroHabitacionesDisponibles;
-    }
+    
 
 
     public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Hotel hotel) {
@@ -86,6 +81,7 @@ public class Recepcion {
     }
 
 
+    @Override
     public String toString() {
         return "Recepcion{" + "numeroLlaveHabitacion=" + numeroLlaveHabitacion + ", precioNoche=" + precioNoche + ", InformacionHabitacion=" + InformacionHabitacion + ", numeroHabitacionesDisponibles=" + numeroHabitacionesDisponibles + ", recepcionList=" + recepcionList + ", hotel=" + hotel + '}';
     }
