@@ -4,13 +4,17 @@
  */
 package model;
 
+
 import java.util.List;
 import java.util.LinkedList;
+
+
 
 /**
  *
  * @author Usuario iTC
  */
+
 public class Recepcionista extends Usuario{
     private List<Recepcion> recepcionList;
 
@@ -31,7 +35,8 @@ public class Recepcionista extends Usuario{
     public String toString() {
         return "Recepcionista{" + "recepcionList=" + recepcionList + '}';
     }
+}
         
     
-    
-}
+
+

@@ -15,6 +15,24 @@ public class Cliente extends Persona{
     public Cliente(String nombre, String Apellido, String Identificacion) {
         super(nombre, Apellido, Identificacion);
     }
+
+    public Reservacion getReservacion() {
+        return reservacion;
+    }
+
+    public void setReservacion(Reservacion reservacion) {
+        this.reservacion = reservacion;
+    }
+
+    public Chef getChef() {
+        return chef;
+    }
+
+    public void setChef(Chef chef) {
+        this.chef = chef;
+    }
+    
+    
  
     
 }

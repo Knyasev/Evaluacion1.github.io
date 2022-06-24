@@ -37,14 +37,18 @@ public class AdministracionDeHotel {
         Carta car4 = new Carta("Café", "Pan,cafe,Tamal", 1.25f);
         
         
+
         
+
 
 //        System.out.println(hotel);
 
         Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
         Chef ch2 = new Chef(002, "Chef", "Victor", "Ojeda","78451236" );
         
-        System.out.println(ch1);
+        Cocina co1 =new Cocina("7 x 7",true);
+        System.out.println(co1);
+
 
 
        Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
@@ -56,7 +60,15 @@ public class AdministracionDeHotel {
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
         recepcion.getRecepcionList().add(recepcionista);
         System.out.println(recepcion);
+
+       
+
+        System.out.println(hotel);
+      
+        Bar br1 = new Bar(40,40);
+        System.out.println(br1);
         
+
 
     }
     

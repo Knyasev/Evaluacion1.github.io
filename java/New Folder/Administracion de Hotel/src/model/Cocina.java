@@ -20,5 +20,16 @@ public class Cocina {
         
         
         }
+
+    public Cocina(String tamanio, Boolean poseeHorno) {
+        this.tamanio = tamanio;
+        this.poseeHorno = poseeHorno;
+    }
+
+    @Override
+    public String toString() {
+        return "Cocina{" + "tamanio=" + tamanio + ", poseeHorno=" + poseeHorno + '}';
+    }
+        
         
 }

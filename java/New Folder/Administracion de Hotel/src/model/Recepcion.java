@@ -15,7 +15,7 @@ public class Recepcion {
     private String InformacionHabitacion;
     private Integer numeroHabitacionesDisponibles;
     
-    private  List<Recepcionista> recepcionList;
+   private  List<Recepcionista> recepcionList;
     private Hotel hotel;
 
 
@@ -81,9 +81,16 @@ public class Recepcion {
     }
 
 
+
     @Override
     public String toString() {
         return "Recepcion{" + "numeroLlaveHabitacion=" + numeroLlaveHabitacion + ", precioNoche=" + precioNoche + ", InformacionHabitacion=" + InformacionHabitacion + ", numeroHabitacionesDisponibles=" + numeroHabitacionesDisponibles + ", recepcionList=" + recepcionList + ", hotel=" + hotel + '}';
     }
  
+
+//    public String toString() {
+////        return "Recepcion{" + "numeroLlaveHabitacion=" + numeroLlaveHabitacion + ", precioNoche=" + precioNoche + ", InformacionHabitacion=" + InformacionHabitacion + ", numeroHabitacionesDisponibles=" + numeroHabitacionesDisponibles + ", recepcionList=" + recepcionList + ", hotel=" + hotel + '}';
+//    }
+// 
+
 }
