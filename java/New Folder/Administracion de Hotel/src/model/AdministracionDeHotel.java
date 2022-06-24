@@ -52,8 +52,13 @@ public class AdministracionDeHotel {
         
         System.out.println(ch1);
 
-
-    
+        Comedor comedor = new Comedor(20, 20, "55");
+        Mesero mesero = new Mesero(comedor,15, "Meser", "Angel", " ", " ");
+        comedor.setHotel(hotel);
+        System.out.println(comedor);
+        
+        
+;    
 
     }
     
