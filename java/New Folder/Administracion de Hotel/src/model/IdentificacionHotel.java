@@ -12,5 +12,5 @@ public class IdentificacionHotel {
     private String nombreEmpleado ;
     private String ocupacion;
    
-    private Personal personal;
+    private Usuario personal;
 }
