@@ -18,5 +18,10 @@ public class Chef extends Usuario{
         // espero si prearar plato de cocina es boolean
     
     }
+
+    public Chef(String nombre, String FechaNacimiento, String Apellido) {
+        super(nombre, FechaNacimiento, Apellido);
+    }
+    
     
 }

@@ -12,7 +12,12 @@ public class Conserje extends Usuario {
     
     
     public void limpiarHabitacion(){
+        
     
+    }
+
+    public Conserje(String nombre, String FechaNacimiento, String Apellido) {
+        super(nombre, FechaNacimiento, Apellido);
     }
     
 }

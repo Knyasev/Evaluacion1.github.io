@@ -12,6 +12,10 @@ import java.util.List;
  */
 public class Recepcionista extends Usuario{
     private List<Recepcion> recepcionList;
+
+    public Recepcionista(String nombre, String FechaNacimiento, String Apellido) {
+        super(nombre, FechaNacimiento, Apellido);
+    }
     
 
 

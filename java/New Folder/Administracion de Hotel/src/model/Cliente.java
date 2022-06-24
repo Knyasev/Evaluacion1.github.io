@@ -10,5 +10,11 @@ package model;
  */
 public class Cliente extends Persona{
     private Reservacion reservacion;
-    private Chef chef;  
+    private Chef chef; 
+
+    public Cliente(String nombre, String FechaNacimiento, String Apellido) {
+        super(nombre, FechaNacimiento, Apellido);
+    }
+    
+    
 }

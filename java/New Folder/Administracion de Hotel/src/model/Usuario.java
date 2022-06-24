@@ -10,4 +10,9 @@ package model;
  */
 public class Usuario extends Persona{
         private IdentificacionHotel identificacionHotel;
+
+    public Usuario(String nombre, String FechaNacimiento, String Apellido) {
+        super(nombre, FechaNacimiento, Apellido);
+    }
+        
 }

@@ -9,5 +9,11 @@ package model;
  * @author Usuario iTC
  */
 public class Gerente  extends Usuario  {
+
+    public Gerente(String nombre, String FechaNacimiento, String Apellido) {
+        super(nombre, FechaNacimiento, Apellido);
+    }
+    
+    
     
 }
