@@ -36,18 +36,7 @@ public class AdministracionDeHotel {
         Carta car3 = new Carta("Tilapia Sudada", "Tilapia,Porcion de arroz, platanos,limon,Fresco de Maracuyá", 5.30f);
         Carta car4 = new Carta("Café", "Pan,cafe,Tamal", 1.25f);
         
-        
-        
-
-//        System.out.println(hotel);
-
-        Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
-        Chef ch2 = new Chef(002, "Chef", "Victor", "Ojeda","78451236" );
-        
-        System.out.println(ch1);
-
-
-       Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
+           Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      System.out.println(hotel);
         
         Reservacion reservacion = new Reservacion(5, 7, 5, 54f, 45f, 12f, "4", 10f, "Presidencial");
@@ -57,6 +46,14 @@ public class AdministracionDeHotel {
         recepcion.getRecepcionList().add(recepcionista);
         System.out.println(recepcion);
         
+        
+        Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
+        Chef ch2 = new Chef(002, "Chef", "Victor", "Ojeda","78451236" );
+        
+        System.out.println(ch1);
+
+
+    
 
     }
     

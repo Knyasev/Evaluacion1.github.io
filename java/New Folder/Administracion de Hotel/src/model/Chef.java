@@ -26,8 +26,6 @@ public class Chef extends Usuario{
 
     
 
-   
-
     public List<Carta> getCartaList() {
         return cartaList;
     }
