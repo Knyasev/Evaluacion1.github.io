@@ -53,6 +53,11 @@ public class Carta {
         this.precio = precio;
     }
 
+    @Override
+    public String toString() {
+        return "nombrePlatillo=" + nombrePlatillo + ", descripcion=" + descripcion + ", precio=" + precio ;
+    }
+
    
     
     

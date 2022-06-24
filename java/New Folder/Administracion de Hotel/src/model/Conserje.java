@@ -16,8 +16,8 @@ public class Conserje extends Usuario {
     
     }
 
-    public Conserje(String nombre, String FechaNacimiento, String Apellido) {
-        super(nombre, FechaNacimiento, Apellido);
+    public Conserje(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
+        super(identificacionHotel, nombre, Apellido, identificacion);
     }
-    
+
 }

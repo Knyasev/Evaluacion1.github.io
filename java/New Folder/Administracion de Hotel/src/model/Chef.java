@@ -19,9 +19,10 @@ public class Chef extends Usuario{
     
     }
 
-    public Chef(String nombre, String FechaNacimiento, String Apellido) {
-        super(nombre, FechaNacimiento, Apellido);
+    public Chef(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
+        super(identificacionHotel, nombre, Apellido, identificacion);
     }
+
     
     
 }

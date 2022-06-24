@@ -11,8 +11,10 @@ package model;
 public class Usuario extends Persona{
         private IdentificacionHotel identificacionHotel;
 
-    public Usuario(String nombre, String FechaNacimiento, String Apellido) {
-        super(nombre, FechaNacimiento, Apellido);
+    public Usuario(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
+        super(nombre, Apellido, identificacion);
+        this.identificacionHotel = identificacionHotel;
     }
-        
+
+      
 }

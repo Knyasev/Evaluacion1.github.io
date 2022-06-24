@@ -10,9 +10,12 @@ package model;
  */
 public class Gerente  extends Usuario  {
 
-    public Gerente(String nombre, String FechaNacimiento, String Apellido) {
-        super(nombre, FechaNacimiento, Apellido);
+    public Gerente(IdentificacionHotel identificacionHotel, String nombre, String Apellido, String identificacion) {
+        super(identificacionHotel, nombre, Apellido, identificacion);
     }
+
+   
+
     
     
     
