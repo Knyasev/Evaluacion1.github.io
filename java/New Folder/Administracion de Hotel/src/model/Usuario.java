@@ -8,6 +8,6 @@ package model;
  *
  * @author Usuario iTC
  */
-public class Personal extends Persona{
+public class Usuario extends Persona{
         private IdentificacionHotel identificacionHotel;
 }

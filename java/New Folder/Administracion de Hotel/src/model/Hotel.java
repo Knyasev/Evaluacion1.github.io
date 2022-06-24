@@ -39,6 +39,155 @@ public class Hotel {
         this.factura = new Factura();
         this.servicioList = new LinkedList<>();
     }
+
+    public Hotel(String nombre, Integer numeroPisos, Integer numeroHabitaciones, 
+            String ruc, Integer numeroEstrella, Boolean poseePiscina, String ubicacion, 
+            String fechaInaguracion) {
+        this();
+        this.nombre = nombre;
+        this.numeroPisos = numeroPisos;
+        this.numeroHabitaciones = numeroHabitaciones;
+        this.ruc = ruc;
+        this.numeroEstrella = numeroEstrella;
+        this.poseePiscina = poseePiscina;
+        this.ubicacion = ubicacion;
+        this.fechaInaguracion = fechaInaguracion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getNumeroPisos() {
+        return numeroPisos;
+    }
+
+    public void setNumeroPisos(Integer numeroPisos) {
+        this.numeroPisos = numeroPisos;
+    }
+
+    public Integer getNumeroHabitaciones() {
+        return numeroHabitaciones;
+    }
+
+    public void setNumeroHabitaciones(Integer numeroHabitaciones) {
+        this.numeroHabitaciones = numeroHabitaciones;
+    }
+
+    public String getRuc() {
+        return ruc;
+    }
+
+    public void setRuc(String ruc) {
+        this.ruc = ruc;
+    }
+
+    public Integer getNumeroEstrella() {
+        return numeroEstrella;
+    }
+
+    public void setNumeroEstrella(Integer numeroEstrella) {
+        this.numeroEstrella = numeroEstrella;
+    }
+
+    public Boolean getPoseePiscina() {
+        return poseePiscina;
+    }
+
+    public void setPoseePiscina(Boolean poseePiscina) {
+        this.poseePiscina = poseePiscina;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public String getFechaInaguracion() {
+        return fechaInaguracion;
+    }
+
+    public void setFechaInaguracion(String fechaInaguracion) {
+        this.fechaInaguracion = fechaInaguracion;
+    }
+
+    public List<Reservacion> getReservacionList() {
+        return reservacionList;
+    }
+
+    public void setReservacionList(List<Reservacion> reservacionList) {
+        this.reservacionList = reservacionList;
+    }
+
+    public Comedor getComedor() {
+        return comedor;
+    }
+
+    public void setComedor(Comedor comedor) {
+        this.comedor = comedor;
+    }
+
+    public List<Habitacion> getHabitacionList() {
+        return habitacionList;
+    }
+
+    public void setHabitacionList(List<Habitacion> habitacionList) {
+        this.habitacionList = habitacionList;
+    }
+
+    public List<Recepcion> getRecepcionList() {
+        return recepcionList;
+    }
+
+    public void setRecepcionList(List<Recepcion> recepcionList) {
+        this.recepcionList = recepcionList;
+    }
+
+    public Parqueadero getParqueadero() {
+        return parqueadero;
+    }
+
+    public void setParqueadero(Parqueadero parqueadero) {
+        this.parqueadero = parqueadero;
+    }
+
+    public Factura getFactura() {
+        return factura;
+    }
+
+    public void setFactura(Factura factura) {
+        this.factura = factura;
+    }
+
+    public List<Servicio> getServicioList() {
+        return servicioList;
+    }
+
+    public void setServicioList(List<Servicio> servicioList) {
+        this.servicioList = servicioList;
+    }
+
+    public List<Persona> getPersonaList() {
+        return personaList;
+    }
+
+    public void setPersonaList(List<Persona> personaList) {
+        this.personaList = personaList;
+    }
+    
+    
+
+    @Override
+    public String toString() {
+        return "Hotel{" + "nombre=" + nombre + ", numeroPisos=" + numeroPisos + ", numeroHabitaciones=" + numeroHabitaciones + ", ruc=" + ruc + ", numeroEstrella=" + numeroEstrella + ", poseePiscina=" + poseePiscina + ", ubicacion=" + ubicacion + ", fechaInaguracion=" + fechaInaguracion + '}';
+    }
    
     
     

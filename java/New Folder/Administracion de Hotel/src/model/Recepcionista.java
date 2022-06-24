@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author Usuario iTC
  */
-public class Recepcionista extends Personal{
+public class Recepcionista extends Usuario{
     private List<Recepcion> recepcionList;
     
 

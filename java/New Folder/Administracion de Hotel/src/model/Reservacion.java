@@ -35,6 +35,20 @@ public class Reservacion {
     public Reservacion() {
         reservacionComidaList = new LinkedList<>();
     }
+
+    public Reservacion(Integer numeroDias, String fechaEntrada, String fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+        this.numeroDias = numeroDias;
+        this.fechaEntrada = fechaEntrada;
+        this.fechaSalida = fechaSalida;
+        this.numeroHuespedes = numeroHuespedes;
+        this.precioHabitacion = precioHabitacion;
+        this.precioServicio = precioServicio;
+        this.precioReservacion = precioReservacion;
+        this.tiempoEstancia = tiempoEstancia;
+        this.tipoDescuento = tipoDescuento;
+        this.tipoHabitacion = tipoHabitacion;
+    }
+    
     
     
 }

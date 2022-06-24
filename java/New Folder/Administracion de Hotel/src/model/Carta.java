@@ -9,11 +9,9 @@ package model;
  * @author Gonzalez G
  */
 public class Carta {
-    private String platoComida;
-    private String ensaladas;
-    private String postres;
-    private String bebidas;
-    private String sopas;
+    private String nombrePlatillo;
+    private String descripcion;
+    private String precio;
     
     public void hacerPedido(){
     //botton para hacer pedido si o no 

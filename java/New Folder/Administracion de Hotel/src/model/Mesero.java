@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author Usuario iTC
  */
-public class Mesero extends Personal {
+public class Mesero extends Usuario {
     
      private Comedor comedor; 
 

@@ -8,7 +8,7 @@ package model;
  *
  * @author Usuario iTC
  */
-public class Conserje extends Personal {
+public class Conserje extends Usuario {
     
     
     public void limpiarHabitacion(){
