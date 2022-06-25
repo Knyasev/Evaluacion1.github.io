@@ -9,6 +9,7 @@ import java.util.List;
  * @author Gonzalez G
  */
 public class Servicio {
+    private Boolean internet;
     private Reservacion reservacion;
     private Hotel hotel;
     private List<ServicioAdicional> servicioAdicionalList;

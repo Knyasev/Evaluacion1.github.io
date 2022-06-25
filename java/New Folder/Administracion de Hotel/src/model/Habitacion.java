@@ -5,7 +5,7 @@
 package model;
 import java.util.List;
 import java.util.LinkedList;
-import org.netbeans.lib.awtextra.AbsoluteConstraints;
+
 /**
  *
  * @author Gonzalez G

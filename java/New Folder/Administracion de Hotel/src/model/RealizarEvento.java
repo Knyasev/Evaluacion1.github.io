@@ -24,10 +24,10 @@ public class RealizarEvento {
     
     
     
-    public RealizarEvento() {
-        servicioAdicional = new ServicioAdicional();
-        
-    }
+//    public RealizarEvento() {
+//        servicioAdicional = new ServicioAdicional();
+//        
+//    }
 
     public String getTipoEvento() {
         return tipoEvento;

@@ -35,9 +35,9 @@ public class AdministracionDeHotel {
         Carta car2 = new Carta("Continental", "Pollo, PorcionArroz,Ensalada,Salsas(Mayonesa Salsa de Tomate),Agua de horchata", 2.00f);
         Carta car3 = new Carta("Especial", "Tilapia,Porcion de arroz, platanos,limon,Fresco de Maracuyá", 2.30f);
         Carta car4 = new Carta("Ligero", "Pan,cafe,Tamal", 1.00f);
-        System.out.println(car2);
-        System.out.println(car3);
-        System.out.println(car4);
+        //System.out.println(car2);
+        //System.out.println(car3);
+        //System.out.println(car4);
 
 //        System.out.println(hotel);
 
@@ -66,15 +66,23 @@ public class AdministracionDeHotel {
         Bar br1 = new Bar(40,40);
         //System.out.println(br1);
         
-        Spa sp1 = new Spa(true, false);
+        
         
         ReservacionComida com1 = new ReservacionComida("Continental","Ligero","Especial",car2.precioComidaPorHuesped(reservacion),car3.precioComidaPorHuesped(reservacion) ,car4.precioComidaPorHuesped(reservacion));
         
         RealizarEvento env1 = new RealizarEvento("Cumpleanios","14/09/2022","6 horas");
-        System.out.println(com1);
+        //System.out.println(com1);
         
-        System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
-        car4.precioComidaPorHuesped(reservacion));
+        //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
+        //car4.precioComidaPorHuesped(reservacion));
+        
+        
+        
+        
+                                                    //tvCable,servicioHabitacion,servicioLimpieza,bare,spa,Gim
+        ServicioAdicional sr1= new ServicioAdicional(true, false, true,true, true, true);
+        //System.out.println(reservacion.getTiempoEstancia());
+        //System.out.println(sr1.precioAddServicio(reservacion));
 
     }
     
