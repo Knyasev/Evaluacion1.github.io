@@ -12,6 +12,9 @@ public class Carta {
     private String nombrePlatillo;
     private String descripcion;
     private Float precio;
+    private Float totalComida;
+    private Integer numDias=0;
+    
     
     public void hacerPedido(){
     //botton para hacer pedido si o no 
@@ -23,11 +26,31 @@ public class Carta {
         this.precio = precio;
     }
     
+   
     
     
     private Comedor comedor;
     private Habitacion habitacion;
     private Chef chef;
+    private Reservacion reservacion;
+
+    public Carta(Reservacion reservacion) {
+        this.reservacion = reservacion;
+    }
+    
+    
+            
+     public float precioComidaPorHuesped(Reservacion reservacion){
+         numDias=reservacion.getTiempoEstancia();
+         for (int i = 0; i <= reservacion.getNumeroHuespedes(); i++) {
+             totalComida= 0f;
+             totalComida=precio*i;
+             totalComida=totalComida*numDias;
+         }
+         //System.out.println(totalComida);
+         return totalComida;
+    }
+     
 
     public String getNombrePlatillo() {
         return nombrePlatillo;
@@ -52,6 +75,15 @@ public class Carta {
     public void setPrecio(Float precio) {
         this.precio = precio;
     }
+
+    public Reservacion getReservacion() {
+        return reservacion;
+    }
+
+    public void setReservacion(Reservacion reservacion) {
+        this.reservacion = reservacion;
+    }
+    
 
     @Override
     public String toString() {

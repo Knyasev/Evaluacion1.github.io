@@ -11,6 +11,7 @@ package model;
 public class Gimnasio {
     private String horario;
     private Boolean adquirirMaquinaria;
+    private float precioGim=3.50f;
     
     private ServicioAdicional servicioAdicional;
 

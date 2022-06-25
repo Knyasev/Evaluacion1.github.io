@@ -11,6 +11,7 @@ package model;
 public class Spa {
      private Boolean Vapor ;
      private Boolean masajes ;
+     private float   precioSpa=5.00f; 
 
     public Spa(Boolean Vapor, Boolean masajes) {
         this.Vapor = Vapor;

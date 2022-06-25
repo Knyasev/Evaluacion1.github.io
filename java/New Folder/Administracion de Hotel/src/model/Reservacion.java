@@ -18,7 +18,7 @@ public class Reservacion {
     
     private Float precioServicio;
     private Float precioReservacion;
-    private String tiempoEstancia;
+    private Integer tiempoEstancia;
     private Float tipoDescuento ;
     
     private String metodoPago ;
@@ -39,7 +39,7 @@ public class Reservacion {
     }
 
 
-    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, String tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
      
 
         this.fechaEntrada = 0;
@@ -112,13 +112,15 @@ public class Reservacion {
         this.precioReservacion = precioReservacion;
     }
 
-    public String getTiempoEstancia() {
+    public Integer getTiempoEstancia() {
         return tiempoEstancia;
     }
 
-    public void setTiempoEstancia(String tiempoEstancia) {
+    public void setTiempoEstancia(Integer tiempoEstancia) {
         this.tiempoEstancia = tiempoEstancia;
     }
+
+  
 
     public Float getTipoDescuento() {
         return tipoDescuento;

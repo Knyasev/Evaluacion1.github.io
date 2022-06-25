@@ -11,7 +11,7 @@ package model;
 public class Bar {
         private Integer numBebidasNoAlcoholicas;
         private Integer numBebidasAlcoholicas;
-        
+        private float precioBar=4.00f;
         
       
         private ServicioAdicional servicioAdd;
@@ -21,6 +21,7 @@ public class Bar {
         this.numBebidasNoAlcoholicas = numBebidasNoAlcoholicas;
         this.numBebidasAlcoholicas = numBebidasAlcoholicas;  
     }
+    
 
     public Integer getNumBebidasNoAlcoholicas() {
         return numBebidasNoAlcoholicas;
@@ -42,10 +43,21 @@ public class Bar {
         return servicioAdd;
     }
 
+    public float getPrecioBar() {
+        return precioBar;
+    }
+
+    public void setPrecioBar(float precioBar) {
+        this.precioBar = precioBar;
+    }
+
     @Override
     public String toString() {
-        return "Bar{" + "numBebidasNoAlcoholicas=" + numBebidasNoAlcoholicas + ", numBebidasAlcoholicas=" + numBebidasAlcoholicas + '}';
+        return "Bar{" + "numBebidasNoAlcoholicas=" + numBebidasNoAlcoholicas + ", numBebidasAlcoholicas=" + numBebidasAlcoholicas + ", precioBar=" + precioBar + '}';
     }
+    
+
+   
 
     
 

@@ -12,15 +12,34 @@ public class ReservacionComida {
     private String tipoAlmuerzo;
     private String tipoDesayuno;
     private String tipoCena ;
+    private float precioAlmuerzo;
+    private float precioDesayuno;
+    private float precioCena;
     
     private Reservacion reservacion;
     private Comedor comedor;
 
-    public ReservacionComida(String tipoAlmuerzo, String tipoDesayuno, String tipoCena) {
+    public ReservacionComida(String tipoAlmuerzo, String tipoDesayuno, String tipoCena, float precioAlmuerzo, float precioDesayuno, float precioCena) {
         this.tipoAlmuerzo = tipoAlmuerzo;
         this.tipoDesayuno = tipoDesayuno;
         this.tipoCena = tipoCena;
+        this.precioAlmuerzo = precioAlmuerzo;
+        this.precioDesayuno = precioDesayuno;
+        this.precioCena = precioCena;
     }
+
+    
+
+   
+    
+    
+    
+
+    
+
+    
+
+    
 
     public String getTipoAlmuerzo() {
         return tipoAlmuerzo;
@@ -64,8 +83,10 @@ public class ReservacionComida {
 
     @Override
     public String toString() {
-        return "ReservacionComida{" + "tipoAlmuerzo=" + tipoAlmuerzo + ", tipoDesayuno=" + tipoDesayuno + ", tipoCena=" + tipoCena + '}';
+        return  tipoAlmuerzo+"=" + precioAlmuerzo + tipoDesayuno +"="+ precioDesayuno+ tipoCena +"="+   precioCena ;
     }
+
+    
     
     
 }

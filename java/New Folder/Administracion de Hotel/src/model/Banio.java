@@ -19,7 +19,6 @@ public class Banio {
       
     }
     
-    
 
     public Integer getNumeroDuchas() {
         return numeroDuchas;
