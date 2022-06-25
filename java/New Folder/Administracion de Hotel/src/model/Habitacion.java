@@ -5,6 +5,7 @@
 package model;
 import java.util.List;
 import java.util.LinkedList;
+import org.netbeans.lib.awtextra.AbsoluteConstraints;
 /**
  *
  * @author Gonzalez G
@@ -23,10 +24,38 @@ public class Habitacion {
     private List<Reservacion> reservacionList;
     private List<Banio> bañoList;
 
-    public Habitacion() {
+    public Habitacion(Boolean poseeMirador, Integer numeroBaños, Integer numeroCamas, Float tamanio, Integer numeroHuespedes, String tipoHabitacion, Float precioHabitacion) {
+        this.poseeMirador = poseeMirador;
+        this.numeroBaños = numeroBaños;
+        this.numeroCamas = numeroCamas;
+        this.tamanio = tamanio;
+        this.numeroHuespedes = numeroHuespedes;
+        this.tipoHabitacion = tipoHabitacion;
+        this.precioHabitacion = precioHabitacion;
         bañoList = new LinkedList<>();
     }
 
+    
+    public Habitacion() {
+        bañoList = new LinkedList<>();
+    }
+    
+    public void CalcularPrecio(){
+        Banio banio = new Banio();
+        Float auxPrecioBaño =0f;
+      
+        if (numeroBaños ==1) {
+            auxPrecioBaño= (banio.CalcularPrecio()+1) * 1;
+            System.out.println(auxPrecioBaño);
+        }else if (numeroBaños==2) {
+            auxPrecioBaño= (banio.CalcularPrecio()+1) * 2;
+            System.out.println(auxPrecioBaño);
+        }
+         auxPrecioBaño = 0f;
+         System.out.println(auxPrecioBaño);
+         
+         
+    }
     public Boolean getPoseeMirador() {
         return poseeMirador;
     }
@@ -105,6 +134,11 @@ public class Habitacion {
 
     public void setBañoList(List<Banio> bañoList) {
         this.bañoList = bañoList;
+    }
+
+    @Override
+    public String toString() {
+        return "Habitacion{" + "poseeMirador=" + poseeMirador + ", numeroBa\u00f1os=" + numeroBaños + ", numeroCamas=" + numeroCamas + ", tamanio=" + tamanio + ", numeroHuespedes=" + numeroHuespedes + ", tipoHabitacion=" + tipoHabitacion + ", precioHabitacion=" + precioHabitacion + ", hotel=" + hotel + ", reservacionList=" + reservacionList + ", ba\u00f1oList=" + bañoList + '}';
     }
     
     

@@ -46,7 +46,7 @@ public class AdministracionDeHotel {
         Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
         Chef ch2 = new Chef(002, "Chef", "Victor", "Ojeda","78451236" );
         
-        Cocina co1 =new Cocina("7 x 7",true);
+       
         //System.out.println(co1);
 
 
@@ -54,7 +54,12 @@ public class AdministracionDeHotel {
        Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      //System.out.println(hotel);
         
-        Reservacion reservacion = new Reservacion(5, 7, 5, 54f, 45f, 12f, "4", 10f, "Presidencial");
+        Habitacion habitacion = new Habitacion(false, 2,5, 6f, 2, " ",2.5f);
+        Banio banio =new  Banio(2, " ");
+        habitacion.getBañoList().add(banio);
+        habitacion.CalcularPrecio();
+        
+     Reservacion reservacion = new Reservacion(5, 7, 5, 54f, 45f, 12f, "4", 10f, "Presidencial");
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
