@@ -13,12 +13,27 @@ public class Banio {
     private String elementosAceoPersonal;
     private Habitacion habitacion;
 
+    public Banio() {
+    }
+
     public Banio(Integer numeroDuchas, String elementosAceoPersonal) {
+        this();
         this.numeroDuchas = numeroDuchas;
         this.elementosAceoPersonal = elementosAceoPersonal;
       
     }
     
+      public Float CalcularPrecio(){
+        Float aux = 0f;
+        numeroDuchas = 0;
+        if(numeroDuchas > 1|| numeroDuchas <2){
+            aux = 2.0f ;  
+            return aux;
+        }else{
+            System.out.println("escoja el dumero de baños entre 1 y 2"); 
+            return aux;
+        } 
+    }
 
     public Integer getNumeroDuchas() {
         return numeroDuchas;
