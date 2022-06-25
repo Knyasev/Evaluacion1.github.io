@@ -59,7 +59,7 @@ public class Reservacion {
     public void reservarHabitacion (){
         
         for (Habitacion habitacion: habitacionList) {
-             
+             habitacion.getPrecioHabitacion();
             
             
             
