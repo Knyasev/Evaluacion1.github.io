@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.text.ParseException;
+
 /**
  *
  * @author Gonzalez G
@@ -13,9 +15,9 @@ public class AdministracionDeHotel {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
-        
+       
         //cliente
         Cliente c1= new Cliente("Mario", "Martines","14784578");
         //System.out.println(c1);
@@ -51,18 +53,19 @@ public class AdministracionDeHotel {
 
        Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      //System.out.println(hotel);
-        
-        Reservacion reservacion = new Reservacion(5, 7, 2, 54f, 45f, 12f, 4, 10f, "Presidencial");
+      
+        Reservacion reservacion = new Reservacion( 2, 54f, 45f, 12f, 4, 10f, "Presidencial"); 
+       
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
         recepcion.getRecepcionList().add(recepcionista);
         //System.out.println(recepcion);
         
+        Habitacion habitacion = new Habitacion(false, 2,2, 6f, 3, " ",2.5f);
+       // habitacion.calcularPrecioHabitacion();
+          reservacion.reservarHabitacion(habitacion);
         
-        
-        
-      
         Bar br1 = new Bar(40,40);
         //System.out.println(br1);
         
@@ -71,10 +74,10 @@ public class AdministracionDeHotel {
         ReservacionComida com1 = new ReservacionComida("Continental","Ligero","Especial",car2.precioComidaPorHuesped(reservacion),car3.precioComidaPorHuesped(reservacion) ,car4.precioComidaPorHuesped(reservacion));
         
         RealizarEvento env1 = new RealizarEvento("Cumpleanios","14/09/2022","6 horas");
-        System.out.println(com1);
-        
-        System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
-        car4.precioComidaPorHuesped(reservacion));
+//        System.out.println(com1);
+//      
+//        System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
+//       car4.precioComidaPorHuesped(reservacion));
 
     }
     

@@ -45,7 +45,7 @@ public class Carta {
          for (int i = 0; i <= reservacion.getNumeroHuespedes(); i++) {
              totalComida= 0f;
              totalComida=precio*i;
-             totalComida=totalComida*numDias;
+            totalComida=totalComida*numDias;
          }
          //System.out.println(totalComida);
          return totalComida;
