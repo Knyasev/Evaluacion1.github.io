@@ -66,7 +66,7 @@ public class Reservacion {
         habitacion.calcularPrecioHabitacion();
         auxDias = ((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia);
         System.out.println(auxDias);
-        
+       
     
     
     }
