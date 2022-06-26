@@ -52,7 +52,7 @@ public class AdministracionDeHotel {
      
       
         
-        Reservacion reservacion = new Reservacion( 2, 54f, 12f, 4, 10f, "Presidencial");
+        Reservacion reservacion = new Reservacion( 5, 54f, 12f, 4, 10f, "Presidencial");
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
