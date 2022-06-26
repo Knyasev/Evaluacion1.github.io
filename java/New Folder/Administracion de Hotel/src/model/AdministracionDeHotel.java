@@ -115,7 +115,10 @@ public class AdministracionDeHotel {
         System.out.println("\tNumero Habitacion: "+h1.getNumeroHabitacion()
         +"\tNumero Banios: "+h1.getNumeroBaños()+"\n\tNumero de Camas: "+h1.getNumeroCamas()
         +"\tTipo de Habitacion: "+h1.getTipoHabitacion()+"\n\tPrecio Habitacion: "+h1.getPrecioHabitacion());
-        System.out.println("********************************************************************");  
+        System.out.println("********************************************************************"); 
+        System.out.println("  Servicios Adicionales");
+        System.out.println("  |TvCable|Servicio Habitacion|Servicio Limpieza|Bar|Spa|Gimnacio|");
+        System.out.println(sr1.getTvCable());
      }
     
     

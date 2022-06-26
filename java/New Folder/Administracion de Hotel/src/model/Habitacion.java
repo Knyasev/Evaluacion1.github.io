@@ -32,7 +32,7 @@ public class Habitacion {
         this.tipoHabitacion = tipoHabitacion;
         this.precioHabitacion = precioHabitacion;
         this.numeroHabitacion = numeroHabitacion;
-        
+     
     }
 
 
