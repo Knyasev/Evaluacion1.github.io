@@ -56,11 +56,18 @@ public class Reservacion {
 
     public float costosServicios(ServicioAdicional servicioAdicional,Servicio servicio,Reservacion reservacion){
       precioServicio=servicioAdicional.getPrecioServiciosAdd()+ servicio.getInternet()*reservacion.tiempoEstancia;
-      
-          //precio total de servicios
-        //System.out.println(precioServicio);
+   
       return precioServicio;
       
+    }
+    public void reservarHabitacion (Habitacion habitacion){
+        Float auxDias;
+        habitacion.calcularPrecioHabitacion();
+        auxDias = ((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia);
+        System.out.println(auxDias);
+
+
+
     }
 
 

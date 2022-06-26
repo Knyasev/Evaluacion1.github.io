@@ -42,22 +42,74 @@ public class Habitacion {
         bañoList = new LinkedList<>();
     }
     
-    public void CalcularPrecio(){
+    public float CalcularPrecioBanio(){
         Banio banio = new Banio();
         Float auxPrecioBaño =0f;
       
         if (numeroBaños ==1) {
             auxPrecioBaño= (banio.CalcularPrecio()+1) * 1;
-            System.out.println(auxPrecioBaño);
+             return auxPrecioBaño;
         }else if (numeroBaños==2) {
             auxPrecioBaño= (banio.CalcularPrecio()+1) * 2;
-            System.out.println(auxPrecioBaño);
+            return auxPrecioBaño;
         }
          auxPrecioBaño = 0f;
          System.out.println(auxPrecioBaño);
          
-         
+          return auxPrecioBaño;
     }
+    
+        public Float calcularPrecioCama(){
+        Float aux;
+        if (numeroCamas == 1) {
+            aux = 1f;
+            return aux;
+        } 
+        aux = 2f;
+        return aux;
+    }  
+    
+    public Float calcularPrecioHabitacionSuite(){
+        this.tipoHabitacion = "Suite";
+        Float aux=0f ;
+        if (this.tipoHabitacion == "Suite") {
+           aux =  70f + 2;
+            
+            
+        }
+        return aux;
+    }
+     public Float calcularPrecioHabitacionPresidencial(){
+        this.tipoHabitacion = "Presendial";
+        
+        Float aux=0f ;
+        if (this.tipoHabitacion == "Presidencial") {
+           aux =  50f + 2;
+ 
+        }
+         return aux;
+    }
+     public Float calcularPrecioHabitacionNormal(){
+        this.tipoHabitacion = "Normal";
+        Float aux=0f ;
+        if (poseeMirador ==true) {
+           aux =  20f+2;
+              return aux;
+        }else 
+            aux =  20f;
+         return aux;
+        
+    }
+     
+    public Float calcularPrecioHabitacion(){
+       CalcularPrecioBanio();
+       calcularPrecioCama();
+       calcularPrecioHabitacionNormal();
+        
+       precioHabitacion = CalcularPrecioBanio()+calcularPrecioCama()+calcularPrecioHabitacionNormal();
+     return precioHabitacion;
+    }
+    
 
     public Integer getNumeroHabitacion() {
         return numeroHabitacion;
