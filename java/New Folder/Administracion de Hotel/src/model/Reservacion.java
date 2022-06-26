@@ -3,21 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
-
-
 import java.util.List;
 import java.util.LinkedList;
-
-
-
+/**
+ *
+ * @author Gonzalez G
+ */
 public class Reservacion {
     
- 
+    private Integer fechaEntrada;
+    private Integer fechaSalida;
     private Integer numeroHuespedes;
+    
+    
     private Float precioServicio;
     private Float precioReservacion;
     private Integer tiempoEstancia;
     private Float tipoDescuento ;
+    
     private String metodoPago ;
 
     
@@ -33,45 +36,64 @@ public class Reservacion {
 
     public Reservacion() {
         reservacionComidaList = new LinkedList<>();
+        
     }
-
-    public Reservacion(Integer numeroHuespedes, Float precioServicio, Float precioReservacion, Float tipoDescuento) {
-        this();
-        this.numeroHuespedes = numeroHuespedes;
-        this.precioServicio = precioServicio;
-        this.precioReservacion = precioReservacion;
-        this.tipoDescuento = tipoDescuento;
-    }
-
 
     
-    public Reservacion(  Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+    
+
+    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
      
 
-        
+        this.fechaEntrada = 0;
+        this.fechaSalida = fechaSalida;
         this.numeroHuespedes = numeroHuespedes;
-        this.precioServicio = precioServicio;
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
         this.tipoDescuento = tipoDescuento;
-        habitacionList = new LinkedList<>();
         
     }
 
-
-  
-    
-    public void reservarHabitacion (Habitacion habitacion){
-        Float auxDias;
-        habitacion.calcularPrecioHabitacion();
-        auxDias = ((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia);
-        System.out.println(auxDias);
-       
-    
-    
+    public float costosServicios(ServicioAdicional servicioAdicional,Servicio servicio,Reservacion reservacion){
+      precioServicio=servicioAdicional.getPrecioServiciosAdd()+ servicio.getInternet()*reservacion.tiempoEstancia;
+      
+          //precio total de servicios
+        //System.out.println(precioServicio);
+      return precioServicio;
+      
     }
+
+
+
+    
+    public void reservarHabitacion (){
+        
+        for (Habitacion habitacion: habitacionList) {
+             habitacion.getPrecioHabitacion();
+            
+            
+            
+        }
+  
+    }
+    
    
 
+    public Integer getFechaEntrada() {
+        return fechaEntrada;
+    }
+
+    public void setFechaEntrada(Integer fechaEntrada) {
+        this.fechaEntrada = fechaEntrada;
+    }
+
+    public Integer getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(Integer fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
 
     public Integer getNumeroHuespedes() {
         return numeroHuespedes;
@@ -168,10 +190,20 @@ public class Reservacion {
         this.servicio = servicio;
     }
 
+    public List<Habitacion> getHabitacionList() {
+        return habitacionList;
+    }
+
+    public void setHabitacionList(List<Habitacion> habitacionList) {
+        this.habitacionList = habitacionList;
+    }
+    
+
     @Override
     public String toString() {
 
-        return  ", numeroHuespedes=" + numeroHuespedes 
+        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada 
+                + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes 
                 + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
                 + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
 
