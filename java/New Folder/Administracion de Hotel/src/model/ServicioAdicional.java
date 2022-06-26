@@ -32,6 +32,7 @@ public class ServicioAdicional {
         private float precioBare;
         private float precioSpa;
         private float precioGim;
+        private float precioTotalServicios;
         
         private float precioServiciosAdd=0f;
     
@@ -47,7 +48,10 @@ public class ServicioAdicional {
         this.bare = bare;
         this.spa = spa;
         this.Gim = Gim;
+        
     }
+
+    
         
         
 
@@ -60,19 +64,16 @@ public class ServicioAdicional {
         if(servicioHabitacion== true){
            precioSer=reservacion.getTiempoEstancia()*precioServicioHabitacion; }         
         if(servicioLimpieza==true){
-           precioServicioLi=reservacion.getTiempoEstancia()*precioServicioLimpieza;          
-        }
+           precioServicioLi=reservacion.getTiempoEstancia()*precioServicioLimpieza;}
         if(Gim==true){
-           precioGim=reservacion.getTiempoEstancia()*preGim;          
-        }
+           precioGim=reservacion.getTiempoEstancia()*preGim;}
         if(bare==true){
-           precioBare=reservacion.getTiempoEstancia()*preBare;          
-        }
+           precioBare=reservacion.getTiempoEstancia()*preBare;}
         if(spa==true){
-           precioSpa=reservacion.getTiempoEstancia()*preSpa;          
-        }
-         precioServiciosAdd=precioSer+precioServicioLi+precioTv+ precioGim+precioBare+precioSpa;
+           precioSpa=reservacion.getTiempoEstancia()*preSpa;}
         
+        //System.out.println(precioTotalServicios);
+         precioServiciosAdd=precioSer+precioServicioLi+precioTv+ precioGim+precioBare+precioSpa+precioTotalServicios;
         return precioServiciosAdd;
     }
     
@@ -84,6 +85,14 @@ public class ServicioAdicional {
 
     public void setReservacion(Reservacion reservacion) {
         this.reservacion = reservacion;
+    }
+
+    public float getPrecioTotalServicios() {
+        return precioTotalServicios;
+    }
+
+    public void setPrecioTotalServicios(float precioTotalServicios) {
+        this.precioTotalServicios = precioTotalServicios;
     }
 
         

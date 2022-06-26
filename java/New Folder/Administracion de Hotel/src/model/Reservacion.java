@@ -36,22 +36,32 @@ public class Reservacion {
 
     public Reservacion() {
         reservacionComidaList = new LinkedList<>();
+        
     }
 
+    
+    
 
-    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioServicio, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
      
 
         this.fechaEntrada = 0;
         this.fechaSalida = fechaSalida;
         this.numeroHuespedes = numeroHuespedes;
-        this.precioServicio = precioServicio;
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
         this.tipoDescuento = tipoDescuento;
         
     }
 
+    public float costosServicios(ServicioAdicional servicioAdicional,Servicio servicio,Reservacion reservacion){
+      precioServicio=servicioAdicional.getPrecioServiciosAdd()+ servicio.getInternet()*reservacion.tiempoEstancia;
+      
+      
+        System.out.println(precioServicio);
+      return precioServicio;
+      
+    }
 
 
 
@@ -64,10 +74,9 @@ public class Reservacion {
             
             
         }
-         
-    
-    
+  
     }
+    
    
 
     public Integer getFechaEntrada() {
@@ -180,6 +189,15 @@ public class Reservacion {
     public void setServicio(Servicio servicio) {
         this.servicio = servicio;
     }
+
+    public List<Habitacion> getHabitacionList() {
+        return habitacionList;
+    }
+
+    public void setHabitacionList(List<Habitacion> habitacionList) {
+        this.habitacionList = habitacionList;
+    }
+    
 
     @Override
     public String toString() {

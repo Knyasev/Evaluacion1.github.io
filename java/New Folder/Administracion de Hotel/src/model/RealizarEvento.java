@@ -13,6 +13,8 @@ public class RealizarEvento {
     private String fecha;
     private String Duracion;
     
+    private float costoEvento=0f; 
+    
     
     private ServicioAdicional servicioAdicional ;
 
@@ -28,6 +30,22 @@ public class RealizarEvento {
 //        servicioAdicional = new ServicioAdicional();
 //        
 //    }
+    
+    public float precioEvento(ServicioAdicional servicioAdicional){
+        
+        if (tipoEvento=="Cumpleanios") {
+            costoEvento=200f;
+        }
+        if (tipoEvento=="Boda") {
+            costoEvento=2000f;
+        }
+        if (tipoEvento=="Reunion") {
+            costoEvento=150f;
+        }
+        servicioAdicional.setPrecioTotalServicios(costoEvento);
+        //System.out.println( costoEvento);
+        return costoEvento;
+    }
 
     public String getTipoEvento() {
         return tipoEvento;
@@ -53,6 +71,14 @@ public class RealizarEvento {
         this.Duracion = Duracion;
     }
 
+    public float getCostoEvento() {
+        return costoEvento;
+    }
+
+    public void setCostoEvento(float costoEvento) {
+        this.costoEvento = costoEvento;
+    }
+
     public ServicioAdicional getServicioAdicional() {
         return servicioAdicional;
     }
@@ -60,6 +86,9 @@ public class RealizarEvento {
     public void setServicioAdicional(ServicioAdicional servicioAdicional) {
         this.servicioAdicional = servicioAdicional;
     }
+    
+    
+    
 
     @Override
     public String toString() {

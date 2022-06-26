@@ -32,13 +32,7 @@ public class AdministracionDeHotel {
         Banio b3 = new Banio(1, "Shampo,Jabon,cepillo de dientes,Pasta dental");
         //System.out.println(b3);
        
-        Carta car2 = new Carta("Continental", "Pollo, PorcionArroz,Ensalada,Salsas(Mayonesa Salsa de Tomate),Agua de horchata", 2.00f);
-        Carta car3 = new Carta("Especial", "Tilapia,Porcion de arroz, platanos,limon,Fresco de Maracuyá", 2.30f);
-        Carta car4 = new Carta("Ligero", "Pan,cafe,Tamal", 1.00f);
-        //System.out.println(car2);
-        //System.out.println(car3);
-        //System.out.println(car4);
-
+       
 //        System.out.println(hotel);
 
         Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
@@ -51,15 +45,21 @@ public class AdministracionDeHotel {
 
        Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      //System.out.println(hotel);
+     
+     
+     
+     
+      
         
-        Reservacion reservacion = new Reservacion(5, 7, 2, 54f, 45f, 12f, 4, 10f, "Presidencial");
+        Reservacion reservacion = new Reservacion(5, 7, 2, 54f, 12f, 4, 10f, "Presidencial");
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
         recepcion.getRecepcionList().add(recepcionista);
         //System.out.println(recepcion);
         
-        
+        reservacion.getTiempoEstancia();
+        System.out.println(        reservacion.getNumeroHuespedes());
         
         
       
@@ -68,9 +68,14 @@ public class AdministracionDeHotel {
         
         
         
-        ReservacionComida com1 = new ReservacionComida("Continental","Ligero","Especial",car2.precioComidaPorHuesped(reservacion),car3.precioComidaPorHuesped(reservacion) ,car4.precioComidaPorHuesped(reservacion));
+        ReservacionComida re1= new ReservacionComida("Especial","pollo al jugo ",2.00f);
+        ReservacionComida re2= new ReservacionComida("Continental","Costilla decerdo",3.00f);
+        ReservacionComida re3= new ReservacionComida("Ligero","Cafe con humas",1.00f);
+        System.out.println(re1);
+        re1.precioComidaPorHuesped(reservacion);
+        System.out.println(re1.precioComidaPorHuesped(reservacion));
         
-        RealizarEvento env1 = new RealizarEvento("Cumpleanios","14/09/2022","6 horas");
+        RealizarEvento env1 = new RealizarEvento("Boda","14/09/2022","6 horas");
         //System.out.println(com1);
         
         //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
@@ -80,9 +85,17 @@ public class AdministracionDeHotel {
         
         
                                                     //tvCable,servicioHabitacion,servicioLimpieza,bare,spa,Gim
-        ServicioAdicional sr1= new ServicioAdicional(true, false, true,true, true, true);
+        ServicioAdicional sr1= new ServicioAdicional(true,false,false,false,true,false);
+        env1.precioEvento(sr1);
+        sr1.precioAddServicio(reservacion);
         //System.out.println(reservacion.getTiempoEstancia());
         //System.out.println(sr1.precioAddServicio(reservacion));
+        
+        
+        //System.out.println(env1.precioEvento(sr1));
+        Servicio servicio = new Servicio();
+        
+        reservacion.costosServicios(sr1, servicio, reservacion);
 
     }
     

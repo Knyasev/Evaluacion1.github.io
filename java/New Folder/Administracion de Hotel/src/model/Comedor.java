@@ -17,11 +17,11 @@ public class Comedor {
     
         private Hotel hotel;
         private List<ReservacionComida> reservacionComidaList;
-        private List<Carta> cartaList;
+        
         private List<Mesero> meseroList;
 
     public Comedor() {
-        cartaList = new LinkedList <>();
+         
         meseroList = new LinkedList<>();
     }
 
@@ -73,14 +73,7 @@ public class Comedor {
         this.reservacionComidaList = reservacionComidaList;
     }
 
-    public List<Carta> getCartaList() {
-        return cartaList;
-    }
-
-    public void setCartaList(List<Carta> cartaList) {
-        this.cartaList = cartaList;
-    }
-
+    
     public List<Mesero> getMeseroList() {
         return meseroList;
     }
@@ -91,7 +84,7 @@ public class Comedor {
 
     @Override
     public String toString() {
-        return "Comedor{" + "numeroMesas=" + numeroMesas + ", numeroSillas=" + numeroSillas + ", numeroCubiertos=" + numeroCubiertos + ", hotel=" + hotel + ", reservacionComidaList=" + reservacionComidaList + ", cartaList=" + cartaList + ", meseroList=" + meseroList + '}';
+        return "Comedor{" + "numeroMesas=" + numeroMesas + ", numeroSillas=" + numeroSillas + ", numeroCubiertos=" + numeroCubiertos + ", hotel=" + hotel + ", reservacionComidaList=" + reservacionComidaList  + ", meseroList=" + meseroList + '}';
     }
         
     
