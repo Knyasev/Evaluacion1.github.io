@@ -47,12 +47,7 @@ public class AdministracionDeHotel {
        Hotel hotel = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      //System.out.println(hotel);
      
-     
-     
-     
-      
-        
-        Reservacion reservacion = new Reservacion(5, 7, 2, 54f, 12f, 4, 10f, "Presidencial");
+        Reservacion reservacion = new Reservacion( 1, 54f, 12f, 4f, 10,10f, "Presidencial");
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
@@ -81,7 +76,9 @@ public class AdministracionDeHotel {
         
         //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
         //car4.precioComidaPorHuesped(reservacion));
-        
+       
+        reservacion.costoReservacionComida(reservacion);
+      
         
         
         

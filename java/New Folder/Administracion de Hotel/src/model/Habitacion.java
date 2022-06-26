@@ -15,10 +15,10 @@ public class Habitacion {
     private Integer numeroBaños;
     private Integer numeroCamas;
     private Float tamanio;
+    private Integer numeroHuespedes;
     private String tipoHabitacion;
     private Float precioHabitacion;
-    private Integer numeroHabitacion; 
-    
+    private Integer numeroHabitacion;
     
     private Hotel hotel;
     private List<Reservacion> reservacionList;
@@ -32,34 +32,48 @@ public class Habitacion {
         this.tipoHabitacion = tipoHabitacion;
         this.precioHabitacion = precioHabitacion;
         this.numeroHabitacion = numeroHabitacion;
-     
+
     }
+    
+    public Habitacion(Boolean poseeMirador, Integer numeroBaños, Integer numeroCamas, Float tamanio, Integer numeroHuespedes, String tipoHabitacion, Float precioHabitacion) {
+        this.poseeMirador = poseeMirador;
+        this.numeroBaños = numeroBaños;
+        this.numeroCamas = numeroCamas;
+        this.tamanio = tamanio;
+        this.numeroHuespedes = numeroHuespedes;
+        this.tipoHabitacion = tipoHabitacion;
+        this.precioHabitacion = precioHabitacion;
 
+        this.numeroHabitacion = numeroHabitacion;
+        bañoList = new LinkedList<>();
 
+    }
 
     
     public Habitacion() {
         bañoList = new LinkedList<>();
     }
     
-    public float CalcularPrecioBanio(){
+    public Float CalcularPrecioBanio(){
         Banio banio = new Banio();
         Float auxPrecioBaño =0f;
       
         if (numeroBaños ==1) {
-            auxPrecioBaño= (banio.CalcularPrecio()+1) * 1;
-             return auxPrecioBaño;
-        }else if (numeroBaños==2) {
-            auxPrecioBaño= (banio.CalcularPrecio()+1) * 2;
+            auxPrecioBaño= (banio.CalcularPrecio()) * 0.75f;
             return auxPrecioBaño;
-        }
+        }else if (numeroBaños==2) {
+            auxPrecioBaño= (banio.CalcularPrecio()) * 1.5f;
+           
+            return auxPrecioBaño;
+        }else{
          auxPrecioBaño = 0f;
-         System.out.println(auxPrecioBaño);
          
-          return auxPrecioBaño;
+         return auxPrecioBaño;
+        }
+     
     }
     
-        public Float calcularPrecioCama(){
+    public Float calcularPrecioCama(){
         Float aux;
         if (numeroCamas == 1) {
             aux = 1f;
@@ -109,16 +123,6 @@ public class Habitacion {
        precioHabitacion = CalcularPrecioBanio()+calcularPrecioCama()+calcularPrecioHabitacionNormal();
      return precioHabitacion;
     }
-    
-
-    public Integer getNumeroHabitacion() {
-        return numeroHabitacion;
-    }
-
-    public void setNumeroHabitacion(Integer numeroHabitacion) {
-        this.numeroHabitacion = numeroHabitacion;
-    }
-    
     public Boolean getPoseeMirador() {
         return poseeMirador;
     }
@@ -151,7 +155,13 @@ public class Habitacion {
         this.tamanio = tamanio;
     }
 
+    public Integer getNumeroHuespedes() {
+        return numeroHuespedes;
+    }
 
+    public void setNumeroHuespedes(Integer numeroHuespedes) {
+        this.numeroHuespedes = numeroHuespedes;
+    }
 
     public String getTipoHabitacion() {
         return tipoHabitacion;
@@ -193,6 +203,14 @@ public class Habitacion {
         this.bañoList = bañoList;
     }
 
+    public Integer getNumeroHabitacion() {
+        return numeroHabitacion;
+    }
 
+    public void setNumeroHabitacion(Integer numeroHabitacion) {
+        this.numeroHabitacion = numeroHabitacion;
+    }
+
+    
     
 }

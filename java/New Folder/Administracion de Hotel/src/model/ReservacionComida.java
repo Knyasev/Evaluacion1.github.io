@@ -36,8 +36,9 @@ public class ReservacionComida {
              totalComida= 0f;
              totalComida=precio*i;
              totalComida=totalComida*numDias;
+             
          }
-         //System.out.println(totalComida);
+         System.out.println(totalComida);
          return totalComida;
     }
     
