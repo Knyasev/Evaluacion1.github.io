@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.text.ParseException;
+
 /**
  *
  * @author Gonzalez G
@@ -13,15 +15,15 @@ public class AdministracionDeHotel {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
-        
+       
         //cliente
-        Cliente c1= new Cliente("Mario Alejandro", "Martines Pineda","14784578");
+        Cliente c1= new Cliente("Mario", "Martines","14784578");
         //System.out.println(c1);
-        Cliente c2= new Cliente("Jose Rodrigo", "Velez Carrion","478541254");
+        Cliente c2= new Cliente("Jose", "Martines","478541254");
         //System.out.println(c2);
-        Cliente c3= new Cliente("Maria Julia", "Velazquez Romel","1958658");
+        Cliente c3= new Cliente("Maria", "Velazquez","1958658");
         //System.out.println(c3);
         
         //banio
@@ -32,7 +34,13 @@ public class AdministracionDeHotel {
         Banio b3 = new Banio(1, "Shampo,Jabon,cepillo de dientes,Pasta dental");
         //System.out.println(b3);
        
-       
+        Carta car2 = new Carta("Continental", "Pollo, PorcionArroz,Ensalada,Salsas(Mayonesa Salsa de Tomate),Agua de horchata", 2.00f);
+        Carta car3 = new Carta("Especial", "Tilapia,Porcion de arroz, platanos,limon,Fresco de Maracuyá", 2.30f);
+        Carta car4 = new Carta("Ligero", "Pan,cafe,Tamal", 1.00f);
+        System.out.println(car2);
+        System.out.println(car3);
+        System.out.println(car4);
+
 //        System.out.println(hotel);
 
         Chef ch1 = new Chef(001, "Chef", "Alejandro", "Martines","147852" );
@@ -41,34 +49,31 @@ public class AdministracionDeHotel {
         Cocina co1 =new Cocina("7 x 7",true);
         //System.out.println(co1);
 
-        Habitacion h1 = new Habitacion(true,2,2,10.10f,"Presidencial",20.00f,111);
 
 
-       Hotel hotel = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
+       Hotel hotel = new Hotel("Cameru,", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      //System.out.println(hotel);
-     
-     
-     
-     
       
-        
-        Reservacion reservacion = new Reservacion(5, 7, 2, 54f, 12f, 4, 10f, "Presidencial");
+        Reservacion reservacion = new Reservacion( 2, 54f, 45f, 12f, 4, 10f, "Presidencial"); 
+       
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
         recepcion.getRecepcionList().add(recepcionista);
         //System.out.println(recepcion);
         
-        reservacion.getTiempoEstancia();
-        //System.out.println(        reservacion.getNumeroHuespedes());
+        Habitacion habitacion = new Habitacion(false, 2,2, 6f, 3, " ",2.5f);
+       // habitacion.calcularPrecioHabitacion();
+          reservacion.reservarHabitacion(habitacion);
         
-        
-      
         Bar br1 = new Bar(40,40);
         //System.out.println(br1);
         
+        Spa sp1 = new Spa(true, false);
         
+        ReservacionComida com1 = new ReservacionComida("Continental","Ligero","Especial",car2.precioComidaPorHuesped(reservacion),car3.precioComidaPorHuesped(reservacion) ,car4.precioComidaPorHuesped(reservacion));
         
+<<<<<<< HEAD
         ReservacionComida re1= new ReservacionComida("Especial","pollo al jugo ",2.00f);
         ReservacionComida re2= new ReservacionComida("Continental","Costilla decerdo",3.00f);
         ReservacionComida re3= new ReservacionComida("Ligero","Cafe con humas",1.00f);
@@ -125,5 +130,14 @@ public class AdministracionDeHotel {
     
     
     
+=======
+        RealizarEvento env1 = new RealizarEvento("Cumpleanios","14/09/2022","6 horas");
+//        System.out.println(com1);
+//      
+//        System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
+//       car4.precioComidaPorHuesped(reservacion));
+
+    }
+>>>>>>> b5907ae4ca45a64ae5581cc3b64ef0e443c4a2cb
     
 }
