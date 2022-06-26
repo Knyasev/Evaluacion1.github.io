@@ -21,7 +21,7 @@ public class ServicioAdicional {
         private float precioTvCable=0.60f;
         private float precioServicioHabitacion=1.00f;
         private float precioServicioLimpieza=0.50f;
-        private float preBare=6.00f;
+        private float preBare=2.00f;
         private float preSpa=2.00f;
         private float preGim=1.00f;
         
@@ -59,8 +59,10 @@ public class ServicioAdicional {
     
     public float precioAddServicio(Reservacion reservacion){
          float aux=0f;
+         
         if (tvCable == true) {
-           precioTv=reservacion.getTiempoEstancia()*precioTvCable;}
+           precioTv=reservacion.getTiempoEstancia()*precioTvCable;
+        }
         if(servicioHabitacion== true){
            precioSer=reservacion.getTiempoEstancia()*precioServicioHabitacion; }         
         if(servicioLimpieza==true){
