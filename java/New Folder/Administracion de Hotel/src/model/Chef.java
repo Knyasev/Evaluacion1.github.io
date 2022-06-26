@@ -11,7 +11,7 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Chef extends Usuario{
-    private List<Carta> cartaList;
+   
     private List<Cliente> clienteList;
     
     
@@ -26,14 +26,7 @@ public class Chef extends Usuario{
 
     
 
-    public List<Carta> getCartaList() {
-        return cartaList;
-    }
-
-    public void setCartaList(List<Carta> cartaList) {
-        this.cartaList = cartaList;
-    }
-
+   
     public List<Cliente> getClienteList() {
         return clienteList;
     }

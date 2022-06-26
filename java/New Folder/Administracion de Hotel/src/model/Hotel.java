@@ -18,6 +18,7 @@ public class Hotel {
     private Boolean poseePiscina ;
     private String ubicacion;
     private String fechaInaguracion;
+     
     
     private List<Reservacion> reservacionList;
     private Comedor comedor;
@@ -181,6 +182,10 @@ public class Hotel {
     public void setPersonaList(List<Persona> personaList) {
         this.personaList = personaList;
     }
+    
+    
+    
+    
     
     
 
