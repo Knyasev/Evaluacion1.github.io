@@ -52,7 +52,7 @@ public class AdministracionDeHotel {
      
       
         
-        Reservacion reservacion = new Reservacion(5, 7, 2, 54f, 12f, 4, 10f, "Presidencial");
+        Reservacion reservacion = new Reservacion( 2, 54f, 12f, 4, 10f, "Presidencial");
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
@@ -76,7 +76,7 @@ public class AdministracionDeHotel {
         re1.precioComidaPorHuesped(reservacion);
         //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
-        RealizarEvento env1 = new RealizarEvento("Boda","14/09/2022","6 horas");
+        RealizarEvento env1 = new RealizarEvento("Cumpleañios","14/09/2022","6 horas");
         //System.out.println(com1);
         
         //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
@@ -118,7 +118,14 @@ public class AdministracionDeHotel {
         System.out.println("********************************************************************"); 
         System.out.println("  Servicios Adicionales");
         System.out.println("  |TvCable|Servicio Habitacion|Servicio Limpieza|Bar|Spa|Gimnacio|");
-        System.out.println(sr1.getTvCable());
+        System.out.println("   "+sr1.getTvCable()+"\t   "+sr1.getServicioHabitacion()+"\t       "+sr1.getServicioLimpieza()+"\t\t"+sr1.getBare()
+                       +" "+sr1.getSpa()+" "+sr1.getGim());
+        System.out.println("********************************************************************"); 
+        System.out.println("  Costos Totales");
+        System.out.println("Habitacion: "+h1.getPrecioHabitacion());
+        System.out.println("Servicios Adicionales: "+sr1.precioAddServicio(reservacion));
+        System.out.println("Comida"+re1.getTotalComida());
+
      }
     
     

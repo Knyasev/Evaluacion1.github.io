@@ -11,8 +11,7 @@ import java.util.LinkedList;
  */
 public class Reservacion {
     
-    private Integer fechaEntrada;
-    private Integer fechaSalida;
+
     private Integer numeroHuespedes;
     
     
@@ -42,11 +41,10 @@ public class Reservacion {
     
     
 
-    public Reservacion( Integer fechaEntrada, Integer fechaSalida, Integer numeroHuespedes, Float precioHabitacion, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+    public Reservacion( Integer numeroHuespedes, Float precioHabitacion, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
      
 
-        this.fechaEntrada = 0;
-        this.fechaSalida = fechaSalida;
+
         this.numeroHuespedes = numeroHuespedes;
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
@@ -66,8 +64,6 @@ public class Reservacion {
         auxDias = ((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia);
         System.out.println(auxDias);
 
-
-
     }
 
 
@@ -86,21 +82,7 @@ public class Reservacion {
     
    
 
-    public Integer getFechaEntrada() {
-        return fechaEntrada;
-    }
 
-    public void setFechaEntrada(Integer fechaEntrada) {
-        this.fechaEntrada = fechaEntrada;
-    }
-
-    public Integer getFechaSalida() {
-        return fechaSalida;
-    }
-
-    public void setFechaSalida(Integer fechaSalida) {
-        this.fechaSalida = fechaSalida;
-    }
 
     public Integer getNumeroHuespedes() {
         return numeroHuespedes;
@@ -206,17 +188,17 @@ public class Reservacion {
     }
     
 
-    @Override
-    public String toString() {
-
-        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada 
-                + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes 
-                + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
-                + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
-
-       
-    }
-    
+//    @Override
+//    public String toString() {
+//
+//        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada 
+//                + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes 
+//                + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
+//                + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
+//
+//       
+//    }
+//    
     
     
 }
