@@ -42,9 +42,7 @@ public class Reservacion {
     
 
     public Reservacion( Integer numeroHuespedes, Float precioHabitacion, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
-     
-
-
+   
         this.numeroHuespedes = numeroHuespedes;
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
