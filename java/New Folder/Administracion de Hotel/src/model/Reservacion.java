@@ -57,8 +57,8 @@ public class Reservacion {
     public float costosServicios(ServicioAdicional servicioAdicional,Servicio servicio,Reservacion reservacion){
       precioServicio=servicioAdicional.getPrecioServiciosAdd()+ servicio.getInternet()*reservacion.tiempoEstancia;
       
-      
-        System.out.println(precioServicio);
+          //precio total de servicios
+        //System.out.println(precioServicio);
       return precioServicio;
       
     }

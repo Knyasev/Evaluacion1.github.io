@@ -15,25 +15,27 @@ public class Habitacion {
     private Integer numeroBaños;
     private Integer numeroCamas;
     private Float tamanio;
-    private Integer numeroHuespedes;
     private String tipoHabitacion;
     private Float precioHabitacion;
+    private Integer numeroHabitacion; 
     
     
     private Hotel hotel;
     private List<Reservacion> reservacionList;
     private List<Banio> bañoList;
 
-    public Habitacion(Boolean poseeMirador, Integer numeroBaños, Integer numeroCamas, Float tamanio, Integer numeroHuespedes, String tipoHabitacion, Float precioHabitacion) {
+    public Habitacion(Boolean poseeMirador, Integer numeroBaños, Integer numeroCamas, Float tamanio, String tipoHabitacion, Float precioHabitacion, Integer numeroHabitacion) {
         this.poseeMirador = poseeMirador;
         this.numeroBaños = numeroBaños;
         this.numeroCamas = numeroCamas;
         this.tamanio = tamanio;
-        this.numeroHuespedes = numeroHuespedes;
         this.tipoHabitacion = tipoHabitacion;
         this.precioHabitacion = precioHabitacion;
-        bañoList = new LinkedList<>();
+        this.numeroHabitacion = numeroHabitacion;
+        
     }
+
+
 
     
     public Habitacion() {
@@ -56,6 +58,15 @@ public class Habitacion {
          
          
     }
+
+    public Integer getNumeroHabitacion() {
+        return numeroHabitacion;
+    }
+
+    public void setNumeroHabitacion(Integer numeroHabitacion) {
+        this.numeroHabitacion = numeroHabitacion;
+    }
+    
     public Boolean getPoseeMirador() {
         return poseeMirador;
     }
@@ -88,13 +99,7 @@ public class Habitacion {
         this.tamanio = tamanio;
     }
 
-    public Integer getNumeroHuespedes() {
-        return numeroHuespedes;
-    }
 
-    public void setNumeroHuespedes(Integer numeroHuespedes) {
-        this.numeroHuespedes = numeroHuespedes;
-    }
 
     public String getTipoHabitacion() {
         return tipoHabitacion;
@@ -136,10 +141,6 @@ public class Habitacion {
         this.bañoList = bañoList;
     }
 
-    @Override
-    public String toString() {
-        return "Habitacion{" + "poseeMirador=" + poseeMirador + ", numeroBa\u00f1os=" + numeroBaños + ", numeroCamas=" + numeroCamas + ", tamanio=" + tamanio + ", numeroHuespedes=" + numeroHuespedes + ", tipoHabitacion=" + tipoHabitacion + ", precioHabitacion=" + precioHabitacion + ", hotel=" + hotel + ", reservacionList=" + reservacionList + ", ba\u00f1oList=" + bañoList + '}';
-    }
-    
+
     
 }
