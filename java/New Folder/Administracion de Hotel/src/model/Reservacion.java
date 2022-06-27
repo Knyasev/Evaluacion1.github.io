@@ -3,22 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
-
-
 import java.util.List;
 import java.util.LinkedList;
-
-
-
+/**
+ *
+ * @author Gonzalez G
+ */
 public class Reservacion {
     
- 
+
     private Integer numeroHuespedes;
+    
+    
     private Float precioServicio;
     private Float precioReservacion;
     private Float precioReservacionComida= 0f;
     private Integer tiempoEstancia;
     private Float tipoDescuento ;
+    
     private String metodoPago ;
 
     
@@ -34,6 +36,7 @@ public class Reservacion {
 
     public Reservacion() {
         reservacionComidaList = new LinkedList<>();
+
     }
 
    
@@ -45,27 +48,24 @@ public class Reservacion {
         this.tiempoEstancia = tiempoEstancia;
         this.tipoDescuento = tipoDescuento;
 
+
+
     }
+
+    
+    
 
 
     public float costosServicios(ServicioAdicional servicioAdicional,Servicio servicio,Reservacion reservacion){
       precioServicio=servicioAdicional.getPrecioServiciosAdd()+ servicio.getInternet()*reservacion.tiempoEstancia;
-      
-          //precio total de servicios
-        //System.out.println(precioServicio);
+   
       return precioServicio;
       
     }
 
-    public Float costoReservacionComida(Reservacion reservacion){
+    public Float costoReservacionComida(Reservacion reservacion,ReservacionComida reservacionComida){
            precioReservacionComida = 0f;
-           for (ReservacionComida reservacionComida : reservacionComidaList) {
-            precioReservacionComida = reservacionComida.precioComidaPorHuesped(reservacion);
-            return precioReservacionComida;
-        }
-            
-            
-            
+            precioReservacionComida = reservacionComida.getTotalComida();
         return precioReservacionComida;
            
     }
@@ -78,7 +78,8 @@ public class Reservacion {
         
      return precioReservacion;
     }
-   
+    
+
 
     public Float valorSubtotal(){
         Float subtotal = precioReservacion + precioReservacionComida + precioServicio ;
@@ -183,6 +184,7 @@ public class Reservacion {
         this.servicio = servicio;
     }
 
+
     public Float getPrecioReservacionComida() {
         return precioReservacionComida;
     }
@@ -191,16 +193,28 @@ public class Reservacion {
         this.precioReservacionComida = precioReservacionComida;
     }
     
-    @Override
-    public String toString() {
+    
+    public List<Habitacion> getHabitacionList() {
+        return habitacionList;
+    }
 
-        return  ", numeroHuespedes=" + numeroHuespedes 
-                + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
-                + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
 
-       
+    public void setHabitacionList(List<Habitacion> habitacionList) {
+        this.habitacionList = habitacionList;
     }
     
+
+//    @Override
+//    public String toString() {
+//
+//        return "Reservacion{" + ", fechaEntrada=" + fechaEntrada 
+//                + ", fechaSalida=" + fechaSalida + ", numeroHuespedes=" + numeroHuespedes 
+//                + ", precioServicio=" + precioServicio + ", precioReservacion=" + precioReservacion + ", tiempoEstancia=" + tiempoEstancia 
+//                + ", tipoDescuento=" + tipoDescuento + ", tipoHabitacion=" ;
+//
+//       
+//    }
+//    
     
     
 }

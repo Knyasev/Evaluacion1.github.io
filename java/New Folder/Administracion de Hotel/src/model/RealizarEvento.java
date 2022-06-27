@@ -37,7 +37,7 @@ public class RealizarEvento {
             costoEvento=200f;
         }
         if (tipoEvento=="Boda") {
-            costoEvento=2000f;
+            costoEvento=20f;
         }
         if (tipoEvento=="Reunion") {
             costoEvento=150f;

@@ -4,6 +4,8 @@
  */
 package gui;
 
+import java.awt.Color;
+
 /**
  *
  * @author Usuario iTC
@@ -28,12 +30,13 @@ public class HotelInter extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        panImagen1 = new gui.PanImagen();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        btnServiciosAdd = new javax.swing.JButton();
+        btnComida = new javax.swing.JButton();
+        btnHabitacion = new javax.swing.JButton();
+        btnReservacion = new javax.swing.JButton();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/hotel2.png"))); // NOI18N
 
@@ -42,39 +45,10 @@ public class HotelInter extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 102, 153));
         setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 10)); // NOI18N
 
-        jPanel3.setBackground(new java.awt.Color(0, 153, 204));
+        jPanel3.setBackground(new java.awt.Color(59, 134, 134));
+        jPanel3.setForeground(new java.awt.Color(207, 240, 158));
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 153));
-        jButton1.setText("Reservación");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setBackground(new java.awt.Color(0, 153, 153));
-        jButton2.setText("Habitaciones");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setBackground(new java.awt.Color(0, 153, 153));
-        jButton3.setText("Servicios Add");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton6.setBackground(new java.awt.Color(0, 153, 153));
-        jButton6.setText("Comida");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
+        panImagen1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/hotel2.png"))); // NOI18N
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Perpetua Titling MT", 0, 80)); // NOI18N
@@ -87,43 +61,122 @@ public class HotelInter extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("HOTEL");
 
+        btnServiciosAdd.setBackground(new java.awt.Color(0, 153, 153));
+        btnServiciosAdd.setForeground(new java.awt.Color(255, 255, 255));
+        btnServiciosAdd.setText("Servicios Add");
+        btnServiciosAdd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnServiciosAddMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnServiciosAddMouseExited(evt);
+            }
+        });
+        btnServiciosAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnServiciosAddActionPerformed(evt);
+            }
+        });
+
+        btnComida.setBackground(new java.awt.Color(0, 153, 153));
+        btnComida.setForeground(new java.awt.Color(255, 255, 255));
+        btnComida.setText("Comida");
+        btnComida.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnComidaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnComidaMouseExited(evt);
+            }
+        });
+        btnComida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComidaActionPerformed(evt);
+            }
+        });
+
+        btnHabitacion.setBackground(new java.awt.Color(0, 153, 153));
+        btnHabitacion.setForeground(new java.awt.Color(255, 255, 255));
+        btnHabitacion.setText("Habitaciones");
+        btnHabitacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnHabitacionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnHabitacionMouseExited(evt);
+            }
+        });
+        btnHabitacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHabitacionActionPerformed(evt);
+            }
+        });
+
+        btnReservacion.setBackground(new java.awt.Color(0, 153, 153));
+        btnReservacion.setForeground(new java.awt.Color(255, 255, 255));
+        btnReservacion.setText("Reservación");
+        btnReservacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnReservacionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnReservacionMouseExited(evt);
+            }
+        });
+        btnReservacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReservacionActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panImagen1Layout = new javax.swing.GroupLayout(panImagen1);
+        panImagen1.setLayout(panImagen1Layout);
+        panImagen1Layout.setHorizontalGroup(
+            panImagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panImagen1Layout.createSequentialGroup()
+                .addGroup(panImagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panImagen1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnServiciosAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnComida, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnHabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnReservacion, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panImagen1Layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panImagen1Layout.createSequentialGroup()
+                        .addGap(199, 199, 199)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panImagen1Layout.setVerticalGroup(
+            panImagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panImagen1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panImagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnReservacion)
+                    .addComponent(btnHabitacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnComida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnServiciosAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3)
+                .addGap(96, 96, 96))
+        );
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
-                .addGap(34, 34, 34))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(161, 161, 161)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(panImagen1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(68, 68, 68))
+            .addComponent(panImagen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -142,21 +195,55 @@ public class HotelInter extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnComidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComidaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnComidaActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnServiciosAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServiciosAddActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnServiciosAddActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHabitacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnHabitacionActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnReservacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReservacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnReservacionActionPerformed
+
+    private void btnReservacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReservacionMouseEntered
+    btnReservacion.setBackground(new Color(3,54,73));
+
+    }//GEN-LAST:event_btnReservacionMouseEntered
+
+    private void btnReservacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReservacionMouseExited
+        btnReservacion.setBackground(new Color(0,153,153));
+
+    }//GEN-LAST:event_btnReservacionMouseExited
+
+    private void btnHabitacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHabitacionMouseEntered
+    btnHabitacion.setBackground(new Color(3,54,73));
+    }//GEN-LAST:event_btnHabitacionMouseEntered
+
+    private void btnHabitacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHabitacionMouseExited
+    btnHabitacion.setBackground(new Color(0,153,153));
+    }//GEN-LAST:event_btnHabitacionMouseExited
+
+    private void btnServiciosAddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServiciosAddMouseEntered
+     btnServiciosAdd.setBackground(new Color(3,54,73));
+    }//GEN-LAST:event_btnServiciosAddMouseEntered
+
+    private void btnServiciosAddMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServiciosAddMouseExited
+    btnServiciosAdd.setBackground(new Color(0,153,153));
+    }//GEN-LAST:event_btnServiciosAddMouseExited
+
+    private void btnComidaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnComidaMouseEntered
+        btnComida.setBackground(new Color(3,54,73));
+    }//GEN-LAST:event_btnComidaMouseEntered
+
+    private void btnComidaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnComidaMouseExited
+    btnComida.setBackground(new Color(0,153,153));
+    }//GEN-LAST:event_btnComidaMouseExited
 
     /**
      * @param args the command line arguments
@@ -194,13 +281,14 @@ public class HotelInter extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnComida;
+    private javax.swing.JButton btnHabitacion;
+    private javax.swing.JButton btnReservacion;
+    private javax.swing.JButton btnServiciosAdd;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel3;
+    private gui.PanImagen panImagen1;
     // End of variables declaration//GEN-END:variables
 }

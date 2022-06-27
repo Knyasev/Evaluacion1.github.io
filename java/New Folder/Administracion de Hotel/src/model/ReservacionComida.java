@@ -12,39 +12,66 @@ public class ReservacionComida {
     private float precioAlmuerzo;
     private float precioDesayuno;
     private float precioCena;
-    private String nombrePlatillo;
-    private String descripcion;
+    
+    private String Almuerzo;
+    private String Desayuno;
+    private String Cena;
+    
+    private boolean quiereAlmuerzo;
+    private boolean quiereDesayuno;
+    private boolean quiereCena;
+    
     private Float precio;
     private Float totalComida;
     private Integer numDias=0;
     
+    private float num1;
+    private float num2;
+    private float num3;
     
     private Comedor comedor;
     private Habitacion habitacion;
     private Chef chef;
     private Reservacion reservacion;
 
-    public ReservacionComida(String nombrePlatillo, String descripcion, Float precio) {
-        this.nombrePlatillo = nombrePlatillo;
-        this.descripcion = descripcion;
-        this.precio = precio;
+    public ReservacionComida(float precioAlmuerzo, float precioDesayuno, float precioCena, String Almuerzo, String Desayuno, String Cena, boolean quiereAlmuerzo, boolean quiereDesayuno, boolean quiereCena) {
+        this.precioAlmuerzo = precioAlmuerzo;
+        this.precioDesayuno = precioDesayuno;
+        this.precioCena = precioCena;
+        this.Almuerzo = Almuerzo;
+        this.Desayuno = Desayuno;
+        this.Cena = Cena;
+        this.quiereAlmuerzo = quiereAlmuerzo;
+        this.quiereDesayuno = quiereDesayuno;
+        this.quiereCena = quiereCena;
     }
+
+    
+
+
 
     public float precioComidaPorHuesped(Reservacion reservacion){
          numDias=reservacion.getTiempoEstancia();
-         for (int i = 0; i <= reservacion.getNumeroHuespedes(); i++) {
-             totalComida= 0f;
-             totalComida=precio*i;
-             totalComida=totalComida*numDias;
-             
+         if(quiereAlmuerzo==true){
+             num1=precioAlmuerzo*reservacion.getNumeroHuespedes();
+             num1=num1*reservacion.getTiempoEstancia();
+             //System.out.println(num1);
          }
-         System.out.println(totalComida);
+         if(quiereDesayuno==true){
+             num2=precioDesayuno*reservacion.getNumeroHuespedes();
+             num2=num2*reservacion.getTiempoEstancia();
+             //System.out.println(num2);
+         }
+         if(quiereCena==true){
+             num3=precioCena*reservacion.getNumeroHuespedes();
+             num3=num3*reservacion.getTiempoEstancia();
+             //System.out.println(num3);
+         }
+          totalComida=num1+num2+num3;
          return totalComida;
     }
     
-    
-    
-    
+ 
 
     public Reservacion getReservacion() {
         return reservacion;
@@ -86,21 +113,6 @@ public class ReservacionComida {
         this.precioCena = precioCena;
     }
 
-    public String getNombrePlatillo() {
-        return nombrePlatillo;
-    }
-
-    public void setNombrePlatillo(String nombrePlatillo) {
-        this.nombrePlatillo = nombrePlatillo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 
     public Float getPrecio() {
         return precio;
@@ -143,11 +155,7 @@ public class ReservacionComida {
     }
     
 
-    @Override
-    public String toString() {
-        return "ReservacionComida{" + "nombrePlatillo=" + nombrePlatillo + ", descripcion=" + descripcion + ", precio=" + precio + '}';
-    }
-    
+
 
     
 
