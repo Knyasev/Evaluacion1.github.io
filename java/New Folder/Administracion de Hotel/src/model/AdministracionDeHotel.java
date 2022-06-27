@@ -74,11 +74,11 @@ public class AdministracionDeHotel {
         //System.out.println(re1);
         re1.precioComidaPorHuesped(reservacion);
         re1.costoTotalComida();
-        System.out.println(re1.precioComidaPorHuesped(reservacion));
+        //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
         //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
-        RealizarEvento env1 = new RealizarEvento("Cumpleañios","14/09/2022","6 horas");
+        RealizarEvento env1 = new RealizarEvento("Cumpleanios","14/09/2022","6 horas");
         //System.out.println(com1);
         
         //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
@@ -127,7 +127,7 @@ public class AdministracionDeHotel {
         System.out.println("  Costos Totales");
         System.out.println("Habitacion: "+h1.getPrecioHabitacion());
         System.out.println("Servicios Adicionales: "+sr1.precioAddServicio(reservacion));
-        //System.out.println("Comida: "+re1.getTotalComida()+" "+re2.getTotalComida()+re3.getTotalComida());
+        System.out.println("Comida: "+ re1.precioComidaPorHuesped(reservacion));
 
      }
     
