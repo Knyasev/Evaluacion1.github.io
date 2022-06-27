@@ -47,14 +47,14 @@ public class Habitacion {
         Float auxPrecioBaño =0f;
       
         if (numeroBaños ==1) {
-            auxPrecioBaño= (banio.CalcularPrecio()+1) * 1;
+            auxPrecioBaño= (banio.CalcularPrecio()) * 1;
              return auxPrecioBaño;
         }else if (numeroBaños==2) {
-            auxPrecioBaño= (banio.CalcularPrecio()+1) * 2;
+            auxPrecioBaño= (banio.CalcularPrecio()) * 1.5f;
             return auxPrecioBaño;
         }
          auxPrecioBaño = 0f;
-         System.out.println(auxPrecioBaño);
+       
          
           return auxPrecioBaño;
     }
@@ -103,11 +103,14 @@ public class Habitacion {
      
     public Float calcularPrecioHabitacion(){
        CalcularPrecioBanio();
-   
+       
        calcularPrecioCama();
+     
        calcularPrecioHabitacionNormal();
-        
+       
+      
        precioHabitacion = CalcularPrecioBanio()+calcularPrecioCama()+calcularPrecioHabitacionNormal();
+       
      return precioHabitacion;
     }
     

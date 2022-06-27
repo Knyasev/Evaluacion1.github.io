@@ -49,7 +49,7 @@ public class AdministracionDeHotel {
      //System.out.println(hotel);
 
     
-        Reservacion reservacion = new Reservacion( 1, 54f, 12f, 4, 10f, "Presidencial");
+        Reservacion reservacion = new Reservacion( 1, 54f, 12f, 4, 10f, "Normal");
 
      
      
@@ -136,7 +136,7 @@ public class AdministracionDeHotel {
         System.out.println("********************************************************************"); 
         System.out.println("  Costos Totales");
         System.out.println("Habitacion: "+h1.getPrecioHabitacion());
-        System.out.println("Servicios Adicionales: "+sr1.precioAddServicio(reservacion));
+        System.out.println("Servicios Adicionales: "+ reservacion.getPrecioServicio());
         //System.out.println("Comida: "+re1.getTotalComida()+" "+re2.getTotalComida()+re3.getTotalComida());
 
      }
