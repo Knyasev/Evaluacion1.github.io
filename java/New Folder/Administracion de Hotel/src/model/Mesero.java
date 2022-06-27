@@ -29,13 +29,7 @@ public class Mesero extends Usuario {
         this.comedor = comedor;
     }
 
-    public Comedor getComedor() {
-        return comedor;
-    }
-
-    public void setComedor(Comedor comedor) {
-        this.comedor = comedor;
-    }
+   
 
 
     
