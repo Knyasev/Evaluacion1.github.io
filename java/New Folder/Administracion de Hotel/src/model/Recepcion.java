@@ -16,13 +16,12 @@ public class Recepcion {
    private  List<Recepcionista> recepcionList;
    private Hotel hotel;
 
-    public Recepcion(String InformacionHabitacion, Integer numeroHabitacionesDisponibles, List<Recepcionista> recepcionList, Hotel hotel) {
+   public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Hotel hotel) {
+      
         this.InformacionHabitacion = InformacionHabitacion;
-        this.numeroHabitacionesDisponibles = numeroHabitacionesDisponibles;
-        this.recepcionList = recepcionList;
         this.hotel = hotel;
+        recepcionList = new LinkedList<>();
     }
-   
 
 
     

@@ -62,8 +62,10 @@ public class AdministracionDeHotel {
         
         //Factura
         
-        System.out.println("*******************************************************************");
+       System.out.println("*******************************************************************");
         System.out.println("\t\t\t"+hotel.getNombre());
+        System.out.println("*******************************************************************");
+        System.out.println("   Ruc Factura:"+factura.getRuc()+"   Fecha:"+ factura.getFecha()+"    Numero:"+factura.getNumero());
         System.out.println("*******************************************************************");
         System.out.println("  Datos de hotel");
         System.out.println("\tRUC:        "+hotel.getRuc()+"  \tNumero de Estrellas:"+hotel.getNumeroEstrella()+"\n\tUbicacion:  "+hotel.getUbicacion());
@@ -76,19 +78,21 @@ public class AdministracionDeHotel {
         System.out.println("\tNumero Habitacion: "+h1.getNumeroHabitacion()
         +"\tNumero Banios: "+h1.getNumeroBaños()+"\n\tNumero de Camas: "+h1.getNumeroCamas()
         +"\tTipo de Habitacion: "+h1.getTipoHabitacion()+"\n\tPrecio Habitacion: "+h1.getPrecioHabitacion());
+        System.out.println("  Elementos aceo: "+b1.getElementosAceoPersonal());
         System.out.println("********************************************************************"); 
         System.out.println("  Servicios Adicionales");
         System.out.println("  |TvCable|Servicio Habitacion|Servicio Limpieza|Bar|Spa|Gimnacio|");
         System.out.println("   "+sr1.getTvCable()+"\t   "+sr1.getServicioHabitacion()+"\t       "+sr1.getServicioLimpieza()+"\t\t"+sr1.getBare()
                        +" "+sr1.getSpa()+" "+sr1.getGim());
         System.out.println("********************************************************************"); 
+        System.out.println("  Descripcion");
+        System.out.println("    Habitacion: \t    "+reservacion.getPrecioReservacion());
+        System.out.println("    Servicios Adicionales:  "+ reservacion.getPrecioServicio());
+        System.out.println("    Comida: \t\t    "+ re1.precioComidaPorHuesped(reservacion));
+        System.out.println("********************************************************************");
         System.out.println("  Costos Totales");
-        System.out.println("Habitacion: "+reservacion.getPrecioReservacion());
-
-        System.out.println("Servicios Adicionales: "+ reservacion.getPrecioServicio());
-        //System.out.println("Comida: "+re1.getTotalComida()+" "+re2.getTotalComida()+re3.getTotalComida());
-
-        System.out.println("Comida: "+ re1.precioComidaPorHuesped(reservacion));
+        System.out.println(factura);
+        System.out.println("********************************************************************");
 
 
      }

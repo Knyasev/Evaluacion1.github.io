@@ -11,7 +11,7 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Chef extends Usuario{
-   
+   private List<Cliente> cliente ;
     
     
     public void prepararPlato(){
@@ -21,6 +21,14 @@ public class Chef extends Usuario{
 
     public Chef(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
+    }
+
+    public List<Cliente> getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(List<Cliente> cliente) {
+        this.cliente = cliente;
     }
 
     
