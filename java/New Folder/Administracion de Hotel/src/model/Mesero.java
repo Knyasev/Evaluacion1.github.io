@@ -11,7 +11,8 @@ import java.util.List;
  */
 public class Mesero extends Usuario {
     
-     private Comedor comedor; 
+     private Comedor comedor;
+     
 
     public Mesero(Comedor comedor, Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
@@ -27,6 +28,15 @@ public class Mesero extends Usuario {
     public void setComedor(Comedor comedor) {
         this.comedor = comedor;
     }
+
+    public Comedor getComedor() {
+        return comedor;
+    }
+
+    public void setComedor(Comedor comedor) {
+        this.comedor = comedor;
+    }
+
 
     
 
