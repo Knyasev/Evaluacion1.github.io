@@ -9,13 +9,14 @@ package model;
  * @author Gonzalez G
  */
 public class AdministracionDeHotel {
-
+  
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
 
-        
+            
+
         //cliente
         Cliente c1= new Cliente("Mario Alejandro", "Martines Pineda","14784578");
         //System.out.println(c1);
@@ -69,11 +70,12 @@ public class AdministracionDeHotel {
         
         
         
-        ReservacionComida re1= new ReservacionComida("Especial","pollo al jugo ",2.00f);
-        ReservacionComida re2= new ReservacionComida("Continental","Costilla decerdo",3.00f);
-        ReservacionComida re3= new ReservacionComida("Ligero","Cafe con humas",1.00f);
+        ReservacionComida re1= new ReservacionComida(2.00f,1.00f,1.50f,"Pollo frito","Cafe con humas","Costilla de cerdo",true,true, true);
         //System.out.println(re1);
         re1.precioComidaPorHuesped(reservacion);
+        re1.costoTotalComida();
+        System.out.println(re1.precioComidaPorHuesped(reservacion));
+        
         //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
         RealizarEvento env1 = new RealizarEvento("Cumpleañios","14/09/2022","6 horas");
@@ -97,7 +99,8 @@ public class AdministracionDeHotel {
         Servicio servicio = new Servicio();
         
         reservacion.costosServicios(sr1, servicio, reservacion);
-      
+         
+        
         
         //Factura
         
@@ -124,7 +127,7 @@ public class AdministracionDeHotel {
         System.out.println("  Costos Totales");
         System.out.println("Habitacion: "+h1.getPrecioHabitacion());
         System.out.println("Servicios Adicionales: "+sr1.precioAddServicio(reservacion));
-        System.out.println("Comida"+re1.getTotalComida());
+        //System.out.println("Comida: "+re1.getTotalComida()+" "+re2.getTotalComida()+re3.getTotalComida());
 
      }
     
