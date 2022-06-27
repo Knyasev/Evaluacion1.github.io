@@ -13,8 +13,6 @@ public class Reservacion {
     
 
     private Integer numeroHuespedes;
-    
-    
     private Float precioServicio;
     private Float precioReservacion;
     private Float precioReservacionComida= 0f;
