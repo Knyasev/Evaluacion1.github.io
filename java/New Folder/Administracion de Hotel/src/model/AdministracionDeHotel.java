@@ -46,8 +46,8 @@ public class AdministracionDeHotel {
 
        Hotel hotel = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
      //System.out.println(hotel);
-     
-        Reservacion reservacion = new Reservacion( 1, 54f, 12f, 4f, 10,10f, "Presidencial");
+    
+        Reservacion reservacion = new Reservacion( 1, 54f, 12f, 4, 10f, "Presidencial");
         //System.out.println(reservacion);
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
@@ -56,6 +56,7 @@ public class AdministracionDeHotel {
         
         reservacion.getTiempoEstancia();
         //System.out.println(        reservacion.getNumeroHuespedes());
+        
         
         
       
@@ -69,6 +70,8 @@ public class AdministracionDeHotel {
         ReservacionComida re3= new ReservacionComida("Ligero","Cafe con humas",1.00f);
         //System.out.println(re1);
         re1.precioComidaPorHuesped(reservacion);
+        re2.precioComidaPorHuesped(reservacion);
+        re3.precioComidaPorHuesped(reservacion);
         //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
         RealizarEvento env1 = new RealizarEvento("Boda","14/09/2022","6 horas");
@@ -76,10 +79,13 @@ public class AdministracionDeHotel {
         
         //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
         //car4.precioComidaPorHuesped(reservacion));
-       
-        reservacion.costoReservacionComida(reservacion);
+        re1.setReservacion(reservacion);
+        re2.setReservacion(reservacion);
+        re3.setReservacion(reservacion);
+        System.out.println(reservacion.costoReservacionComida(reservacion));
       
-        
+       
+       
         
         
                                                     //tvCable,servicioHabitacion,servicioLimpieza,bare,spa,Gim
@@ -93,8 +99,10 @@ public class AdministracionDeHotel {
         //System.out.println(env1.precioEvento(sr1));
         Servicio servicio = new Servicio();
         
+        reservacion.reservarHabitacion(h1);
         reservacion.costosServicios(sr1, servicio, reservacion);
-      
+        reservacion.costoReservacionComida(reservacion);
+        reservacion.valorSubtotal();
         
         //Factura
         

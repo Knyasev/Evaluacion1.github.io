@@ -27,7 +27,7 @@ public class Banio {
         Float aux = 0f;
         numeroDuchas = 0;
         if(numeroDuchas > 1|| numeroDuchas <2){
-            aux = 2.0f ;  
+            aux = 1.0f ;  
             return aux;
         }else{
             System.out.println("escoja el dumero de baños entre 1 y 2"); 
