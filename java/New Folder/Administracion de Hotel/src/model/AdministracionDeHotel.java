@@ -23,15 +23,9 @@ public class AdministracionDeHotel {
         Cliente c2= new Cliente("Jose Rodrigo", "Velez Carrion","478541254");
         //System.out.println(c2);
         Cliente c3= new Cliente("Maria Julia", "Velazquez Romel","1958658");
-        //System.out.println(c3);
         
-        //banio
         Banio b1 = new Banio(2, "Shampo,Jabon,cepillo de dientes,Pasta dental");
-        //System.out.println(b1);
-        Banio b2 = new Banio(3, "Shampo,Jabon,cepillo de dientes,Pasta dental");
-        //System.out.println(b2);
         Banio b3 = new Banio(1, "Shampo,Jabon,cepillo de dientes,Pasta dental");
-        //System.out.println(b3);
        
        
 //        System.out.println(hotel);
@@ -46,28 +40,15 @@ public class AdministracionDeHotel {
 
 
        Hotel hotel = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
-     //System.out.println(hotel);
-
-    
-        Reservacion reservacion = new Reservacion( 1, 54f, 12f, 4, 10f, "Normal");
-
-     
-     
-     
-     
-      
-        
-       
-
-        //System.out.println(reservacion);
+        Reservacion reservacion = new Reservacion( 1, 4, 10f, "Normal");
         Recepcion recepcion = new  Recepcion(15, 14.5f, "Habitaciones Especiales",hotel);
         Recepcionista recepcionista = new Recepcionista( 5, "Gerente", "Wilson", "Gonzalez","1154875");
+        
         recepcion.getRecepcionList().add(recepcionista);
-        //System.out.println(recepcion);
+        
         
         reservacion.getTiempoEstancia();
         //System.out.println(        reservacion.getNumeroHuespedes());
-        
         
         
       
@@ -78,39 +59,40 @@ public class AdministracionDeHotel {
         
         ReservacionComida re1= new ReservacionComida(2.00f,1.00f,1.50f,"Pollo frito","Cafe con humas","Costilla de cerdo",true,true, true);
         //System.out.println(re1);
+        re1.precioComidaPorHuesped(reservacion);
+ 
+        //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
-
-        
-      
-        
-
+        //System.out.println(re1.precioComidaPorHuesped(reservacion));
         
         RealizarEvento env1 = new RealizarEvento("Cumpleanios","14/09/2022","6 horas");
+        //System.out.println(com1);
         
-        re1.setReservacion(reservacion);
-        re1.precioComidaPorHuesped(reservacion);
-              
-       
-       
-
+        //System.out.println(car2.precioComidaPorHuesped(reservacion)+car3.precioComidaPorHuesped(reservacion)+
+        //car4.precioComidaPorHuesped(reservacion));
+        
+        
+        
         
                                                     //tvCable,servicioHabitacion,servicioLimpieza,bare,spa,Gim
         ServicioAdicional sr1= new ServicioAdicional(true,false,false,false,true,false);
         env1.precioEvento(sr1);
         sr1.precioAddServicio(reservacion);
-      
+        //System.out.println(reservacion.getTiempoEstancia());
+        //System.out.println(sr1.precioAddServicio(reservacion));
         
-       
+        
+        //System.out.println(env1.precioEvento(sr1));
         Servicio servicio = new Servicio();
         
-        reservacion.reservarHabitacion(h1);
-        reservacion.costosServicios(sr1, servicio, reservacion);
-        reservacion.costoReservacionComida(reservacion,re1);
-        reservacion.valorSubtotal();
-
-         
         
- 
+        reservacion.valorSubtotal(reservacion, re1, h1, sr1, servicio);
+        
+       
+        
+        Factura factura = new Factura(125487978, "26/06/2022","1245645-654");
+        factura.calcularTotal(reservacion, re1, servicio, sr1, h1);
+        
         
         //Factura
         
@@ -135,9 +117,13 @@ public class AdministracionDeHotel {
                        +" "+sr1.getSpa()+" "+sr1.getGim());
         System.out.println("********************************************************************"); 
         System.out.println("  Costos Totales");
-        System.out.println("Habitacion: "+h1.getPrecioHabitacion());
+        System.out.println("Habitacion: "+reservacion.getPrecioReservacion());
+
         System.out.println("Servicios Adicionales: "+ reservacion.getPrecioServicio());
         //System.out.println("Comida: "+re1.getTotalComida()+" "+re2.getTotalComida()+re3.getTotalComida());
+
+        System.out.println("Comida: "+ re1.precioComidaPorHuesped(reservacion));
+
 
      }
     

@@ -41,7 +41,7 @@ public class Reservacion {
 
    
     
-   public Reservacion( Integer numeroHuespedes, Float precioHabitacion, Float precioReservacion, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+   public Reservacion( Integer numeroHuespedes, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
         this();
         this.numeroHuespedes = numeroHuespedes;
         this.precioReservacion = precioReservacion;
@@ -71,22 +71,22 @@ public class Reservacion {
     }
   
     
-    public Float reservarHabitacion (Habitacion habitacion){
-        
+    public Float reservarHabitacion (Habitacion habitacion){ 
         habitacion.calcularPrecioHabitacion();
         precioReservacion= ((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia);
-        
+
      return precioReservacion;
     }
     
 
 
-    public Float valorSubtotal(){
+    public Float valorSubtotal(Reservacion reservacion,ReservacionComida reservacionComida,Habitacion habitacion, ServicioAdicional servicioAdicional ,Servicio servicio){
+        costoReservacionComida(reservacion, reservacionComida);
+        costosServicios(servicioAdicional, servicio, reservacion);
+        reservarHabitacion(habitacion);
+        
         Float subtotal = precioReservacion + precioReservacionComida + precioServicio ;
-        System.out.println("servicio"+precioServicio);
-        System.out.println("comida"+precioReservacionComida);
-        System.out.println("reservacion"+precioReservacion);
-        System.out.println(subtotal);
+        
         return subtotal;
     }
     public Integer getNumeroHuespedes() {
