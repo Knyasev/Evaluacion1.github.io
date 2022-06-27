@@ -14,12 +14,9 @@ public class Cocina {
     
 
         private Hotel hotel;
-        private Chef chef;
-        
-        public void cocinar(){
         
         
-        }
+
 
     public Cocina(String tamanio, Boolean poseeHorno) {
         this.tamanio = tamanio;

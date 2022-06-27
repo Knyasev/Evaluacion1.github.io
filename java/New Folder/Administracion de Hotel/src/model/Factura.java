@@ -88,6 +88,11 @@ public class Factura {
         this.valorIva = valorIva;
     }
 
+    @Override
+    public String toString() {
+        return "    Subtotal:   " + valorSubtotal + "\n    Iva(12%):   " + valorIva + "\n    Total:      " + valorTotal ;
+    }
+
 
         
     
