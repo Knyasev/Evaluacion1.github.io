@@ -16,6 +16,16 @@ public class Mesero extends Usuario {
     public Mesero(Comedor comedor, Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
         this.comedor = comedor;
+        
+        
+    }
+
+    public Comedor getComedor() {
+        return comedor;
+    }
+
+    public void setComedor(Comedor comedor) {
+        this.comedor = comedor;
     }
 
     

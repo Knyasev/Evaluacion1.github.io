@@ -17,6 +17,7 @@ import java.util.LinkedList;
 
 public class Recepcionista extends Usuario{
     private List<Recepcion> recepcionList;
+    private List<Reservacion> reservacionList;
 
     public Recepcionista( Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
@@ -31,6 +32,15 @@ public class Recepcionista extends Usuario{
         this.recepcionList = recepcionList;
     }
 
+    public List<Reservacion> getReservacionList() {
+        return reservacionList;
+    }
+
+    public void setReservacionList(List<Reservacion> reservacionList) {
+        this.reservacionList = reservacionList;
+    }
+
+    
     @Override
     public String toString() {
         return "Recepcionista{" + "recepcionList=" + recepcionList + '}';
