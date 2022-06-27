@@ -11,6 +11,7 @@ package model;
 public class Cliente extends Persona{
     private Reservacion reservacion;
      
+    private Chef chef;
 
     public Cliente(String nombre, String Apellido, String Identificacion) {
         super(nombre, Apellido, Identificacion);
@@ -23,6 +24,15 @@ public class Cliente extends Persona{
     public void setReservacion(Reservacion reservacion) {
         this.reservacion = reservacion;
     }
+
+    public Chef getChef() {
+        return chef;
+    }
+
+    public void setChef(Chef chef) {
+        this.chef = chef;
+    }
+    
 
 
     
