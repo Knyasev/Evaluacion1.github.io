@@ -93,16 +93,17 @@ public class Habitacion {
         this.tipoHabitacion = "Normal";
         Float aux=0f ;
         if (poseeMirador ==true) {
-           aux =  20f+2;
+           aux =  10f+2;
               return aux;
         }else 
-            aux =  20f;
+            aux =  10f;
          return aux;
         
     }
      
     public Float calcularPrecioHabitacion(){
        CalcularPrecioBanio();
+   
        calcularPrecioCama();
        calcularPrecioHabitacionNormal();
         

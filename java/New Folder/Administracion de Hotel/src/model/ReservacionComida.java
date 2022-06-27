@@ -71,12 +71,7 @@ public class ReservacionComida {
          return totalComida;
     }
     
-    
-    public void costoTotalComida(){
-
-    }
-    
-    
+ 
 
     public Reservacion getReservacion() {
         return reservacion;
