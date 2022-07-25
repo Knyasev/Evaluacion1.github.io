@@ -8,9 +8,9 @@
     <session-factory>  
         <property name="hbm2ddl.auto">update</property>  
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>  
-        <property name="connection.url">jdbc:postgresql://localhost/AnStore</property>  
-        <property name="connection.username">anstore</property>  
-        <property name="connection.password">jhonel.2004</property>  
+        <property name="connection.url">jdbc:postgresql://localhost/Camerum</property>  
+        <property name="connection.username">camerum</property>  
+        <property name="connection.password">camerum123</property>  
         <property name="connection.driver_class">org.postgresql.Driver</property>  
         
         <!-- JDBC connection pool (use the built-in) -->

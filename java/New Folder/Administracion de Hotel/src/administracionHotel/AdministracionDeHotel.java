@@ -2,7 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package model;
+package administracionHotel;
+
+import model.Banio;
+import model.Bar;
+import model.Chef;
+import model.Cliente;
+import model.Cocina;
+import model.Comedor;
+import model.Factura;
+import model.Habitacion;
+import model.Hotel;
+import model.Mesero;
+import model.RealizarEvento;
+import model.Recepcion;
+import model.Recepcionista;
+import model.Reservacion;
+import model.ReservacionComida;
+import model.Servicio;
+import model.ServicioAdicional;
 
 /**
  *

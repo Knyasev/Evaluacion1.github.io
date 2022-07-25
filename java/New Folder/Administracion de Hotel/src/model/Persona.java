@@ -10,13 +10,13 @@ package model;
  */
 public class Persona {
     private String nombre ;
-    private String Apellido;
+    private String apellido;
     private Hotel  hotel ;
     private String identificacion;
 
     public Persona(String nombre, String Apellido, String identificacion) {
         this.nombre = nombre;
-        this.Apellido = Apellido;
+        this.apellido = Apellido;
         this.identificacion = identificacion;
     }
 
@@ -30,11 +30,11 @@ public class Persona {
     }
 
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
 
     public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
+        this.apellido = Apellido;
     }
 
     public Hotel getHotel() {
@@ -56,7 +56,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "nombre=" + nombre + "  Apellido=" + Apellido + "  identificacion=" + identificacion;
+        return "nombre=" + nombre + "  Apellido=" + apellido + "  identificacion=" + identificacion;
     }
     
     //evaluacion 14 //!=condicion13?//if14*12://else14*15;

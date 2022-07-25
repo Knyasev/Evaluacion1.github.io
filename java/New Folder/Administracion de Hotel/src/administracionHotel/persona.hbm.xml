@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="anstore.model.Pedido" table="PEDIDO">  
+    
+    <id name="pedido">  
+        <generator class="native"></generator>  
+    </id>  
+            
+            
+                private String nombre ;
+    private String Apellido;
+    private Hotel  hotel ;
+    private String identificacion;
+    
+
+    <property name="nombre"></property>  
+    <property name="apellido"></property>  
+    <property name="zona"></property>  
+    <property name="productoPedido"></property>  
+    <property name="cantidad"></property>  
+    <property name="id_Producto"></property>  
+     
+    
+
+  </class>  
+            
+ </hibernate-mapping> 
