@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model;
+package administracion.model;
 
 /**
  *
  * @author Usuario iTC
  */
-public class Usuario extends Persona{
-            private Integer numeroIdeEmpleado;
-            private String ocupacion;
+public class IdentificacionHotel {
+    private Integer numeroIdeEmpleado;
+    private String ocupacion;
 
-    public Usuario(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
-        super(nombre, Apellido, identificacion);
+
+    public IdentificacionHotel(Integer numeroIdeEmpleado, String ocupacion) {
         this.numeroIdeEmpleado = numeroIdeEmpleado;
         this.ocupacion = ocupacion;
     }
@@ -33,9 +33,7 @@ public class Usuario extends Persona{
     public void setOcupacion(String ocupacion) {
         this.ocupacion = ocupacion;
     }
-    
 
-   
+   private Usuario personal ; 
 
-      
 }

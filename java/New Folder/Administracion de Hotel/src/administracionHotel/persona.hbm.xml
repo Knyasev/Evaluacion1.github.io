@@ -6,23 +6,14 @@
  <hibernate-mapping>  
   <class name="anstore.model.Pedido" table="PEDIDO">  
     
-    <id name="pedido">  
+    <id name="persona">  
         <generator class="native"></generator>  
     </id>  
-            
-            
-                private String nombre ;
-    private String Apellido;
-    private Hotel  hotel ;
-    private String identificacion;
-    
+
 
     <property name="nombre"></property>  
     <property name="apellido"></property>  
-    <property name="zona"></property>  
-    <property name="productoPedido"></property>  
-    <property name="cantidad"></property>  
-    <property name="id_Producto"></property>  
+    <property name="identificacion"></property>  
      
     
 

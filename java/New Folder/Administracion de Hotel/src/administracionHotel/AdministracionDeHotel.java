@@ -4,23 +4,23 @@
  */
 package administracionHotel;
 
-import model.Banio;
-import model.Bar;
-import model.Chef;
-import model.Cliente;
-import model.Cocina;
-import model.Comedor;
-import model.Factura;
-import model.Habitacion;
-import model.Hotel;
-import model.Mesero;
-import model.RealizarEvento;
-import model.Recepcion;
-import model.Recepcionista;
-import model.Reservacion;
-import model.ReservacionComida;
-import model.Servicio;
-import model.ServicioAdicional;
+import administracion.model.Banio;
+import administracion.model.Bar;
+import administracion.model.Chef;
+import administracion.model.Cliente;
+import administracion.model.Cocina;
+import administracion.model.Comedor;
+import administracion.model.Factura;
+import administracion.model.Habitacion;
+import administracion.model.Hotel;
+import administracion.model.Mesero;
+import administracion.model.RealizarEvento;
+import administracion.model.Recepcion;
+import administracion.model.Recepcionista;
+import administracion.model.Reservacion;
+import administracion.model.ReservacionComida;
+import administracion.model.Servicio;
+import administracion.model.ServicioAdicional;
 
 import java.util.List;
 
