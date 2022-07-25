@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Chef extends Usuario{
    
+    private List<Cliente> clienteList;
     
     
     public void prepararPlato(){
@@ -26,7 +27,13 @@ public class Chef extends Usuario{
     
 
    
+    public List<Cliente> getClienteList() {
+        return clienteList;
+    }
 
+    public void setClienteList(List<Cliente> clienteList) {
+        this.clienteList = clienteList;
+    }
 
     @Override
     public String toString() {
