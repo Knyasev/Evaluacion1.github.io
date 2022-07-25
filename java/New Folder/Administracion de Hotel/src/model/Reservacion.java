@@ -14,12 +14,12 @@ public class Reservacion {
 
     private Integer numeroHuespedes;
     private Float precioServicio;
-    private Float precioReservacion;
+    private Float precioReservacionHabitacion= 0f;
     private Float precioReservacionComida= 0f;
     private Integer tiempoEstancia;
-    private Float tipoDescuento ;
-    
+    private Float descuento ;
     private String metodoPago ;
+    private Float precioReservacion;
 
     
     
@@ -39,19 +39,14 @@ public class Reservacion {
 
    
     
-   public Reservacion( Integer numeroHuespedes, Integer tiempoEstancia, Float tipoDescuento, String tipoHabitacion) {
+   public Reservacion( Integer numeroHuespedes, Integer tiempoEstancia, Float descuento, String tipoHabitacion) {
         this();
         this.numeroHuespedes = numeroHuespedes;
         this.precioReservacion = precioReservacion;
         this.tiempoEstancia = tiempoEstancia;
-        this.tipoDescuento = tipoDescuento;
-
-
+        this.descuento = descuento/100;
 
     }
-
-    
-    
 
 
     public float costosServicios(ServicioAdicional servicioAdicional,Servicio servicio,Reservacion reservacion){
@@ -71,21 +66,23 @@ public class Reservacion {
     
     public Float reservarHabitacion (Habitacion habitacion){ 
         habitacion.calcularPrecioHabitacion();
-        precioReservacion= ((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia);
-
-     return precioReservacion;
+        
+        Float auxPrecio= ((((habitacion.calcularPrecioHabitacion()  * numeroHuespedes)* tiempoEstancia )));
+        Float auxDescuento = precioReservacionHabitacion * descuento;
+        precioReservacionHabitacion = auxPrecio - auxDescuento;
+     return precioReservacionHabitacion;
     }
     
-
+   
 
     public Float valorSubtotal(Reservacion reservacion,ReservacionComida reservacionComida,Habitacion habitacion, ServicioAdicional servicioAdicional ,Servicio servicio){
         costoReservacionComida(reservacion, reservacionComida);
         costosServicios(servicioAdicional, servicio, reservacion);
         reservarHabitacion(habitacion);
         
-        Float subtotal = precioReservacion + precioReservacionComida + precioServicio ;
+        precioReservacion = precioReservacionHabitacion + precioReservacionComida + precioServicio ;
         
-        return subtotal;
+        return precioReservacion;
     }
     public Integer getNumeroHuespedes() {
         return numeroHuespedes;
@@ -106,11 +103,11 @@ public class Reservacion {
     }
 
     public Float getPrecioReservacion() {
-        return precioReservacion;
+        return precioReservacionHabitacion;
     }
 
     public void setPrecioReservacion(Float precioReservacion) {
-        this.precioReservacion = precioReservacion;
+        this.precioReservacionHabitacion = precioReservacion;
     }
 
     public Integer getTiempoEstancia() {
@@ -124,11 +121,11 @@ public class Reservacion {
   
 
     public Float getTipoDescuento() {
-        return tipoDescuento;
+        return descuento;
     }
 
     public void setTipoDescuento(Float tipoDescuento) {
-        this.tipoDescuento = tipoDescuento;
+        this.descuento = tipoDescuento;
     }
 
    
@@ -201,6 +198,7 @@ public class Reservacion {
         this.habitacionList = habitacionList;
     }
     
+    
 
 //    @Override
 //    public String toString() {
@@ -213,6 +211,22 @@ public class Reservacion {
 //       
 //    }
 //    
+
+    public Float getPrecioReservacionHabitacion() {
+        return precioReservacionHabitacion;
+    }
+
+    public void setPrecioReservacionHabitacion(Float precioReservacionHabitacion) {
+        this.precioReservacionHabitacion = precioReservacionHabitacion;
+    }
+
+    public Float getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(Float descuento) {
+        this.descuento = descuento;
+    }
     
     
 }

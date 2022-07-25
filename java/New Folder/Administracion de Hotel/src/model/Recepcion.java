@@ -10,44 +10,27 @@ import java.util.LinkedList;
  * @author Usuario iTC
  */
 public class Recepcion {
-    private Integer numeroLlaveHabitacion ;
-    private Float precioNoche;
     private String InformacionHabitacion;
     private Integer numeroHabitacionesDisponibles;
     
-    private  List<Recepcionista> recepcionList;
-    private Hotel hotel;
-    private List<Reservacion> reservacionList;
+   private  List<Recepcionista> recepcionList;
+   private Hotel hotel;
 
-
-    
-
-
-    public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Hotel hotel) {
-        this.numeroLlaveHabitacion = numeroLlaveHabitacion;
-        this.precioNoche = precioNoche;
+   public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Hotel hotel) {
+      
         this.InformacionHabitacion = InformacionHabitacion;
         this.hotel = hotel;
         recepcionList = new LinkedList<>();
     }
 
+
     
 
-    public Integer getNumeroLlaveHabitacion() {
-        return numeroLlaveHabitacion;
-    }
 
-    public void setNumeroLlaveHabitacion(Integer numeroLlaveHabitacion) {
-        this.numeroLlaveHabitacion = numeroLlaveHabitacion;
-    }
 
-    public Float getPrecioNoche() {
-        return precioNoche;
-    }
 
-    public void setPrecioNoche(Float precioNoche) {
-        this.precioNoche = precioNoche;
-    }
+    
+
 
     public String getInformacionHabitacion() {
         return InformacionHabitacion;
@@ -81,27 +64,8 @@ public class Recepcion {
         this.hotel = hotel;
     }
 
-    public List<Reservacion> getReservacionList() {
-        return reservacionList;
-    }
-
-    public void setReservacionList(List<Reservacion> reservacionList) {
-        this.reservacionList = reservacionList;
-    }
 
 
 
-
-
-    @Override
-    public String toString() {
-        return "Recepcion{" + "numeroLlaveHabitacion=" + numeroLlaveHabitacion + ", precioNoche=" + precioNoche + ", InformacionHabitacion=" + InformacionHabitacion + ", numeroHabitacionesDisponibles=" + numeroHabitacionesDisponibles + ", recepcionList=" + recepcionList + ", hotel=" + hotel + '}';
-    }
- 
-
-//    public String toString() {
-////        return "Recepcion{" + "numeroLlaveHabitacion=" + numeroLlaveHabitacion + ", precioNoche=" + precioNoche + ", InformacionHabitacion=" + InformacionHabitacion + ", numeroHabitacionesDisponibles=" + numeroHabitacionesDisponibles + ", recepcionList=" + recepcionList + ", hotel=" + hotel + '}';
-//    }
-// 
 
 }

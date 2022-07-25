@@ -22,6 +22,8 @@ import model.ReservacionComida;
 import model.Servicio;
 import model.ServicioAdicional;
 
+import java.util.List;
+
 /**
  *
  * @author Gonzalez G
@@ -31,7 +33,7 @@ public class AdministracionDeHotel {
     /**
      * @param args the command line arguments
      */
-public static void main(String[] args) {
+    public static void main(String[] args) {
         Hotel hotel = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
         Habitacion h1 = new Habitacion(true,2,2,10.10f,"Presidencial",20.00f,111);     
         Banio b1 = new Banio(2, "Shampo,Jabon,cepillo de dientes,Pasta dental");
@@ -74,8 +76,11 @@ public static void main(String[] args) {
         reservacion.valorSubtotal(reservacion, re1, h1, sr1, servicio);
         Factura factura = new Factura(125487978, "26/06/2022","1245645-654");
         factura.calcularTotal(reservacion, re1, servicio, sr1, h1);
+        
+        
         //Factura
-        System.out.println("*******************************************************************");
+        
+       System.out.println("*******************************************************************");
         System.out.println("\t\t\t"+hotel.getNombre());
         System.out.println("*******************************************************************");
         System.out.println("   Ruc Factura:"+factura.getRuc()+"   Fecha:"+ factura.getFecha()+"    Numero:"+factura.getNumero());

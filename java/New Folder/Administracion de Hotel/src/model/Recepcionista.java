@@ -40,9 +40,11 @@ public class Recepcionista extends Usuario{
         this.reservacionList = reservacionList;
     }
 
-  
-
-
+    
+    @Override
+    public String toString() {
+        return "Recepcionista{" + "recepcionList=" + recepcionList + '}';
+    }
 }
         
     

@@ -68,6 +68,7 @@ public class ReservacionComida {
              //System.out.println(num3);
          }
           totalComida=num1+num2+num3;
+          
          return totalComida;
     }
     
