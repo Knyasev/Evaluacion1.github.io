@@ -11,7 +11,7 @@ import java.util.LinkedList;
  */
 public class Reservacion {
     
-
+    private int reservacionId;
     private Integer numeroHuespedes;
     private Float precioServicio;
     private Float precioReservacionHabitacion= 0f;
@@ -226,6 +226,14 @@ public class Reservacion {
 
     public void setDescuento(Float descuento) {
         this.descuento = descuento;
+    }
+
+    public int getReservacionId() {
+        return reservacionId;
+    }
+
+    public void setReservacionId(int reservacionId) {
+        this.reservacionId = reservacionId;
     }
     
     

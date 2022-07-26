@@ -9,6 +9,7 @@ package administracion.model;
  * @author Gonzalez G
  */
 public class ReservacionComida {
+    private int numeroReservacion;
     private float precioAlmuerzo;
     private float precioDesayuno;
     private float precioCena;
@@ -153,6 +154,86 @@ public class ReservacionComida {
 
     public void setChef(Chef chef) {
         this.chef = chef;
+    }
+
+    public int getNumeroReservacion() {
+        return numeroReservacion;
+    }
+
+    public void setNumeroReservacion(int numeroReservacion) {
+        this.numeroReservacion = numeroReservacion;
+    }
+
+    public String getAlmuerzo() {
+        return Almuerzo;
+    }
+
+    public void setAlmuerzo(String Almuerzo) {
+        this.Almuerzo = Almuerzo;
+    }
+
+    public String getDesayuno() {
+        return Desayuno;
+    }
+
+    public void setDesayuno(String Desayuno) {
+        this.Desayuno = Desayuno;
+    }
+
+    public String getCena() {
+        return Cena;
+    }
+
+    public void setCena(String Cena) {
+        this.Cena = Cena;
+    }
+
+    public boolean isQuiereAlmuerzo() {
+        return quiereAlmuerzo;
+    }
+
+    public void setQuiereAlmuerzo(boolean quiereAlmuerzo) {
+        this.quiereAlmuerzo = quiereAlmuerzo;
+    }
+
+    public boolean isQuiereDesayuno() {
+        return quiereDesayuno;
+    }
+
+    public void setQuiereDesayuno(boolean quiereDesayuno) {
+        this.quiereDesayuno = quiereDesayuno;
+    }
+
+    public boolean isQuiereCena() {
+        return quiereCena;
+    }
+
+    public void setQuiereCena(boolean quiereCena) {
+        this.quiereCena = quiereCena;
+    }
+
+    public float getNum1() {
+        return num1;
+    }
+
+    public void setNum1(float num1) {
+        this.num1 = num1;
+    }
+
+    public float getNum2() {
+        return num2;
+    }
+
+    public void setNum2(float num2) {
+        this.num2 = num2;
+    }
+
+    public float getNum3() {
+        return num3;
+    }
+
+    public void setNum3(float num3) {
+        this.num3 = num3;
     }
     
     

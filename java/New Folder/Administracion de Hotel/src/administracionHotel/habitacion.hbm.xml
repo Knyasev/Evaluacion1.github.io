@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+ <hibernate-mapping>  
+  <class name="administracionHotel.model.Habitacion" table="HABITACION">  
+    
+    <id name="numeroHabitacion">  
+        <generator class="native"></generator>  
+    </id>  
+    
+    <property name="precioHabitacion"></property>  
+    <property name="tipoHabitacion"></property>  
+    <property name="numeroCamas"></property>  
+    <property name="numeroBaños"></property>
+    <property name="poseeMirador"></property>   
+    
+     
+  </class>        
+ </hibernate-mapping>

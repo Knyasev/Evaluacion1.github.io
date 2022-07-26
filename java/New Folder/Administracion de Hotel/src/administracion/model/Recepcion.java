@@ -10,6 +10,7 @@ import java.util.LinkedList;
  * @author Usuario iTC
  */
 public class Recepcion {
+    private int recepcionid;
     private String InformacionHabitacion;
     private Integer numeroHabitacionesDisponibles;
     
@@ -62,6 +63,14 @@ public class Recepcion {
 
     public void setHotel(Hotel hotel) {
         this.hotel = hotel;
+    }
+
+    public int getRecepcionid() {
+        return recepcionid;
+    }
+
+    public void setRecepcionid(int recepcionid) {
+        this.recepcionid = recepcionid;
     }
 
 

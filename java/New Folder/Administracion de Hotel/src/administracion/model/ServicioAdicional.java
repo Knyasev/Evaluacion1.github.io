@@ -10,7 +10,7 @@ import java.util.LinkedList;
  * @author Gonzalez G
  */
 public class ServicioAdicional {
-       
+        private int numeroServicio;
         private Boolean tvCable;
         private Boolean servicioHabitacion;
         private Boolean servicioLimpieza;
@@ -273,8 +273,16 @@ public class ServicioAdicional {
     public String toString() {
         return "ServicioAdicional{" + "tvCable=" + tvCable + ", servicioHabitacion=" + servicioHabitacion + ", servicioLimpieza=" + servicioLimpieza + ", precioTvCable=" + precioTvCable + ", precioServicioHabitacion=" + precioServicioHabitacion + ", precioServicioLimpieza=" + precioServicioLimpieza ;
     }
+
+    public int getNumeroServicio() {
+        return numeroServicio;
+    }
+
+    public void setNumeroServicio(int numeroServicio) {
+        this.numeroServicio = numeroServicio;
+    }
     
     
-        
+    
         
 }
