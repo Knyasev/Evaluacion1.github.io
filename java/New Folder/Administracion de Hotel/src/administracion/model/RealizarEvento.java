@@ -9,6 +9,7 @@ package administracion.model;
  * @author Gonzalez G
  */
 public class RealizarEvento {
+    private int eventoId;
     private String tipoEvento;
     private String fecha;
     private String Duracion;
@@ -85,6 +86,14 @@ public class RealizarEvento {
 
     public void setServicioAdicional(ServicioAdicional servicioAdicional) {
         this.servicioAdicional = servicioAdicional;
+    }
+
+    public int getEventoId() {
+        return eventoId;
+    }
+
+    public void setEventoId(int eventoId) {
+        this.eventoId = eventoId;
     }
     
     

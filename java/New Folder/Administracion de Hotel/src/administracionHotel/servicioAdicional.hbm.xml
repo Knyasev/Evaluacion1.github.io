@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="administracionHotel.model.ServicioAdicional" table="SERVICIOADICIONAL">  
+    
+    <id name="numeroServicio">  
+        <generator class="native"></generator>  
+    </id>  
+    
+    <property name="tvCable"></property>  
+    <property name="servicioHabitacion"></property>  
+    <property name="servicioLimpieza"></property>
+    <property name="bare"></property>  
+    <property name="spa"></property>  
+    <property name="Gim"></property>  
+    
+    <property name="precioTvCable"></property>  
+    <property name="precioServicioHabitacion"></property>  
+    <property name="precioServicioLimpieza"></property>
+    <property name="preBare"></property>  
+    <property name="preSpa"></property>  
+    <property name="preGim"></property>
+     
+  </class>        
+ </hibernate-mapping> 

@@ -10,7 +10,7 @@ import java.util.List;
  * @author Usuario iTC
  */
 public class Mesero extends Usuario {
-    
+    private int meseroId;
      private Comedor comedor;
      
 
@@ -27,6 +27,14 @@ public class Mesero extends Usuario {
 
     public void setComedor(Comedor comedor) {
         this.comedor = comedor;
+    }
+
+    public int getMeseroId() {
+        return meseroId;
+    }
+
+    public void setMeseroId(int meseroId) {
+        this.meseroId = meseroId;
     }
 
    

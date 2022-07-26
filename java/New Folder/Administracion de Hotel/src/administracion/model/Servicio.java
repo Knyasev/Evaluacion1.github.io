@@ -9,7 +9,9 @@ import java.util.List;
  * @author Gonzalez G
  */
 public class Servicio {
+    private int numeroServicio;
     private float internet=0.20f;
+    
     private Reservacion reservacion;
     private Hotel hotel;
     private List<ServicioAdicional> servicioAdicionalList;
@@ -52,6 +54,14 @@ public class Servicio {
 
     public void setServicioAdicionalList(List<ServicioAdicional> servicioAdicionalList) {
         this.servicioAdicionalList = servicioAdicionalList;
+    }
+
+    public int getNumeroServicio() {
+        return numeroServicio;
+    }
+
+    public void setNumeroServicio(int numeroServicio) {
+        this.numeroServicio = numeroServicio;
     }
     
     

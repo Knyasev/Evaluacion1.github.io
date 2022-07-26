@@ -8,14 +8,13 @@ package administracion.model;
 import java.util.List;
 import java.util.LinkedList;
 
-
-
 /**
  *
  * @author Usuario iTC
  */
 
 public class Recepcionista extends Usuario{
+    private int recepcionistaId;
     private List<Recepcion> recepcionList;
     private List<Reservacion> reservacionList;
 
@@ -40,11 +39,21 @@ public class Recepcionista extends Usuario{
         this.reservacionList = reservacionList;
     }
 
+    public int getRecepcionistaId() {
+        return recepcionistaId;
+    }
+
+    public void setRecepcionistaId(int recepcionistaId) {
+        this.recepcionistaId = recepcionistaId;
+    }
+
     
     @Override
     public String toString() {
         return "Recepcionista{" + "recepcionList=" + recepcionList + '}';
     }
+    
+    
 }
         
     

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+  <?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+ <hibernate-mapping>  
+  <class name="administracionHotel.model.ReservacionComida" table="RESERVACIONCOMIDA">  
+    
+    <id name="numeroReservacion">  
+        <generator class="native"></generator>  
+    </id>  
+    
+    <property name="quiereAlmuerzo"></property>  
+    <property name="quiereDesayuno"></property>  
+    <property name="quiereCena"></property>
+    <property name="Almuerzo"></property>  
+    <property name="Desayuno"></property>  
+    <property name="Cena"></property>  
+    
+    <property name="precioAlmuerzo"></property>  
+    <property name="precioDesayuno"></property>  
+    <property name="precioCena"></property>
+    <property name="precio"></property>  
+    <property name="totalComida"></property>  
+    <property name="numDias"></property>
+     
+  </class>        
+ </hibernate-mapping> 
