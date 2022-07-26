@@ -13,6 +13,7 @@ public class Persona {
     private String apellido;
     private Hotel  hotel ;
     private String identificacion;
+    private int persona_id;
 
     public Persona(String nombre, String Apellido, String identificacion) {
         this.nombre = nombre;
@@ -52,6 +53,15 @@ public class Persona {
     public void setIdentificacion(String identificacion) {
         this.identificacion = identificacion;
     }
+
+    public int getPersona_id() {
+        return persona_id;
+    }
+
+    public void setPersona_id(int persona_id) {
+        this.persona_id = persona_id;
+    }
+    
     
 
     @Override

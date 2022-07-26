@@ -12,6 +12,7 @@ public class Bar {
         private Integer numBebidasNoAlcoholicas;
         private Integer numBebidasAlcoholicas;
         private float precioBar=4.00f;
+        private int bar_id;
         
       
         private ServicioAdicional servicioAdd;
@@ -50,6 +51,15 @@ public class Bar {
     public void setPrecioBar(float precioBar) {
         this.precioBar = precioBar;
     }
+
+    public int getBar_id() {
+        return bar_id;
+    }
+
+    public void setBar_id(int bar_id) {
+        this.bar_id = bar_id;
+    }
+    
 
     @Override
     public String toString() {

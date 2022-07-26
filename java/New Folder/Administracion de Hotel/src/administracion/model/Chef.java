@@ -13,6 +13,7 @@ import java.util.List;
 public class Chef extends Usuario{
    
     private List<Cliente> clienteList;
+    private int chef_id;
     
     
     public void prepararPlato(){
@@ -34,6 +35,15 @@ public class Chef extends Usuario{
     public void setClienteList(List<Cliente> clienteList) {
         this.clienteList = clienteList;
     }
+
+    public int getChef_id() {
+        return chef_id;
+    }
+
+    public void setChef_id(int chef_id) {
+        this.chef_id = chef_id;
+    }
+    
 
     @Override
     public String toString() {

@@ -12,7 +12,9 @@ import java.util.LinkedList;
 public class Comedor {
     private Integer numeroMesas;
     private Integer numeroSillas; 
-    private  String numeroCubiertos;   
+    private  String numeroCubiertos;  
+    private  int comedor_id;
+    
     
     
         private Hotel hotel;
@@ -81,6 +83,15 @@ public class Comedor {
     public void setMeseroList(List<Mesero> meseroList) {
         this.meseroList = meseroList;
     }
+
+    public int getComedor_id() {
+        return comedor_id;
+    }
+
+    public void setComedor_id(int comedor_id) {
+        this.comedor_id = comedor_id;
+    }
+    
 
     @Override
     public String toString() {

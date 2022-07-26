@@ -11,6 +11,7 @@ package administracion.model;
 public class Cocina {
     private String tamanio;
     private Boolean poseeHorno;
+    private int cocina_id;
     
 
         private Hotel hotel;
@@ -22,6 +23,41 @@ public class Cocina {
         this.tamanio = tamanio;
         this.poseeHorno = poseeHorno;
     }
+
+    public int getCocina_id() {
+        return cocina_id;
+    }
+
+    public void setCocina_id(int cocina_id) {
+        this.cocina_id = cocina_id;
+    }
+
+    public String getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(String tamanio) {
+        this.tamanio = tamanio;
+    }
+
+    public Boolean getPoseeHorno() {
+        return poseeHorno;
+    }
+
+    public void setPoseeHorno(Boolean poseeHorno) {
+        this.poseeHorno = poseeHorno;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
+    }
+    
+    
+    
 
     @Override
     public String toString() {

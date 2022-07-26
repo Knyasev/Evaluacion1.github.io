@@ -18,6 +18,7 @@ public class Habitacion {
     private String tipoHabitacion;
     private Float precioHabitacion;
     private Integer numeroHabitacion; 
+
     
     
     private Hotel hotel;

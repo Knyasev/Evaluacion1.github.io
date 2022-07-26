@@ -9,6 +9,7 @@ package administracion.model;
  * @author Usuario iTC
  */
 public class Conserje extends Usuario {
+    private int conserje_id;
     
     
     public void limpiarHabitacion(){
@@ -19,6 +20,16 @@ public class Conserje extends Usuario {
     public Conserje(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(numeroIdeEmpleado, ocupacion, nombre, Apellido, identificacion);
     }
+
+    public int getConserje_id() {
+        return conserje_id;
+    }
+
+    public void setConserje_id(int conserje_id) {
+        this.conserje_id = conserje_id;
+    }
+    
+    
     
 
     

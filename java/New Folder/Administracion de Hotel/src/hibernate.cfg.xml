@@ -26,9 +26,15 @@
         <property name="show_sql">true</property>
         
         
-        <mapping resource="anstore/datosPersona.hbm.xml"/>
-        <mapping resource="anstore/producto.hbm.xml"/>
-        <mapping resource="anstore/pedido.hbm.xml"/>
+        <mapping resource="administracionHotel/persona.hbm.xml"/>
+        <mapping resource="administracionHotel/banio.hbm.xml"/>
+        <mapping resource="administracionHotel/bar.hbm.xml"/>
+        <mapping resource="administracionHotel/chef.hbm.xml"/>
+        <mapping resource="administracionHotel/cliente.hbm.xml"/>
+        <mapping resource="administracionHotel/cocina.hbm.xml"/>
+        <mapping resource="administracionHotel/comedor.hbm.xml"/>
+        <mapping resource="administracionHotel/conserje.hbm.xml"/>
+
 
 
         

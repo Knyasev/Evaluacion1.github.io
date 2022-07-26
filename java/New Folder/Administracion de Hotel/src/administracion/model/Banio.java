@@ -12,6 +12,7 @@ public class Banio {
     private Integer numeroDuchas;
     private String elementosAceoPersonal;
     private Habitacion habitacion;
+    private int banio;
 
     public Banio() {
     }
@@ -50,6 +51,26 @@ public class Banio {
     public void setElementosAceoPersonal(String elementosAceoPersonal) {
         this.elementosAceoPersonal = elementosAceoPersonal;
     }
+
+    public Habitacion getHabitacion() {
+        return habitacion;
+    }
+
+    public void setHabitacion(Habitacion habitacion) {
+        this.habitacion = habitacion;
+    }
+
+    public int getBanio() {
+        return banio;
+    }
+
+    public void setBanio(int banio) {
+        this.banio = banio;
+    }
+
+
+    
+    
 
     @Override
     public String toString() {

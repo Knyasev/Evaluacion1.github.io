@@ -51,12 +51,6 @@ public class ServicioAdicional {
         
     }
 
-    
-        
-        
-
-    
-    
     public float precioAddServicio(Reservacion reservacion){
          float aux=0f;
          
@@ -97,9 +91,6 @@ public class ServicioAdicional {
         this.precioTotalServicios = precioTotalServicios;
     }
 
-        
-        
-   
     public Boolean getTvCable() {
         return tvCable;
     }

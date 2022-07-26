@@ -4,16 +4,15 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
   
  <hibernate-mapping>  
-  <class name="administracion.model.Persona" table="PERSONA">  
+  <class name="administracion.model.Banio" table="BANIO">  
     
-    <id name="persona_id">  
+    <id name="banio">  
         <generator class="native"></generator>  
     </id>  
 
+    <property name="numeroDuchas"></property>  
+    <property name="elementosAceoPersonal"></property>  
 
-    <property name="nombre"></property>  
-    <property name="apellido"></property>  
-    <property name="identificacion"></property>  
      
     
 

@@ -11,6 +11,7 @@ package administracion.model;
 public class Cliente extends Persona{
     private Reservacion reservacion;
     private Chef chef ;
+    private int cliente_id;
      
   
 
@@ -35,6 +36,15 @@ public class Cliente extends Persona{
     public void setChef(Chef chef) {
         this.chef = chef;
     }
+
+    public int getCliente_id() {
+        return cliente_id;
+    }
+
+    public void setCliente_id(int cliente_id) {
+        this.cliente_id = cliente_id;
+    }
+    
 
   
 }
