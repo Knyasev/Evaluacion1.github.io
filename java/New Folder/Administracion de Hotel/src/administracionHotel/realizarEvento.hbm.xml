@@ -3,7 +3,7 @@
  "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
  <hibernate-mapping>  
-  <class name="administracionHotel.model.RealizarEvento" table="REALIZAREVENTO">  
+  <class name="administracion.model.RealizarEvento" table="REALIZAREVENTO">  
     
     <id name="eventoId">  
         <generator class="native"></generator>  

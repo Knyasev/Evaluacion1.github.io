@@ -48,7 +48,7 @@ public class Chef extends Usuario{
     @Override
     public String toString() {
         return "Nombre: " +getNombre()+" Apellido "+getApellido()+" Identificacion: " +getIdentificacion()+"   Ocupacion "
-                +getOcupacion()+"    Numero Empleado "+ getNumeroIdeEmpleado() ;
+                +getOcupacion()+"    Numero Empleado "+ getEmpleadoId() ;
     }
 
 

@@ -3,10 +3,10 @@
  "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
  <hibernate-mapping>  
-  <class name="administracionHotel.model.Habitacion" table="HABITACION">  
+  <class name="administracion.model.Habitacion" table="HABITACION">  
     
     <id name="numeroHabitacion">  
-        <generator class="native"></generator>  
+        <generator class="assigned"></generator>  
     </id>  
     
     <property name="precioHabitacion"></property>  

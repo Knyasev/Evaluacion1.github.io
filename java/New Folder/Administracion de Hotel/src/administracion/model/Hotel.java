@@ -95,13 +95,7 @@ public class Hotel {
         this.numeroEstrella = numeroEstrella;
     }
 
-    public Boolean getPoseePiscina() {
-        return poseePiscina;
-    }
-
-    public void setPoseePiscina(Boolean poseePiscina) {
-        this.poseePiscina = poseePiscina;
-    }
+ 
 
     public String getUbicacion() {
         return ubicacion;
@@ -181,6 +175,14 @@ public class Hotel {
 
     public void setPersonaList(List<Persona> personaList) {
         this.personaList = personaList;
+    }
+
+    public Boolean getPoseePiscina() {
+        return poseePiscina;
+    }
+
+    public void setPoseePiscina(Boolean poseePiscina) {
+        this.poseePiscina = poseePiscina;
     }
     
     

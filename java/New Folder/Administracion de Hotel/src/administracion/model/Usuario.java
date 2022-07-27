@@ -9,22 +9,24 @@ package administracion.model;
  * @author Usuario iTC
  */
 public class Usuario extends Persona{
-            private Integer numeroIdeEmpleado;
+            private int empleadoId;
             private String ocupacion;
 
-    public Usuario(Integer numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
+    public Usuario(int numeroIdeEmpleado, String ocupacion, String nombre, String Apellido, String identificacion) {
         super(nombre, Apellido, identificacion);
-        this.numeroIdeEmpleado = numeroIdeEmpleado;
+        this.empleadoId = numeroIdeEmpleado;
         this.ocupacion = ocupacion;
     }
 
-    public Integer getNumeroIdeEmpleado() {
-        return numeroIdeEmpleado;
+    public int getEmpleadoId() {
+        return empleadoId;
     }
 
-    public void setNumeroIdeEmpleado(Integer numeroIdeEmpleado) {
-        this.numeroIdeEmpleado = numeroIdeEmpleado;
+    public void setEmpleadoId(int empleadoId) {
+        this.empleadoId = empleadoId;
     }
+
+   
 
     public String getOcupacion() {
         return ocupacion;

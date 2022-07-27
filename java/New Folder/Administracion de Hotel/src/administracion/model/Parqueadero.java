@@ -18,6 +18,12 @@ public class Parqueadero {
     public Parqueadero() {
     }
 
+    public Parqueadero(String datosVehiculo) {
+        this();
+        this.datosVehiculo = datosVehiculo;
+    }
+
+    
     public Parqueadero(Integer numeroParqueadero, String datosVehiculo, Hotel hotel) {
         this();
         this.numeroParqueadero = numeroParqueadero;

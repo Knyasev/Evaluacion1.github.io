@@ -8,7 +8,21 @@ import administracion.dao.DAOBanio;
 import administracion.dao.DAOBar;
 import administracion.dao.DAOChef;
 import administracion.dao.DAOCliente;
+import administracion.dao.DAOFactura;
+import administracion.dao.DAOGerente;
+import administracion.dao.DAOHabitacion;
+import administracion.dao.DAOHotel;
+import administracion.dao.DAOMesero;
+import administracion.dao.DAOParqueadero;
 import administracion.dao.DAOPersona;
+import administracion.dao.DAORealizarEvento;
+import administracion.dao.DAORecepcion;
+import administracion.dao.DAORecepcionista;
+import administracion.dao.DAOReservacion;
+import administracion.dao.DAOReservacionComida;
+import administracion.dao.DAOServicio;
+import administracion.dao.DAOServicioAdicional;
+import administracion.dao.DAOUsuario;
 import administracion.dao.HibernateUtil;
 import administracion.model.Banio;
 import administracion.model.Bar;
@@ -17,9 +31,11 @@ import administracion.model.Cliente;
 import administracion.model.Cocina;
 import administracion.model.Comedor;
 import administracion.model.Factura;
+import administracion.model.Gerente;
 import administracion.model.Habitacion;
 import administracion.model.Hotel;
 import administracion.model.Mesero;
+import administracion.model.Parqueadero;
 import administracion.model.Persona;
 import administracion.model.RealizarEvento;
 import administracion.model.Recepcion;
@@ -28,6 +44,7 @@ import administracion.model.Reservacion;
 import administracion.model.ReservacionComida;
 import administracion.model.Servicio;
 import administracion.model.ServicioAdicional;
+import administracion.model.Usuario;
 
 import java.util.List;
 
@@ -41,7 +58,6 @@ public class AdministracionDeHotel {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        HibernateUtil.getSessionFactory();
         
         DAOPersona dAOPersona = new DAOPersona();
         Persona p1 = new Persona("Wilson", "Gonzales", "147852365");
@@ -63,12 +79,60 @@ public class AdministracionDeHotel {
         Cliente c1= new Cliente("Fausto","Roldan","11225563");
         dAOCliente.guardarCliente(c1);
         
+        DAOUsuario aOUsuario = new DAOUsuario();
+        Usuario usuario = new Usuario(1548877, "empleado","Wilson", "Gonzalez","121578451");
+        aOUsuario.guardar(usuario);
         
+        DAOServicioAdicional aOServicioAdicional = new DAOServicioAdicional();
+        ServicioAdicional sa = new ServicioAdicional(true,false, false,false, true, false);
+        aOServicioAdicional.guardar(sa);
         
+        DAOServicio daoservicio = new DAOServicio();
+        Servicio s = new Servicio();
+        daoservicio.guardar(s);
         
+        DAOReservacionComida daorc = new DAOReservacionComida();
+        ReservacionComida reservacionComida = new ReservacionComida(5f, 2f, 1.50f,"Arroz con pollo","Sopa","postre", true, true, true);
+        daorc.guardar(reservacionComida);
         
+        DAOReservacion daoreservacion = new DAOReservacion();
+        Reservacion reservacion = new Reservacion(2, 5, 10f, "Presidencial");
+        daoreservacion.guardar(reservacion);
         
+        DAORecepcionista daorecepcionista = new DAORecepcionista();
+        Recepcionista recepcionista  = new Recepcionista(12, "recepecionoista", "Wiliam", "Queen", "4545874412");
+        daorecepcionista.guardar(recepcionista);
         
+        DAORecepcion daorecepcion = new DAORecepcion();
+        Recepcion r= new Recepcion("Grande con ventana",15);
+        daorecepcion.guardar(r);
+        
+        DAORealizarEvento aORealizarEvento = new DAORealizarEvento();
+        RealizarEvento realizarEvento = new RealizarEvento("cumpleaños","12-05-2020","12horas");
+        aORealizarEvento.guardar(realizarEvento);
+        
+        DAOParqueadero daoparqueadero = new DAOParqueadero();
+        Parqueadero par = new Parqueadero("AB215-54");
+        daoparqueadero.guardar(par);
+        
+        DAOMesero daomesero =new  DAOMesero();
+        Mesero mesero = new Mesero( 13, "mesero","Wilson","camachop", "215454541");
+        daomesero.guardar(mesero);
+        
+        DAOHotel daohotel = new DAOHotel();
+        Hotel h = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
+        
+        DAOHabitacion daohabitacion = new DAOHabitacion();
+        Habitacion habitacion = new Habitacion(true,2,2,10.10f,"Presidencial",20.00f,111);
+     
+        
+        DAOGerente daogerente = new DAOGerente();
+        Gerente gerente = new Gerente(12,"gerente","Alex","Carrion","123564584");
+        daogerente.guardar(gerente);
+        
+        DAOFactura aOFactura = new DAOFactura();
+        Factura f = new Factura(154, "1258","1254874");
+        aOFactura.guardar(f);
         
 //        Hotel hotel = new Hotel("CAMERUM HOTEL", 5,15,"12454758", 5,true, "Los Lagos","11-05-2018");
 //        Habitacion h1 = new Habitacion(true,2,2,10.10f,"Presidencial",20.00f,111);     

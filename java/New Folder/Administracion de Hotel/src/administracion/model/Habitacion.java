@@ -25,6 +25,7 @@ public class Habitacion {
     private List<Reservacion> reservacionList;
     private List<Banio> bañoList;
 
+    
     public Habitacion(Boolean poseeMirador, Integer numeroBaños, Integer numeroCamas, Float tamanio, String tipoHabitacion, Float precioHabitacion, Integer numeroHabitacion) {
         this.poseeMirador = poseeMirador;
         this.numeroBaños = numeroBaños;

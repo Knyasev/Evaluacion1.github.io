@@ -4,9 +4,9 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
   
  <hibernate-mapping>  
-  <class name="administracionHotel.model.Usuario" table="USUARIO">  
+  <class name="administracion.model.Usuario" table="USUARIO">  
     
-    <id name="numeroIdEmpleado">  
+    <id name="empleadoId">  
         <generator class="native"></generator>  
     </id>  
     

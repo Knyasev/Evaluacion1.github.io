@@ -34,10 +34,20 @@
         <mapping resource="administracionHotel/cocina.hbm.xml"/>
         <mapping resource="administracionHotel/comedor.hbm.xml"/>
         <mapping resource="administracionHotel/conserje.hbm.xml"/>
-
-
-
-        
+         <mapping resource="administracionHotel/usuario.hbm.xml"/>
+         <mapping resource="administracionHotel/servicioadicional.hbm.xml"/>
+         <mapping resource="administracionHotel/servicio.hbm.xml"/>
+        <mapping resource="administracionHotel/reservacioncomida.hbm.xml"/>
+        <mapping resource="administracionHotel/reservacion.hbm.xml"/>
+        <mapping resource="administracionHotel/recepcionista.hbm.xml"/>
+        <mapping resource="administracionHotel/recepcion.hbm.xml"/>
+        <mapping resource="administracionHotel/realizarEvento.hbm.xml"/>
+        <mapping resource="administracionHotel/parqueadero.hbm.xml"/>
+        <mapping resource="administracionHotel/mesero.hbm.xml"/>
+        <mapping resource="administracionHotel/hotel.hbm.xml"/>
+        <mapping resource="administracionHotel/habitacion.hbm.xml"/>
+        <mapping resource="administracionHotel/gerente.hbm.xml"/>
+        <mapping resource="administracionHotel/factura.hbm.xml"/>
     </session-factory>  
   
 </hibernate-configuration>

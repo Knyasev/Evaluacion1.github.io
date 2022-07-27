@@ -10,13 +10,19 @@ import java.util.LinkedList;
  * @author Usuario iTC
  */
 public class Recepcion {
-    private int recepcionid;
+    private int recepcionId;
     private String InformacionHabitacion;
     private Integer numeroHabitacionesDisponibles;
     
    private  List<Recepcionista> recepcionList;
    private Hotel hotel;
 
+    public Recepcion(String InformacionHabitacion, Integer numeroHabitacionesDisponibles) {
+        this.InformacionHabitacion = InformacionHabitacion;
+        this.numeroHabitacionesDisponibles = numeroHabitacionesDisponibles;
+    }
+
+   
    public Recepcion(Integer numeroLlaveHabitacion, Float precioNoche, String InformacionHabitacion, Hotel hotel) {
       
         this.InformacionHabitacion = InformacionHabitacion;
@@ -65,12 +71,12 @@ public class Recepcion {
         this.hotel = hotel;
     }
 
-    public int getRecepcionid() {
-        return recepcionid;
+    public int getRecepcionId() {
+        return recepcionId;
     }
 
-    public void setRecepcionid(int recepcionid) {
-        this.recepcionid = recepcionid;
+    public void setRecepcionId(int recepcionid) {
+        this.recepcionId = recepcionid;
     }
 
 

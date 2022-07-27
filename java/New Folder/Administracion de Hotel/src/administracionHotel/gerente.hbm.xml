@@ -3,15 +3,15 @@
  "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
  <hibernate-mapping>  
-  <class name="administracionHotel.model.Gerente" table="GERENTE">  
+  <class name="administracion.model.Gerente" table="GERENTE">  
     
-    <id name="numeroIdeEmpleado">  
+    <id name="gerenteId">  
         <generator class="native"></generator>  
     </id>  
     
     <property name="nombre"></property>  
     <property name="apellido"></property>  
-    <property name="ocupacion"></property>  
+    <property name="ocupacion"></property>
      
   </class>        
  </hibernate-mapping>

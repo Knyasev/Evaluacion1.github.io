@@ -4,7 +4,7 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
   
  <hibernate-mapping>  
-  <class name="administracionHotel.model.ServicioAdicional" table="SERVICIOADICIONAL">  
+  <class name="administracion.model.ServicioAdicional" table="SERVICIOADICIONAL">  
     
     <id name="numeroServicio">  
         <generator class="native"></generator>  
