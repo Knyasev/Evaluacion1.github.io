@@ -7,10 +7,6 @@ package administracion.dao;
    this template
  */
 
-import administracion.dao.HibernateUtil;
-import administracion.model.Chef;
-import administracion.model.Persona;
-import org.hibernate.Session;
 
 /**
  *
@@ -18,13 +14,9 @@ import org.hibernate.Session;
  */
 
  
-public class DAOChef {
-        public void guardarChef(Chef chef){
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        session.beginTransaction();
-        session.saveOrUpdate(chef);
-        session.getTransaction().commit();
+public class DAOChef extends DAOMain{
+
         
     }   
-}
+
 

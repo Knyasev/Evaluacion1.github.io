@@ -61,23 +61,23 @@ public class AdministracionDeHotel {
         
         DAOPersona dAOPersona = new DAOPersona();
         Persona p1 = new Persona("Wilson", "Gonzales", "147852365");
-        dAOPersona.guardarPersona(p1);
+        dAOPersona.guardar(p1);
         
         DAOBanio dAOBanio = new DAOBanio();
         Banio b1 = new Banio(2, "Jabon, Cepillo de dientes, Shampoo");
-        dAOBanio.guardarBanio(b1);
+        dAOBanio.guardar(b1);
         
         DAOBar dAOBar = new DAOBar();
         Bar ba1 = new Bar(25, 52);
-        dAOBar.guardarBar(ba1); 
+        dAOBar.guardar(ba1); 
         
         DAOChef dAOChef = new DAOChef();
         Chef ch1 = new Chef(14, "chef", "Gonzalo", "Plata", "22222222");
-        dAOChef.guardarChef(ch1);  
+        dAOChef.guardar(ch1);  
         
         DAOCliente dAOCliente = new DAOCliente();
         Cliente c1= new Cliente("Fausto","Roldan","11225563");
-        dAOCliente.guardarCliente(c1);
+        dAOCliente.guardar(c1);
         
         DAOUsuario aOUsuario = new DAOUsuario();
         Usuario usuario = new Usuario(1548877, "empleado","Wilson", "Gonzalez","121578451");

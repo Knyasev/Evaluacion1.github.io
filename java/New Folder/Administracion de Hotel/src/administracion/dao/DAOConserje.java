@@ -7,11 +7,7 @@ package administracion.dao;
    this template
  */
 
-import administracion.dao.HibernateUtil;
-import administracion.model.Comedor;
-import administracion.model.Conserje;
-import administracion.model.Persona;
-import org.hibernate.Session;
+
 
 /**
  *
@@ -19,13 +15,9 @@ import org.hibernate.Session;
  */
 
  
-public class DAOConserje {
-        public void guardarConserje(Conserje conserje){
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        session.beginTransaction();
-        session.saveOrUpdate(conserje);
-        session.getTransaction().commit();
+public class DAOConserje extends DAOMain {
+
         
-    }   
-}
+}   
+
 

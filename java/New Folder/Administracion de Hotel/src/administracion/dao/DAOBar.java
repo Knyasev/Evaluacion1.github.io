@@ -7,10 +7,6 @@ package administracion.dao;
    this template
  */
 
-import administracion.dao.HibernateUtil;
-import administracion.model.Bar;
-import administracion.model.Persona;
-import org.hibernate.Session;
 
 /**
  *
@@ -18,12 +14,6 @@ import org.hibernate.Session;
  */
 
  
-public class DAOBar {
-        public void guardarBar(Bar bar){
-        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        session.beginTransaction();
-        session.saveOrUpdate(bar);
-        session.getTransaction().commit();
-        
+public class DAOBar extends DAOMain {
+      
     }   
-}
