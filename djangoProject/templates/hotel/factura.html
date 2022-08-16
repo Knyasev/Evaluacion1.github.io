@@ -1,0 +1,185 @@
+{% extends 'hotel/base.html' %}
+
+{% block titulo %}
+   Factura {{ factura.numero_factura}}
+{% endblock %}
+{% block contenido %}
+
+
+        <p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Factura
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+      <pre>Nº Factura: <strong>{{ factura.numero_factura}}</strong>                 Facturado a :</pre>
+       <pre>Ruc:  <strong>{{ factura.ruc }}</strong>                                Wilson Gonzalez</pre>
+      <pre>Fecha: <strong>{{ factura.fecha }}</strong>                              11058155646   </pre>
+<ul class="list-group">
+<div class="container text-center">
+  <div class="row">
+    <div class="col order-last border">
+     Precio $
+    </div>
+    <div class="col border ">
+      Habitacion
+    </div>
+       <div class="col border">
+      Descripcion
+    </div>
+       <div class="col border">
+      Tiene Mirador
+    </div>
+    <div class="col order-first border ">
+       Nº
+    </div>
+  </div>
+</div>
+
+
+
+  {% for habitacion in factura.habitacion_lista.all%}
+
+<li class="list-group-item" >
+    <div class="container text-center">
+  <div class="row">
+    <div class="col order-last ">
+
+     {{ habitacion.CalcularPrecioHabitacion }}$
+
+    </div>
+    <div class="col ">
+
+ {{ habitacion.tipo_habitacion }}
+
+
+    </div>
+       <div class="col ">
+        {% if habitacion.numero_habitacion > 2 %}
+        
+        {% endif %} 
+
+              Numero de baños {{ habitacion.numero_banios }}
+
+    </div>
+       <div class="col ">
+
+         {{ habitacion.posee_mirador }}
+
+    </div>
+    <div class="col order-first  ">
+
+        {{ habitacion.numero_habitacion }}
+
+    </div>
+  </div>
+</div>
+      </li>
+
+
+  {% endfor %}
+
+<li class="list-group-item" >
+    <div class="container text-center">
+  <div class="row">
+    <div class="col order-last">
+     Total de Servicios $
+    </div>
+    <div class="col border">
+        Servicios Adicionales
+    </div>
+       <div class="col border">
+       Servicios
+    </div>
+       <div class="col border">
+         Precio
+    </div>
+    <div class="col order-first border ">
+         Nº
+    </div>
+  </div>
+</div>
+</li>
+{% for servicio in servicio %}
+<li class="list-group-item" style="-moz-text-decoration-line: blink">
+    <div class="container text-center">
+  <div class="row">
+    <div class="col order-last">
+        $60
+    </div>
+    <div class="col ">
+    {% for servicioAdicional in servicio.servicio_adicional.all %}
+                    {% if servicioAdicional.servicio_habitacion %}
+                   Servicio a la habitacion:  {{ servicioAdicional.servicio_habitacion }}<br>
+                   {% endif %}
+
+                    {% if servicioAdicional.tvcable %}
+                   Servico de tvCable: {{ servicioAdicional.tvcable }}<br>
+                   {% endif %}
+                    {% if servicioAdicional.servicio_limpieza %}
+                   Servicio de Limpieza: {{ servicioAdicional.servicio_limpieza }}<br>
+                   {% endif %}
+                   {% if servicioAdicional.gim %}
+                   Gym: {{ servicioAdicional.gim }}<br>
+                   {% endif %}
+                    {% if servicioAdicional.spa %}
+                   Spa: {{ servicioAdicional.spa }}<br>
+                   {% endif %}
+                    {% if servicioAdicional.bar %}
+                   Bar:  {{ servicioAdicional.bar }}<br>
+                   {% endif %}
+
+                    <div class="card" style="width: 100px"> </div>
+
+    </div>
+       <div class="col ">
+       Precio de servicio a internet : $ {{ servicio.precio_internet }}<br>
+    </div>
+       <div class="col ">
+         20$
+    </div>
+    <div class="col order-first ">
+          {{ servicio.numero_servicio }}
+    </div>
+  </div>
+</div>
+     {% endfor %}
+            {% endfor %}
+</li>
+  <li class="list-group-item" style="background-position: bottom 2500px">
+    <div class="container text-center">
+  <div class="row">
+    <div class="col-2 border">
+     Total $
+    </div>
+    <div class="col-2 border  ">
+        Subtotal
+    </div>
+       <div class="col-2 border" style="text-effect: emboss">
+       Iva 12%
+  </div>
+</div>
+</li>
+</li>
+  <li class="list-group-item" style="background-position: bottom 2500px">
+    <div class="container text-center">
+  <div class="row">
+    <div class="col-2 " style="left: auto">
+       $268.8
+    </div>
+    <div class="col-2 ">
+        $240
+    </div>
+       <div class="col-2 " >
+        $28.8
+  </div>
+</div>
+</li>
+</ul>
+
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% block titulo %}
+   Reservaciones
+{% endblock %}
+{% block contenido %}
+<p style="background-image: url('https://www.kayak.com.ec/rimg/himg/75/c8/84/revato-275450-12292942-924181.jpg?width=720&height=576&crop=true');">
+
+</p>
+
+
+  <ul class="list-group list-group-flush">
+
+       <li class="list-group-item" style="width: 800px";><h4> Reservacion: {{ reservacion.numero_reservacion }}</h4><br></li>
+         Numero de Huespedes:{{ reservacion.numero_huestes }}<br>
+        Precio de Servicio : {{ reservacion.precio_Servicio }}<br>
+        Tiempo de estancia: {{ reservacion.tiempo_estancia }}  dias<br>
+
+       {% for reservacionComida in  reservacion.reservacion_comida_list.all %}
+           <li class="card-footer"><strong>Reservacion de comida #</strong>{{ reservacionComida.reservacion_id }}<br></li>
+           {{ reservacionComida.desea }}
+            {% if reservacionComida.desea_almuerzo %}
+            Almuerzo: {{ reservacionComida.almuerzo }}<br>
+            {% endif %}
+            {% if reservacionComida.desea_cena  %}
+            Cena: {{ reservacionComida.cena }}<br>
+            {% endif %}
+            {% if reservacionComida.desea_desayuno  %}
+            Desayuno: {{ reservacionComida.desayuno }}<br>
+            {% endif %}
+
+
+
+
+    {% endfor %}
+   {% for servicio in servicio %}
+
+
+    <li class="list-group-item" style="width: 800px"> <h4>Servicios del Hotel # {{ servicio.numero_servicio }}</h4></li>
+        Precio de servicio a internet : $ {{ servicio.precio_internet }}  <br>
+              <strong>  Servicios Adicionales</strong> <br>
+                {% for servicioAdicional in servicio.servicio_adicional.all %}
+                  Precio de servicio a la habitacion: $ {{ servicioAdicional.precio_servicio_habitacion }}<br>
+                  Precio de servico de tvCable: ${{ servicioAdicional.precio_tvcalbe }}<br>
+                  Precio de servicio de Limpieza: ${{ servicioAdicional.precio_servicio_limpieza }}<br>
+                  Precio de Gym: ${{ servicioAdicional.precio_gim }}<br>
+                  Precio de Spa: ${{ servicioAdicional.precio_spa }}<br>
+                  Precio de Bar: $ {{ servicioAdicional.precio_bar }}<br>
+                    <div class="card" style="width: 100px"> </div>
+  </ul>
+                {% endfor %}
+            {% endfor %}
+<a class="btn btn-success" href="{% url 'reservacion-reservar' reservacion_id=reservacion.numero_reservacion %}">Editar</a>
+
+
+{% endblock %}

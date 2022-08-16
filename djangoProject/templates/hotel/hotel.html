@@ -1,0 +1,23 @@
+{% extends 'hotel/base.html' %}
+
+{% block titulo %}
+    Gestion de Hoteles
+{% endblock %}
+{% block contenido %}
+    <h3>Hoteles</h3>
+    <p>Bienvenido al Sistema de Administracion de un Hotel</p>
+    <p>Este sistema presenta la administracion de un hotel brindandonos los serivicios</p>
+{% for hotele in hoteles %}
+<div class="card" style="width: 18rem;">
+  <img src="https://www.kayak.com.ec/rimg/himg/75/c8/84/revato-275450-12292942-924181.jpg?width=720&height=576&crop=true" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hotel:{{ hotele.nombre}}</h5>
+
+    <p class="card-text"> Numero de Pisos: {{ hotele.numero_pisos }}<br>
+    Ubicacion: {{ hotele.ubicacion }}<br>Numero de Habitaciones: {{ hotele.numero_habitaciones }}<br></p>
+    <a href="{% url 'hotel-id' hotel_id=hotele.ruc %}" class="btn btn-warning">Habitaciones</a>
+  </div>
+{% endfor %}
+
+</div>
+{% endblock %}
