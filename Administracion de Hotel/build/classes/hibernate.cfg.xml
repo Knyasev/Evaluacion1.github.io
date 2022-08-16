@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>  
+        <property name="connection.url">jdbc:postgresql://localhost/Camerum</property>  
+        <property name="connection.username">camerum</property>  
+        <property name="connection.password">camerum123</property>  
+        <property name="connection.driver_class">org.postgresql.Driver</property>  
+        
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+        
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        
+        
+        <mapping resource="administracionHotel/persona.hbm.xml"/>
+        <mapping resource="administracionHotel/banio.hbm.xml"/>
+        <mapping resource="administracionHotel/bar.hbm.xml"/>
+        <mapping resource="administracionHotel/chef.hbm.xml"/>
+        <mapping resource="administracionHotel/cliente.hbm.xml"/>
+        <mapping resource="administracionHotel/cocina.hbm.xml"/>
+        <mapping resource="administracionHotel/comedor.hbm.xml"/>
+        <mapping resource="administracionHotel/conserje.hbm.xml"/>
+         <mapping resource="administracionHotel/usuario.hbm.xml"/>
+         <mapping resource="administracionHotel/servicioadicional.hbm.xml"/>
+         <mapping resource="administracionHotel/servicio.hbm.xml"/>
+        <mapping resource="administracionHotel/reservacioncomida.hbm.xml"/>
+        <mapping resource="administracionHotel/reservacion.hbm.xml"/>
+        <mapping resource="administracionHotel/recepcionista.hbm.xml"/>
+        <mapping resource="administracionHotel/recepcion.hbm.xml"/>
+        <mapping resource="administracionHotel/realizarEvento.hbm.xml"/>
+        <mapping resource="administracionHotel/parqueadero.hbm.xml"/>
+        <mapping resource="administracionHotel/mesero.hbm.xml"/>
+        <mapping resource="administracionHotel/hotel.hbm.xml"/>
+        <mapping resource="administracionHotel/habitacion.hbm.xml"/>
+        <mapping resource="administracionHotel/gerente.hbm.xml"/>
+        <mapping resource="administracionHotel/factura.hbm.xml"/>
+    </session-factory>  
+  
+</hibernate-configuration>
+
+
