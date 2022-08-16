@@ -1,0 +1,14 @@
+{% extends 'hotel/base.html' %}
+
+{% block titulo %}
+   Factura {{ reservacion.numero_reservacion}}
+{% endblock %}
+{% block contenido %}
+<h3>Realize la reservacion numero {{ reservacion.numero_reservacion }}</h3>
+    <form action="{% url 'reservacion-reservar' reservacion_id=reservacion.numero_reservacion%}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <input class="btn btn-primary" type="submit" value="Reservar"> <a class="btn btn-warning" href="{% url 'reservacion-id' reservacion_id=reservacion.numero_reservacion %}">Volver</a>
+    </form><br>
+
+{% endblock %}

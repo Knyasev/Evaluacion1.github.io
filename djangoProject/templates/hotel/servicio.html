@@ -1,0 +1,33 @@
+{% extends 'hotel/base.html' %}
+
+{% block titulo %}
+   Reservaciones
+{% endblock %}
+{% block contenido %}
+{% for servicio in servicio %}
+<ul>
+
+    <li class="list-group" style="width: 400px"> <h4>Servicios del Hotel # {{ servicio.numero_servicio }}</h4></li>
+
+  <li class="list-group-item" style="width: 400px">
+      Wifi : $ {{ servicio.precio_internet }}<br>
+
+<li class="list-group-item" style="width: 400px">
+              <strong>  Servicios Adicionales</strong> <br>
+                {% for servicioAdicional in servicio.servicio_adicional.all %}
+                 <li class="list-group-item" style="width: 400px">
+                    Precio de servicio a la habitacion: $ {{ servicioAdicional.precio_servicio_habitacion }}<img src="https://cdn-icons-png.flaticon.com/512/35/35143.png?w=740&t=st=1660621737~exp=1660622337~hmac=d9dccbf55fd0cc18fc3c01b4bce129a9d7a98b083ed792e20b7879cfe2ede060" width="80px"height="80px"><br>
+                  Precio de servico de tvCable: ${{ servicioAdicional.precio_tvcalbe }}<img src="https://cdn-icons-png.flaticon.com/512/3260/3260248.png"width="80px"height="80px"><br>
+                  Precio de servicio de Limpieza: ${{ servicioAdicional.precio_servicio_limpieza }}<img src="https://cdn-icons-png.flaticon.com/512/79/79761.png"width="80px"height="80px"><br>
+                  Precio de Gym: ${{ servicioAdicional.precio_gim }}<img src="https://www.nicepng.com/png/full/28-281004_gym-icon-png.png"width="80px"height="80px"><br>
+                  Precio de Spa: ${{ servicioAdicional.precio_spa }}<img src="https://cdn-icons-png.flaticon.com/512/2377/2377308.png"width="80px"height="80px"><br>
+                  Precio de Bar: $ {{ servicioAdicional.precio_bar }}<img src="https://cdn-icons-png.flaticon.com/512/1247/1247271.png?w=740&t=st=1660624449~exp=1660625049~hmac=e15de94e1d225ee7d8808fb57ff85084a361807203fef9d8e1c85b75ffdb39e7"width="80px"height="80px"><br>
+
+                    </li>
+</li>
+  </ul>
+                  <a class="btn btn-primary" href="{% url 'servicio-reservar' servicioAdicional_id=servicioAdicional.id%}" >Escoger servicios</a>
+                {% endfor %}
+            {% endfor %}
+
+{% endblock %}
